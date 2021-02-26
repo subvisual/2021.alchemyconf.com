@@ -1,0 +1,15 @@
+@import "./global.scss";
+@import "./components/Banner.scss";
+@import "./components/Nav.scss";
+@import "./components/Video.scss";
+
+.title {
+  text-align: center;
+  font-size: 54px;
+}
+
+.main {
+  max-width: 1000px;
+  padding: 1rem;
+  margin: 0 auto;
+}

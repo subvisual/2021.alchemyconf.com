@@ -12,22 +12,18 @@ defmodule Alchemy.MixProject do
     ]
   end
 
-  # Run "mix help compile.app" to learn about applications.
   def application do
     [
       extra_applications: [:logger]
     ]
   end
 
-  # Specifies which paths to compile per environment.
   defp elixirc_paths(:test), do: ["lib", "test/support"]
   defp elixirc_paths(_), do: ["lib"]
 
-  # Specifies your project dependencies.
-  #
-  # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:sass, git: "https://github.com/scottdavis/sass.ex", submodules: true},
       {:still, "~> 0.3.0"}
     ]
   end

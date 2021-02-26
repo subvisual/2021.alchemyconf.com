@@ -1,0 +1,15 @@
+div.Hero
+  nav.Nav
+    div.Banner
+      span Virtual
+      span |>
+      span Elixir
+      span |>
+      span Conference
+      span |>
+      span 2021
+
+
+  div.Video
+    video playsinline=true autoplay=true muted=true loop=true
+      source src="public/hero.mp4" type="video/mp4"

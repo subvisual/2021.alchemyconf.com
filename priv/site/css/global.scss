@@ -1,0 +1,26 @@
+:root {
+  --c-white: #fff;
+  --c-purple: #260640;
+  --s-1: 0.354rem;
+  --s-2: 0.5rem;
+  --s-3: 0.707rem;
+  --s-4: 1rem;
+  --s-5: 1.414rem;
+  --s-6: 1.999rem;
+  --s-7: 2.827rem;
+  --s-8: 3.998rem;
+  --s-9: 5.562rem;
+}
+
+html {
+  background-color: var(--c-purple);
+  font-size: var(--s-5);
+  line-height: var(--s-6);
+  font-family: input-mono, monospace;
+  color: var(--c-white);
+}
+
+body {
+  margin: 0;
+}
+
