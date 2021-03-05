@@ -2,9 +2,37 @@
   .header
     h2 About Alchemy Conf
     p A virtual conference for Elixir developers
-  p
-    | Mirror Conf is a conference designed to empower designers and front-end
-      developers who have a thirst for knowledge and want to broaden their
-      horizons. It aims to create the perfect set to blur the differences between
-      these two worlds and point towards a more collaborative future.
+  .details
+    p
+      | Mirror Conf is a conference designed to empower designers and front-end
+        developers who have a thirst for knowledge and want to broaden their
+        horizons. It aims to create the perfect set to blur the differences between
+        these two worlds and point towards a more collaborative future.
+  .lead
+    p A virtual conference for those interested in elixir and its powerful magic
 
+  .points
+    ul
+      li.withDot Nine Speakers
+      li.withDot One Day
+      li.withDot Online
+    div
+      p.withDot.underline Sign-up for updates
+      p.description
+        | Mirror Conf is a conference designed to empower designers and front-end
+          developers who have a thirst for knowledge and want to broaden their
+          horizons.
+
+  marquee.marquee loop="-1"
+    span Follow us
+    span Coming soon
+    span Follow us
+    span Coming soon
+    span Follow us
+    span Coming soon
+    span Follow us
+    span Coming soon
+    span Follow us
+    span Coming soon
+    span Follow us
+    span Coming soon

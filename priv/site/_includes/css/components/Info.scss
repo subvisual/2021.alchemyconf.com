@@ -4,8 +4,85 @@
     border-bottom: 1px solid white;
     display: flex;
     justify-content: space-between;
+    max-width: var(--s-15);
+    margin: 0 auto;
+    padding: 0 var(--s-3);
 
     > * {
+      text-transform: uppercase;
+    }
+  }
+
+  > .details {
+    padding: 0 var(--s-3);
+    max-width: var(--s-14);
+    margin: var(--s-7) auto 0;
+    font-size: var(--s-3);
+    line-height: var(--s-4);
+  }
+
+  .lead {
+    max-width: var(--s-14);
+    margin: 0 auto;
+    padding: 0 var(--s-3);
+
+    p {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: var(--s-6);
+      line-height: var(--s-7);
+    }
+  }
+
+  .points {
+    max-width: var(--s-15);
+    margin: 0 auto var(--s-10);
+    padding: 0 var(--s-3);
+    display: flex;
+
+    > * {
+      flex: 1;
+      padding-left: var(--s-7);
+    }
+
+    > ul {
+      list-style-type: none;
+    }
+
+    .description {
+      margin-top: var(--s-4);
+      font-size: var(--s-3);
+      line-height: var(--s-4);
+    }
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+
+  .withDot {
+    position: relative;
+    font-size: var(--s-5);
+  }
+
+  .withDot::after {
+    content: "";
+    height: 2px;
+    background-color: white;
+    width: 32px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateX(calc(-100% - var(--s-4)));
+  }
+
+  .marquee {
+    padding: var(--s-4) 0;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+
+    > span {
+      margin: 0 var(--s-4);
       text-transform: uppercase;
     }
   }
