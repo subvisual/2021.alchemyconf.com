@@ -1,7 +1,8 @@
-@import "./global.scss";
-@import "./components/Banner.scss";
-@import "./components/Nav.scss";
-@import "./components/Video.scss";
+@import "../_includes/css/global.scss";
+@import "../_includes/css/components/Banner.scss";
+@import "../_includes/css/components/Nav.scss";
+@import "../_includes/css/components/Video.scss";
+@import "../_includes/css/components/Info.scss";
 
 .title {
   text-align: center;
