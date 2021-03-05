@@ -1,0 +1,7 @@
+.Banner {
+  display: flex;
+  justify-content: space-evenly;
+  padding: var(--s-5) 0;
+  border-bottom: 1px solid var(--c-white);
+  text-transform: uppercase;
+}
