@@ -2,8 +2,8 @@
 layout: _layout.slime
 ---
 
-= include("_includes/hero.slime")
+= include(@env, "_includes/hero.slime")
 
 .main
-  = include("_includes/info.slime")
-  = include("_includes/footer.slime")
+  = include(@env, "_includes/info.slime")
+  = include(@env, "_includes/footer.slime")
