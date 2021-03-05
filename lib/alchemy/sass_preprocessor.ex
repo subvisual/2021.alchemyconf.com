@@ -7,10 +7,8 @@ defmodule Alchemy.SassPreprocessor do
   end
 
   @impl true
-  def render(file) do
-    {:ok, content} =
-      Still.Utils.get_input_path(file.input_file)
-      |> Sass.compile_file()
+  def render(%{content: content} = file) do
+    {:ok, content} = Sass.compile(content)
 
     %{file | content: content}
   end

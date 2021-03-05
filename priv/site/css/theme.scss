@@ -1,8 +1,8 @@
-@import "../_includes/css/global.scss";
-@import "../_includes/css/components/Banner.scss";
-@import "../_includes/css/components/Nav.scss";
-@import "../_includes/css/components/Video.scss";
-@import "../_includes/css/components/Info.scss";
+<%= include("_includes/css/global.scss") %>
+<%= include("_includes/css/components/Banner.scss") %>
+<%= include("_includes/css/components/Nav.scss") %>
+<%= include("_includes/css/components/Video.scss") %>
+<%= include("_includes/css/components/Info.scss") %>
 
 .title {
   text-align: center;
