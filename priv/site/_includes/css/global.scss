@@ -10,11 +10,18 @@
   --s-7: 2.827rem;
   --s-8: 3.998rem;
   --s-9: 5.562rem;
+  --s-10: 7.993rem;
+  --s-11: 11.302rem;
+  --s-12: 15.981rem;
+  --s-13: 22.597rem;
+  --s-14: 31.952rem;
+  --s-15: 45.18rem;
+  --s-16: 63.884rem;
 }
 
 html {
   background-color: var(--c-purple);
-  font-size: var(--s-5);
+  font-size: 20px;
   line-height: var(--s-6);
   font-family: input-mono, monospace;
   color: var(--c-white);
