@@ -1,0 +1,13 @@
+---
+layout: _layout.slime
+---
+
+.Speakers
+  = include(@env, "_includes/speakers/hero.slime")
+.Speakers
+  = include(@env, "_includes/speakers/details.slime")
+  = include(@env, "_includes/speakers/details.slime")
+  = include(@env, "_includes/speakers/details.slime")
+  = include(@env, "_includes/speakers/details.slime")
+
+= include(@env, "_includes/footer.slime")

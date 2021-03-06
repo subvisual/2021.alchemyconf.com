@@ -1,6 +1,9 @@
 :root {
   --c-white: #fff;
   --c-purple: #260640;
+  --c-green: #CDFF63;
+  --c-gray: #C4C4C4;
+  --c-black: #000000;
   --s-1: 0.354rem;
   --s-2: 0.5rem;
   --s-3: 0.707rem;
@@ -23,7 +26,7 @@ html {
   background-color: var(--c-purple);
   font-size: 20px;
   line-height: var(--s-6);
-  font-family: input-mono, monospace;
+  font-family: 'Chakra Petch', input-mono, monospace, sans-serif;
   color: var(--c-white);
 }
 
