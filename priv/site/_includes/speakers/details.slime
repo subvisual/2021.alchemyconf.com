@@ -1,0 +1,16 @@
+section.details
+  .photo
+    h2.name Sarah SOUEIDAN
+    img alt="Sarah's picture" src="http://placekitten.com/360/320"
+
+  .content
+    p.title FRONT-END WEB DEVELOPER
+
+    h2.name Sarah SOUEIDAN
+
+    p.description Sarah is an award-winning freelance front-end Web developer and author from Lebanon. She runs workshops and helps companies and agencies build clean front-end (HTML5, SVG, CSS, JS) foundations for Web sites & applications, with strong focus on progressive enhancement, performance and accessibility.
+
+    .social
+      p.handler @sarah.soueidan
+      a href="#" LinkedIn
+      a href="#" Twitter
