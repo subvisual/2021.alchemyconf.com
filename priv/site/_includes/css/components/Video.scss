@@ -1,4 +1,6 @@
 .Video {
+  margin-top: calc(-1 * var(--s-5));
+
   video {
     width: 100%;
   }

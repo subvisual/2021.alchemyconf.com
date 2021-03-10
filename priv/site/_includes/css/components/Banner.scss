@@ -1,7 +1,53 @@
 .Banner {
-  display: flex;
-  justify-content: space-evenly;
-  padding: var(--s-5) 0;
-  border-bottom: 1px solid var(--c-white);
-  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+
+  > .info {
+    display: flex;
+    justify-content: space-evenly;
+    height: var(--s-7);
+    border-bottom: 1px solid var(--c-white);
+    text-transform: uppercase;
+    align-items: center;
+
+    svg {
+      height: var(--s-4);
+    }
+  }
+
+  > .nav {
+    color: var(--c-black);
+    padding: var(--s-5) var(--s-7) 0;
+    display: grid;
+    grid-template-columns: min-content min-content 1fr min-content min-content;
+    grid-column-gap: var(--s-4);
+
+    a {
+      text-decoration: none;
+    }
+
+    > * {
+      background-color: white;
+      border-radius: 4px;
+      padding: 0 var(--s-2);
+      text-transform: uppercase;
+
+      &:nth-child(2) {
+        background-color: var(--c-green);
+      }
+
+      &:nth-child(3) {
+        border-radius: 0;
+        background-color: var(--c-gray);
+
+        span {
+          margin-right: var(--s-5);
+        }
+      }
+
+      &:nth-child(4) {
+        background-color: var(--c-red);
+      }
+    }
+  }
 }

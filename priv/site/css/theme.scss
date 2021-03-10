@@ -1,6 +1,10 @@
 <%= include(@env, "_includes/css/global.scss") %>
 <%= include(@env, "_includes/css/components/Banner.scss") %>
-<%= include(@env, "_includes/css/components/Nav.scss") %>
 <%= include(@env, "_includes/css/components/Video.scss") %>
 <%= include(@env, "_includes/css/components/Info.scss") %>
 <%= include(@env, "_includes/css/components/Speakers.scss") %>
+
+.title {
+  text-align: center;
+  font-size: 54px;
+}

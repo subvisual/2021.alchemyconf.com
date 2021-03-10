@@ -1,15 +1,37 @@
-div.Hero
-  nav.Nav
-    div.Banner
-      span Virtual
-      span |>
-      span Elixir
-      span |>
-      span Conference
-      span |>
-      span 2021
+div.Banner
+  .info
+    span Virtual
+    <svg alt="" viewbox="0 0 30 30">
+      <line x1="10" y1="5" x2="30" y2="15" stroke-width="2" stroke="#fff" />
+      <line x1="10" y1="25" x2="30" y2="15" stroke-width="2" stroke="#fff" />
+      <line x1="0" y1="0" x2="0" y2="30" stroke-width="4" stroke="#fff" />
+    </svg>
+    span Elixir
+    <svg alt="" viewbox="0 0 30 30">
+      <line x1="10" y1="5" x2="30" y2="15" stroke-width="2" stroke="#fff" />
+      <line x1="10" y1="25" x2="30" y2="15" stroke-width="2" stroke="#fff" />
+      <line x1="0" y1="0" x2="0" y2="30" stroke-width="4" stroke="#fff" />
+    </svg>
+    span Conference
+    <svg alt="" viewbox="0 0 30 30">
+      <line x1="10" y1="5" x2="30" y2="15" stroke-width="2" stroke="#fff" />
+      <line x1="10" y1="25" x2="30" y2="15" stroke-width="2" stroke="#fff" />
+      <line x1="0" y1="0" x2="0" y2="30" stroke-width="4" stroke="#fff" />
+    </svg>
+    span 2021
 
+  nav.nav
+    = link @env, "Home", to: "/"
+    a Info
+    marquee
+      span Ticket sales go to charity
+      span Ticket sales go to charity
+      span Ticket sales go to charity
+      span Ticket sales go to charity
+      span Ticket sales go to charity
+      span Ticket sales go to charity
+    a Schedule
+    a Tickets
 
-  div.Video
-    video playsinline=true autoplay=true muted=true loop=true
-      source src="public/hero.mp4" type="video/mp4"
+div.Video
+  video autoplay=true muted=true loop=true src="<%= url_for "public/hero.mp4" %>" type="video/mp4"

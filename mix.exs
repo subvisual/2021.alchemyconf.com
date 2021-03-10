@@ -24,7 +24,7 @@ defmodule Alchemy.MixProject do
   defp deps do
     [
       {:sass, git: "https://github.com/scottdavis/sass.ex", submodules: true},
-      {:still, git: "https://github.com/still-ex/still", ref: "987064f"}
+      {:still, git: "https://github.com/still-ex/still"}
     ]
   end
 end
