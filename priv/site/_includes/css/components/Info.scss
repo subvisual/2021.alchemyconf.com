@@ -47,8 +47,30 @@
       padding-left: var(--s-7);
     }
 
+    svg {
+      height: var(--s-5);
+      position: absolute;
+      left: 0%;
+      top: 50%;
+      transform: translate(calc(-100% + -1 * var(--s-4)), -40%);
+    }
+
     > ul {
       list-style-type: none;
+      font-size: var(--s-5);
+
+      li {
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+    }
+
+    .signUp {
+      position: relative;
+      display: flex;
+      align-items: center;
+      font-size: var(--s-5);
     }
 
     .description {
@@ -60,22 +82,6 @@
 
   .underline {
     text-decoration: underline;
-  }
-
-  .withDot {
-    position: relative;
-    font-size: var(--s-5);
-  }
-
-  .withDot::after {
-    content: "";
-    height: 2px;
-    background-color: white;
-    width: 32px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateX(calc(-100% - var(--s-4)));
   }
 
   .marquee {

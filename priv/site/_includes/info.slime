@@ -13,11 +13,31 @@
 
   .points
     ul
-      li.withDot Nine Speakers
-      li.withDot One Day
-      li.withDot Online
+      li
+        <svg alt="" viewbox="0 0 30 30">
+          <line y1="15" x1="0" y2="15" x2="29" stroke-width="2" stroke="#fff" />
+          <path d="M 21 5 L 29 15 L 21 25" stroke-width="2" stroke="#fff" fill="transparent" />
+        </svg>
+        span Nine Speakers
+      li
+        <svg alt="" viewbox="0 0 30 30">
+          <line y1="15" x1="0" y2="15" x2="29" stroke-width="2" stroke="#fff" />
+          <path d="M 21 5 L 29 15 L 21 25" stroke-width="2" stroke="#fff" fill="transparent" />
+        </svg>
+        span  One Day
+      li
+        <svg alt="" viewbox="0 0 30 30">
+          <line y1="15" x1="0" y2="15" x2="29" stroke-width="2" stroke="#fff" />
+          <path d="M 21 5 L 29 15 L 21 25" stroke-width="2" stroke="#fff" fill="transparent" />
+        </svg>
+        span Online
     div
-      p.withDot.underline Sign-up for updates
+      p.signUp
+        <svg alt="" viewbox="0 0 30 30">
+          <line y1="15" x1="0" y2="15" x2="29" stroke-width="2" stroke="#fff" />
+          <path d="M 21 5 L 29 15 L 21 25" stroke-width="2" stroke="#fff" fill="transparent" />
+        </svg>
+        span.underline Sign-up for updates
       p.description
         | Mirror Conf is a conference designed to empower designers and front-end
           developers who have a thirst for knowledge and want to broaden their
