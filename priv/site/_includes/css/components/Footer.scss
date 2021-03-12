@@ -1,0 +1,41 @@
+.Footer {
+  background-color: var(--c-green);
+  color: var(--c-black);
+  padding: var(--s-8) var(--s-5);
+  font-size: var(--s-3);
+  text-transform: uppercase;
+
+  .title {
+    font-size: var(--s-5);
+    line-height: var(--s-5);
+    font-weight: bold;
+    text-align: left;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .content {
+    max-width: var(--s-15);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    > * {
+      display: flex;
+      flex-direction: column;
+      max-width: var(--s-11);
+    }
+  }
+
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+    li img {
+      height: var(--s-4);
+    }
+  }
+}

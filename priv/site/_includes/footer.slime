@@ -1,6 +1,23 @@
-footer
-  p Relevant links:
-  nav
-    ul
-      li = link @env, "Docs", to: "https://hexdocs.pm/still/"
-      li = link @env, "Github", to: "https://github.com/still-ex/still"
+footer.Footer
+  .content
+    div
+      p.title Alchemy Conf 2021
+      p &copy; 2021 ALCHEMY CONF All Rights reserved
+    div
+      p COPY TAG LINE GOES HERE
+      p #{link @env, "Get in touch", to: "mailto:hello@mirrorconf.com"} hello@mirrorconf.com
+    div
+      p
+        div Powered by #{link @env, "Subvisual", to: "https://subvisual.com/"}
+        div Design by #{link @env, "Onda", to: "https://ondastudio.co/"}
+      p Braga, Portugal.
+    div
+      p Follow Us
+      p
+        nav
+          ul
+            li = responsive_image "_includes/icons/INSTAGRAM.png"
+            li
+              = link @env, to: "https://twitter.com/Alchemy_Conf/status/1283130961656524800" do
+                = responsive_image("_includes/icons/TWITTER.png", class: "sponsor-image")
+            li = responsive_image "_includes/icons/LINKEDIN.png"
