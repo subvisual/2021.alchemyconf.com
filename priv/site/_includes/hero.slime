@@ -34,4 +34,4 @@ div.Banner
     a Tickets
 
 div.Video
-  video autoplay=true muted=true loop=true src="<%= url_for "public/hero.mp4" %>" type="video/mp4"
+  video autoplay=true muted=true loop=true src="<%= include_video("videos/hero.mp4") %>" poster="<%= url_for("videos/hero.jpg") %>" type="video/mp4"
