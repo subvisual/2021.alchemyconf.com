@@ -1,7 +1,14 @@
 .Video {
   margin-top: calc(-1 * var(--s-5));
+  width: 100%;
 
   video {
     width: 100%;
+
+    @media (max-width: 650px) {
+      height: var(--s-14);
+      object-fit: cover;
+      object-position: right;
+    }
   }
 }

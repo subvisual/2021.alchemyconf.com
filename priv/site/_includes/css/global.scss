@@ -29,10 +29,12 @@ html {
   line-height: var(--s-6);
   font-family: "Chakra Petch", input-mono, monospace, sans-serif;
   color: var(--c-white);
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 * {

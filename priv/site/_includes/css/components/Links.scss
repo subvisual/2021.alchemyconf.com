@@ -1,0 +1,22 @@
+.BigLink {
+  width: 100%;
+  height: var(--s-7);
+  background-color: var(--c-gray);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: var(--s-3);
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--c-black);
+
+  &.red {
+    background-color: var(--c-red);
+  }
+
+  &.black {
+    color: var(--c-white);
+    background-color: var(--c-black);
+  }
+}

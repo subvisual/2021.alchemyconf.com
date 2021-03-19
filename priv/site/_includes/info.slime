@@ -8,6 +8,31 @@
         developers who have a thirst for knowledge and want to broaden their
         horizons. It aims to create the perfect set to blur the differences between
         these two worlds and point towards a more collaborative future.
+
+  .rectangles
+    div
+      = responsive_image("_includes/Rectangle 35.jpg")
+    div
+      = responsive_image("_includes/Rectangle 34.jpg")
+    div
+      = responsive_image("_includes/Rectangle 33.jpg")
+    .left
+      <svg width="986" height="562" viewBox="0 0 986 562" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="213" cy="535" r="26.5" transform="rotate(90 213 535)" stroke="#CDFF63"/>
+        <circle cx="145.5" cy="99.5" r="14" transform="rotate(90 145.5 99.5)" fill="#E5E5E5" stroke="#CDFF63"/>
+        <path d="M458 30L210 532M210 532L146 100L-156 496L-280 100L210 532Z" stroke="#CDFF63"/>
+        <circle cx="461" cy="27" r="26.5" transform="rotate(90 461 27)" fill="#E5E5E5" stroke="#CDFF63"/>
+        <circle cx="960.5" cy="39.5" r="25" stroke="#CDFF63"/>
+        <circle cx="390.5" cy="372.5" r="49" fill="#CDFF63" stroke="#CDFF63"/>
+      </svg>
+    .right
+      <svg width="360" height="562" viewBox="0 0 360 562" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M134 507.5C125.992 507.5 119.5 501.008 119.5 493C119.5 484.992 125.992 478.5 134 478.5C142.008 478.5 148.5 484.992 148.5 493C148.5 501.008 142.008 507.5 134 507.5Z" fill="#E5E5E5" stroke="#CDFF63"/>
+        <circle cx="10" cy="95" r="9.5" transform="rotate(90 10 95)" fill="#E5E5E5" stroke="#CDFF63"/>
+        <path d="M749 30L501 532M501 532L437 100L135 496L11 100L501 532Z" stroke="#CDFF63"/>
+      </svg>
+
+
   .lead
     p A virtual conference for those interested in elixir and its powerful magic
 

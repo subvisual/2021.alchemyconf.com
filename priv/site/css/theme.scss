@@ -4,8 +4,4 @@
 <%= include(@env, "_includes/css/components/Info.scss") %>
 <%= include(@env, "_includes/css/components/Speakers.scss") %>
 <%= include(@env, "_includes/css/components/Footer.scss") %>
-
-.title {
-  text-align: center;
-  font-size: 54px;
-}
+<%= include(@env, "_includes/css/components/Links.scss") %>
