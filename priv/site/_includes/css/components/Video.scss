@@ -6,7 +6,8 @@
     width: 100%;
 
     @media (max-width: 650px) {
-      height: var(--s-14);
+      // height: var(--s-14);
+      height: 80vh;
       object-fit: cover;
       object-position: right;
     }

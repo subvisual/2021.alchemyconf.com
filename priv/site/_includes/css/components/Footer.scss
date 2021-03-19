@@ -17,6 +17,7 @@
   .content {
     padding: var(--s-8) var(--s-5);
     font-size: var(--s-3);
+    line-height: var(--s-4);
     max-width: var(--s-15);
     margin: 0 auto;
     display: flex;
@@ -26,6 +27,10 @@
       display: flex;
       flex-direction: column;
       max-width: var(--s-11);
+
+      > *:first-child {
+        margin-bottom: var(--s-6);
+      }
     }
 
     @media (max-width: 650px) {

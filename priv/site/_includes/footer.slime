@@ -1,5 +1,4 @@
 footer.Footer
-
   .contentMobile
     .grid
       = link @env, "schedule", to: "/schedule", class: "BigLink"
@@ -19,13 +18,13 @@ footer.Footer
 
   .content
     div
-      p.title Alchemy Conf 2021
+      p.title Alchemy <br /> Conf 2021
       p &copy; 2021 ALCHEMY CONF All Rights reserved
     div
       p COPY TAG LINE GOES HERE
       p #{link @env, "Get in touch", to: "mailto:hello@mirrorconf.com"} hello@mirrorconf.com
     div
-      p
+      div
         div Powered by #{link @env, "Subvisual", to: "https://subvisual.com/"}
         div Design by #{link @env, "Onda", to: "https://ondastudio.co/"}
       p Braga, Portugal.

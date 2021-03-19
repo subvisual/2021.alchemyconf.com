@@ -1,19 +1,19 @@
 div.Banner
   .info
     span Virtual
-    <svg alt="" viewbox="0 0 30 30">
+    <svg aria-hidden="true" alt="" viewbox="0 0 30 30">
       <line x1="10" y1="5" x2="30" y2="15" stroke-width="2" stroke="#fff" />
       <line x1="10" y1="25" x2="30" y2="15" stroke-width="2" stroke="#fff" />
       <line x1="0" y1="0" x2="0" y2="30" stroke-width="4" stroke="#fff" />
     </svg>
     span Elixir
-    <svg alt="" viewbox="0 0 30 30">
+    <svg aria-hidden="true" alt="" viewbox="0 0 30 30">
       <line x1="10" y1="5" x2="30" y2="15" stroke-width="2" stroke="#fff" />
       <line x1="10" y1="25" x2="30" y2="15" stroke-width="2" stroke="#fff" />
       <line x1="0" y1="0" x2="0" y2="30" stroke-width="4" stroke="#fff" />
     </svg>
     span Conference
-    <svg alt="" viewbox="0 0 30 30">
+    <svg aria-hidden="true" alt="" viewbox="0 0 30 30">
       <line x1="10" y1="5" x2="30" y2="15" stroke-width="2" stroke="#fff" />
       <line x1="10" y1="25" x2="30" y2="15" stroke-width="2" stroke="#fff" />
       <line x1="0" y1="0" x2="0" y2="30" stroke-width="4" stroke="#fff" />
@@ -23,7 +23,7 @@ div.Banner
   nav.nav
     = link @env, "Home", to: "/"
     a Info
-    marquee
+    marquee aria-hidden="true"
       span Ticket sales go to charity
       span Ticket sales go to charity
       span Ticket sales go to charity

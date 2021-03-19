@@ -10,7 +10,7 @@
         horizons. It aims to create the perfect set to blur the differences between
         these two worlds and point towards a more collaborative future.
 
-  .rectangles
+  .rectangles aria-hidden="true"
     div
       = responsive_image("_includes/Rectangle 35.jpg")
     div
@@ -57,7 +57,7 @@
           developers who have a thirst for knowledge and want to broaden their
           horizons.
 
-  marquee.marquee loop="-1"
+  marquee.marquee loop="-1" aria-hidden="true"
     span Follow us
     span Coming soon
     span Follow us
