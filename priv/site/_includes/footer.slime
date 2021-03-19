@@ -13,8 +13,9 @@ footer.Footer
             = responsive_image("_includes/icons/TWITTER.png", class: "sponsor-image")
         li = responsive_image "_includes/icons/LINKEDIN.png"
     footer.footer
-      p Virtual Conference
-      p 14th May 2021
+      p Alchemy Conf
+      time datetime="2021-05-14"
+        | 14th May 2021
 
   .content
     div

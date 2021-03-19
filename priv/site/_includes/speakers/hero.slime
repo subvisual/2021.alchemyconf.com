@@ -1,7 +1,8 @@
 main.hero
   .content
     .dateTime
-      p May 14th 2021.
+      time datetime="2021-05-14"
+        | 14th May 2021
       p 09:00 - 18:30
 
     h1.title

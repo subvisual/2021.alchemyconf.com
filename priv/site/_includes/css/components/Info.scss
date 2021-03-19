@@ -8,25 +8,25 @@
   > .rectangles {
     display: flex;
     justify-content: center;
-    width: 100%;
     position: relative;
-    margin-top: var(--s-7);
-    margin-bottom: var(--s-4);
+    margin-left: auto;
+    margin-right: auto;
 
-    @media (min-width: 650px) {
+    @media (min-width: 550px) {
+      height: 530px;
       margin-top: var(--s-10);
-      margin-bottom: var(--s-8);
+      margin-bottom: var(--s-10);
 
-      .left {
-        position: absolute;
-        right: 30%;
-        top: 8%;
+      .mobile {
+        display: none;
       }
 
-      .right {
+      .desktop {
         position: absolute;
-        right: -4%;
-        top: -16%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-47%, -50%);
+        z-index: 1;
       }
 
       img {
@@ -37,52 +37,77 @@
         object-fit: contain;
       }
 
-      > *:nth-child(2) {
-        z-index: 1;
-        margin-left: calc(-1 * var(--s-7));
-        margin-right: calc(-1 * var(--s-7));
+      div:nth-child(1) {
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        transform: translate(calc(-220px + -50%), -20%);
       }
 
-      @for $i from 1 through 3 {
-        > *:nth-child(#{$i}) {
-          margin-top: calc(#{$i - 1} * var(--s-7));
-        }
+      div:nth-child(2) {
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+
+      div:nth-child(3) {
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        transform: translate(calc(220px + -50%), 20%);
       }
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: 550px) {
       flex-direction: column;
+      width: 350px;
+      margin-top: var(--s-7);
+      margin-bottom: var(--s-7);
 
-      .left,
-      .right {
+      .mobile {
+        position: absolute;
+        top: 20%;
+        left: -50%;
+      }
+
+      .desktop {
         display: none;
       }
 
+      > *:nth-child(1) {
+        margin-left: var(--s-4);
+      }
+
       > *:nth-child(2) {
+        display: flex;
+        justify-content: flex-end;
         z-index: -1;
-        margin-right: calc(-1 * var(--s-7));
-        margin-top: calc(-1 * var(--s-7));
-        margin-bottom: calc(-1 * var(--s-7));
+        margin-right: calc(-1 * var(--s-4));
+        margin-top: calc(-1 * var(--s-8));
+        margin-bottom: calc(-1 * var(--s-8));
       }
     }
   }
 
   > .header {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    display: flex;
-    justify-content: space-between;
     max-width: var(--s-15);
     margin: 0 auto;
-    padding: 0 var(--s-3);
+    padding: 0 var(--s-4);
 
-    > * {
+    > div {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid white;
+      border-bottom: 1px solid white;
+    }
+
+    div > * {
       text-transform: uppercase;
     }
 
-    @media (max-width: 650px) {
-      margin: 0 var(--s-4);
-
+    @media (max-width: 750px) {
       p {
         display: none;
       }
@@ -109,12 +134,17 @@
     p {
       text-transform: uppercase;
       text-align: center;
-      font-size: var(--s-6);
-      line-height: var(--s-7);
+      font-size: var(--s-4);
+      line-height: var(--s-5);
     }
 
     @media (min-width: 650px) {
       padding: 0 var(--s-3) var(--s-10);
+
+      p {
+        font-size: var(--s-6);
+        line-height: var(--s-7);
+      }
     }
   }
 
@@ -152,18 +182,23 @@
       position: relative;
       display: flex;
       align-items: center;
-      font-size: var(--s-5);
+      font-size: var(--s-4);
+      line-height: var(--s-5);
     }
 
     .description {
       margin-top: var(--s-4);
-      font-size: var(--s-4);
-      line-height: var(--s-5);
+      font-size: var(--s-3);
+      line-height: var(--s-4);
     }
 
     @media (max-width: 650px) {
       text-align: center;
       margin: 0 auto var(--s-7);
+
+      .description {
+        margin: 0;
+      }
 
       ul {
         display: none;

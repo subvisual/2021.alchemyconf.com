@@ -38,8 +38,8 @@
 
     .grid {
       display: grid;
-      grid-row-gap: var(--s-5);
-      grid-column-gap: var(--s-5);
+      grid-row-gap: var(--s-4);
+      grid-column-gap: var(--s-4);
       grid-template-columns: repeat(2, 1fr);
     }
 
@@ -56,6 +56,9 @@
       font-weight: bold;
       display: flex;
       justify-content: space-between;
+      font-size: var(--s-3);
+      line-height: 1;
+      margin-top: var(--s-4);
     }
 
     @media (min-width: 650px) {

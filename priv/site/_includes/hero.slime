@@ -42,11 +42,11 @@ div.Banner
 
 
     .modal#modal-menu aria-hidden="true"
-      .overlay(tabindex="-1" data-micromodal-close="modal-menu")
+      .overlay(tabindex="-1" data-micromodal-close)
         .container role="dialog" aria-modal="true" aria-labelledby="modal-menu-title"
           header.header
-            p.title#modal-menu-title Alchemy Conf 2021
-            button.button(aria-label="Close modal" data-micromodal-close="modal-menu")
+            h2.title#modal-menu-title Alchemy Conf 2021
+            button.button(aria-label="Close modal" data-micromodal-close)
               <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="0.353553" y1="0.646447" x2="28.3536" y2="28.6464" stroke="black"/>
                 <line x1="28.3536" y1="1.35355" x2="0.353551" y2="29.3536" stroke="black"/>
@@ -58,11 +58,18 @@ div.Banner
             = link @env, "tickets", to: "/tickets", class: "BigLink red"
           footer.footer
             p Virtual Conference
-            p 14th May 2021
+            time datetime="2021-05-14"
+              | 14th May 2021
 
 
 div.Video
   video autoplay=true muted=true loop=true src="<%= include_video("videos/hero.mp4") %>" poster="<%= url_for("videos/hero.jpg") %>" type="video/mp4"
 
 javascript:
-  MicroModal.init();
+  MicroModal.init({
+          onClose: function(modal, element, event) {
+              console.log('asd')
+              event.preventDefault();
+              event.stopPropagation();
+          }
+      });
