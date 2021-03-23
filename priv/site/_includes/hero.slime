@@ -1,24 +1,25 @@
-div.Banner
-  .info
-    span Virtual
+header.Banner
+  p.info
+    span.visually-hidden Vitual Elixir Conference 2021
+    span aria-hidden="true" Virtual
     <svg aria-hidden="true" alt="" viewbox="0 0 30 30">
       <line x1="10" y1="5" x2="30" y2="15" stroke-width="2" stroke="#fff" />
       <line x1="10" y1="25" x2="30" y2="15" stroke-width="2" stroke="#fff" />
       <line x1="0" y1="0" x2="0" y2="30" stroke-width="4" stroke="#fff" />
     </svg>
-    span Elixir
+    span aria-hidden="true" Elixir
     <svg aria-hidden="true" alt="" viewbox="0 0 30 30">
       <line x1="10" y1="5" x2="30" y2="15" stroke-width="2" stroke="#fff" />
       <line x1="10" y1="25" x2="30" y2="15" stroke-width="2" stroke="#fff" />
       <line x1="0" y1="0" x2="0" y2="30" stroke-width="4" stroke="#fff" />
     </svg>
-    span Conference
+    span aria-hidden="true" Conference
     <svg aria-hidden="true" alt="" viewbox="0 0 30 30">
       <line x1="10" y1="5" x2="30" y2="15" stroke-width="2" stroke="#fff" />
       <line x1="10" y1="25" x2="30" y2="15" stroke-width="2" stroke="#fff" />
       <line x1="0" y1="0" x2="0" y2="30" stroke-width="4" stroke="#fff" />
     </svg>
-    span 2021
+    span aria-hidden="true" 2021
 
   nav.nav
     = link @env, "Home", to: "/"

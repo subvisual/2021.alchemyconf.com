@@ -6,11 +6,11 @@ footer class="Footer #{if @alt, do: "Footer--alt"}"
       = link @env, "tickets", to: "/tickets", class: "BigLink red"
     nav
       ul.social
-        li = responsive_image "_includes/icons/INSTAGRAM.png"
+        li = responsive_image "_includes/icons/INSTAGRAM.png", alt: "Instagram"
         li
           = link @env, to: "https://twitter.com/Alchemy_Conf/status/1283130961656524800" do
-            = responsive_image("_includes/icons/TWITTER.png", class: "sponsor-image")
-        li = responsive_image "_includes/icons/LINKEDIN.png"
+            = responsive_image "_includes/icons/TWITTER.png", class: "sponsor-image", alt: "Twitter"
+        li = responsive_image "_includes/icons/LINKEDIN.png", alt: "LinkedIn"
     footer.footer
       p Alchemy Conf
       time datetime="2021-05-14"
@@ -30,15 +30,16 @@ footer class="Footer #{if @alt, do: "Footer--alt"}"
       p
         nav
           ul
-            li = responsive_image "_includes/icons/INSTAGRAM.png"
+            li = responsive_image "_includes/icons/INSTAGRAM.png", alt: "Instagram"
             li
               = link @env, to: "https://twitter.com/Alchemy_Conf/status/1283130961656524800" do
+                span.visually-hidden Twitter
                 = if @alt do
-                  = include(@env, "_includes/icons/twitter-alt.svg")
+                  = include(@env, "_includes/icons/twitter-alt.svg", alt: "Twitter")
                 - else
-                  = include(@env, "_includes/icons/twitter.svg")
+                  = include(@env, "_includes/icons/twitter.svg", alt: "Twitter")
 
-            li = responsive_image "_includes/icons/LINKEDIN.png"
+            li = responsive_image "_includes/icons/LINKEDIN.png", alt: "LinkedIn"
     div
       p &copy; 2021 ALCHEMY CONF All Rights reserved
     div
