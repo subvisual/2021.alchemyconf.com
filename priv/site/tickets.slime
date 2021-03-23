@@ -1,0 +1,22 @@
+---
+layout: _layout.slime
+---
+
+.Tickets
+  .image
+    = responsive_image "_includes/tickets/hero.png"
+
+  .content
+    p ALL Proceeds will go to charity
+    h1.title TICKETS
+
+    p.description
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a eget quis arcu ultrices. Turpis vitae adipiscing massa egestas. Mattis diam risus metus, sit aliquam. Facilisis at sit commodo nisl. Vitae scelerisque quam congue cras dui tempor velit auctor orci.
+
+    p.description
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a eget quis arcu ultrices. Turpis vitae adipiscing massa egestas. Mattis diam risus metus, sit aliquam. Facilisis at sit commodo nisl. Vitae scelerisque quam congue cras dui tempor velit auctor orci.
+
+  ul.tickets
+    li.ticket = include(@env, "_includes/tickets/ticket.slime")
+
+= include(@env, "_includes/footer.slime")

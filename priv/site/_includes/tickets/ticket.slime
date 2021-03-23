@@ -1,0 +1,11 @@
+.header
+  p.name Charity 1
+  p.sector Sector
+  a.link href="#"
+    | get tickets
+
+.content
+  .image
+    .imagePlaceholder
+  .description
+    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a eget quis arcu ultrices. Turpis vitae adipiscing massa egestas. Mattis diam risus metus, sit aliquam. Facilisis at sit commodo nisl. Vitae scelerisque quam congue cras dui tempor velit auctor orci. 

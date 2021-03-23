@@ -1,0 +1,70 @@
+.Tickets {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--c-gray);
+
+  padding-top: var(--s-10);
+
+  > .content {
+    flex: 1;
+
+    padding: 0 var(--s-4);
+  }
+
+  > .image {
+    display: none;
+  }
+
+  > .content > p {
+    margin-bottom: var(--s-2);
+
+    color: var(--c-black);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+
+  .title {
+    padding: var(--s-3);
+    padding-right: var(--s-6);
+    margin-bottom: var(--s-6);
+
+    background-color: var(--c-white);
+
+    color: var(--c-black);
+    font-size: var(--s-7);
+    line-height: 90%;
+    font-weight: normal;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  p.description {
+    margin-top: var(--s-6);
+
+    font-family: "input-mono";
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    font-weight: normal;
+    text-transform: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Tickets {
+    flex-direction: row-reverse;
+
+    > img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: auto;
+      min-width: 100%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
