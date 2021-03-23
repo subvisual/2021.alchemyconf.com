@@ -67,10 +67,20 @@
       margin-top: var(--s-7);
       margin-bottom: var(--s-7);
 
+      div {
+        video {
+          height: 390px;
+        }
+
+        &:first-child video {
+          height: 286px;
+        }
+      }
+
       .mobile {
         position: absolute;
         top: 20%;
-        left: -50%;
+        left: -70%;
       }
 
       .desktop {

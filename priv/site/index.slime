@@ -1,11 +1,16 @@
 ---
 layout: _layout.slime
 ---
-
-script src="https://unpkg.com/micromodal/dist/micromodal.min.js"
+script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
 
 = include(@env, "_includes/hero.slime")
 
 .main
   = include(@env, "_includes/info.slime")
   = include(@env, "_includes/footer.slime")
+
+script src="https://unpkg.com/micromodal/dist/micromodal.min.js"
+
+javascript:
+  const observer = lozad();
+  observer.observe();

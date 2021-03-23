@@ -16,10 +16,9 @@ config :still,
   input: Path.join(Path.dirname(__DIR__), "priv/site"),
   output: Path.join(Path.dirname(__DIR__), "_site"),
   preprocessors: %{
-    ".mp4" => [OutputPath, Alchemy.VideoPreprocessor],
     ".scss" => [AddContent, EEx, Alchemy.SassPreprocessor, OutputPath, Save],
     ".svg" => [AddContent]
   },
-  pass_through_copy: ["public"]
+  pass_through_copy: ["public", "videos"]
 
 import_config("#{Mix.env()}.exs")
