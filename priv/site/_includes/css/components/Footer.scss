@@ -3,6 +3,11 @@
   color: var(--c-black);
   text-transform: uppercase;
 
+  &.Footer--alt {
+    background-color: var(--c-purple);
+    color: var(--c-white);
+  }
+
   .followUs {
     font-weight: bold;
     text-decoration: underline;

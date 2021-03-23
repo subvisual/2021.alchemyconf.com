@@ -1,4 +1,4 @@
-footer.Footer
+footer class="Footer #{if @alt, do: "Footer--alt"}"
   .contentMobile
     .grid
       /*= link @env, "schedule", to: "/schedule", class: "BigLink"*/
@@ -33,7 +33,11 @@ footer.Footer
             li = responsive_image "_includes/icons/INSTAGRAM.png"
             li
               = link @env, to: "https://twitter.com/Alchemy_Conf/status/1283130961656524800" do
-                = responsive_image("_includes/icons/TWITTER.png", class: "sponsor-image")
+                = if @alt do
+                  = include(@env, "_includes/icons/twitter-alt.svg")
+                - else
+                  = include(@env, "_includes/icons/twitter.svg")
+
             li = responsive_image "_includes/icons/LINKEDIN.png"
     div
       p &copy; 2021 ALCHEMY CONF All Rights reserved

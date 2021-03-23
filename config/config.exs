@@ -17,7 +17,8 @@ config :still,
   output: Path.join(Path.dirname(__DIR__), "_site"),
   preprocessors: %{
     ".mp4" => [OutputPath, Alchemy.VideoPreprocessor],
-    ".scss" => [AddContent, EEx, Alchemy.SassPreprocessor, OutputPath, Save]
+    ".scss" => [AddContent, EEx, Alchemy.SassPreprocessor, OutputPath, Save],
+    ".svg" => [AddContent]
   },
   pass_through_copy: ["public"]
 

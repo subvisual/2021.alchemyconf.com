@@ -1,70 +1,138 @@
 .Tickets {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--c-gray);
+  .hero {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c-gray);
 
-  padding-top: var(--s-10);
+    > .content {
+      padding: 0 var(--s-4);
+    }
 
-  > .content {
-    flex: 1;
+    > .video {
+      display: none;
 
-    padding: 0 var(--s-4);
+      width: 50%;
+    }
+
+    .content > p {
+      margin-bottom: var(--s-2);
+
+      color: var(--c-black);
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      text-transform: uppercase;
+    }
+
+    .title {
+      padding: var(--s-3);
+      padding-right: var(--s-6);
+      margin-bottom: var(--s-6);
+
+      background-color: var(--c-white);
+
+      color: var(--c-black);
+      font-size: var(--s-9);
+      line-height: 90%;
+      font-weight: normal;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+      text-align: left;
+    }
+
+    .ticket {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-row-gap: var(--s-3);
+      margin-top: var(--s-7);
+      color: var(--c-black);
+      padding-bottom: var(--s-6);
+      border-bottom: 1px solid var(--c-black);
+
+      svg {
+        margin-left: var(--s-2);
+      }
+    }
+
+    .ticket > .logo {
+      // placeholders
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+      background-color: var(--c-black);
+    }
+
+    .ticket > .header {
+      border-top: 1px solid var(--c-black);
+      border-bottom: 1px solid var(--c-black);
+      text-transform: uppercase;
+      font-weight: bold;
+
+      &.right {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    p.description {
+      margin-top: var(--s-6);
+
+      font-family: "input-mono";
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: -0.02em;
+      font-weight: normal;
+      text-transform: none;
+    }
+
+    p.info {
+      font-family: "input-mono";
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: -0.02em;
+      font-weight: normal;
+      text-transform: none;
+    }
   }
 
-  > .image {
-    display: none;
-  }
-
-  > .content > p {
-    margin-bottom: var(--s-2);
-
+  .marquee {
+    background-color: var(--c-green);
     color: var(--c-black);
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: var(--s-8);
+    line-height: var(--s-9);
     text-transform: uppercase;
+
+    svg {
+      margin: 0 var(--s-4);
+    }
   }
 
-  .title {
-    padding: var(--s-3);
-    padding-right: var(--s-6);
-    margin-bottom: var(--s-6);
-
-    background-color: var(--c-white);
-
-    color: var(--c-black);
-    font-size: var(--s-7);
-    line-height: 90%;
-    font-weight: normal;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    text-align: left;
-  }
-
-  p.description {
-    margin-top: var(--s-6);
-
-    font-family: "input-mono";
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: -0.02em;
-    font-weight: normal;
-    text-transform: none;
+  a {
+    color: inherit;
+    text-decoration: none;
   }
 }
 
 @media (min-width: 1200px) {
   .Tickets {
-    flex-direction: row-reverse;
+    .hero {
+      flex-direction: row-reverse;
 
-    > img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 100%;
-      height: auto;
-      min-width: 100%;
-      transform: translate(-50%, -50%);
+      > .video {
+        display: inherit;
+      }
+
+      > .content {
+        width: 50%;
+        padding: var(--s-10) var(--s-8) var(--s-8);
+
+      }
+
+      video {
+        max-width: 100%;
+        object-position: right;
+        object-fit: cover;
+      }
     }
   }
 }

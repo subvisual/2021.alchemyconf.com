@@ -1,11 +1,16 @@
-.header
-  p.name Charity 1
-  p.sector Sector
-  a.link href="#"
-    | get tickets
+.list
+  .ticket
+    div.header Charity 1
+    div.header.right
+      span Sector
+      a.link href="#"
+        span Get Tickets
+        <svg width="19" height="14" viewBox="0 0 19 14" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0618 7L12.2842 1.00727L13.3838 0L18.9644 7L13.3838 14L12.2842 12.9927L17.0618 7Z" fill="black"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.342773 6.22473L17.8605 6.22473V7.77517L0.342773 7.77517L0.342773 6.22473Z" fill="black"/>
+        </svg>
 
-.content
-  .image
-    .imagePlaceholder
-  .description
-    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a eget quis arcu ultrices. Turpis vitae adipiscing massa egestas. Mattis diam risus metus, sit aliquam. Facilisis at sit commodo nisl. Vitae scelerisque quam congue cras dui tempor velit auctor orci. 
+    .logo
+
+    p.info
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a eget quis arcu ultrices. Turpis vitae adipiscing massa egestas. Mattis diam risus metus, sit aliquam. Facilisis at sit commodo nisl. Vitae scelerisque quam congue cras dui tempor velit auctor orci.

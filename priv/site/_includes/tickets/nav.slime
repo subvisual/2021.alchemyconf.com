@@ -1,0 +1,10 @@
+.Nav
+  nav
+    div.entry
+      = link @env, "Home", to: "/"
+      = link @env, "Info", to: "/#"
+    div.entry
+      span Alchemy Conf
+    div.entry
+      a Schedule
+      a Tickets
