@@ -48,6 +48,7 @@
   }
 
   > .nav {
+    position: absolute;
     color: var(--c-black);
     padding: var(--s-5) var(--s-7) 0;
     display: grid;

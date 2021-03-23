@@ -1,8 +1,8 @@
 footer.Footer
   .contentMobile
     .grid
-      = link @env, "schedule", to: "/schedule", class: "BigLink"
-      = link @env, "speakers", to: "/speakers", class: "BigLink black"
+      /*= link @env, "schedule", to: "/schedule", class: "BigLink"*/
+      /*= link @env, "speakers", to: "/speakers", class: "BigLink black"*/
       = link @env, "tickets", to: "/tickets", class: "BigLink red"
     nav
       ul.social
@@ -19,17 +19,14 @@ footer.Footer
   .content
     div
       p.title Alchemy <br /> Conf 2021
-      p &copy; 2021 ALCHEMY CONF All Rights reserved
     div
-      p COPY TAG LINE GOES HERE
-      p #{link @env, "Get in touch", to: "mailto:hello@mirrorconf.com"} hello@mirrorconf.com
+      p.tagLine COPY TAG LINE GOES HERE
     div
       div
         div Powered by #{link @env, "Subvisual", to: "https://subvisual.com/"}
         div Design by #{link @env, "Onda", to: "https://ondastudio.co/"}
-      p Braga, Portugal.
     div
-      p Follow Us
+      p.followUs Follow Us
       p
         nav
           ul
@@ -38,3 +35,10 @@ footer.Footer
               = link @env, to: "https://twitter.com/Alchemy_Conf/status/1283130961656524800" do
                 = responsive_image("_includes/icons/TWITTER.png", class: "sponsor-image")
             li = responsive_image "_includes/icons/LINKEDIN.png"
+    div
+      p &copy; 2021 ALCHEMY CONF All Rights reserved
+    div
+      p #{link @env, "Get in touch", to: "mailto:hello@mirrorconf.com"} hello@mirrorconf.com
+    div
+      p Braga, Portugal.
+    div
