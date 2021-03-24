@@ -4,7 +4,7 @@ title: "Still"
 doctype html
 html
   head
-    title Still
+    title Alchemy Conf 2021 | Virtual Elixir & Erlang Conference
     meta charset="UTF-8"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
     = include(@env, "_includes/meta.slime")

@@ -12,8 +12,8 @@
       | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a eget quis arcu ultrices. Turpis vitae adipiscing massa egestas. Mattis diam risus metus, sit aliquam. Facilisis at sit commodo nisl. Vitae scelerisque quam congue cras dui tempor velit auctor orci.
 
     p.description
-      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a eget quis arcu ultrices. Turpis vitae adipiscing massa egestas. Mattis diam risus metus, sit aliquam. Facilisis at sit commodo nisl. Vitae scelerisque quam congue cras dui tempor velit auctor orci.
+      | Tree This is a small family venture working towards a more sustainable way of life. They our very special partners in making this as much of a carbon-free conference as we can! For every attendee that joins the conference, we will be planting a tree and help reduce our carbon footprint and, if possible, leave the world just a little bit better than before.
 
     .list
-      = include(@env, "_includes/tickets/ticket.slime")
-      = include(@env, "_includes/tickets/ticket.slime")
+      = for charity <- charities() do
+        = include(@env, "_includes/tickets/ticket.slime", charity: charity)

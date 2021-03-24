@@ -1,6 +1,6 @@
 header.Banner
   p.info
-    span.visually-hidden Vitual Elixir Conference 2021
+    span.visually-hidden Virtual Elixir Conference 2021
     span aria-hidden="true" Virtual
     <svg aria-hidden="true" alt="" viewbox="0 0 30 30">
       <line x1="10" y1="5" x2="30" y2="15" stroke-width="2" stroke="#fff" />
@@ -25,12 +25,16 @@ header.Banner
     = link @env, "Home", to: "/"
     = link @env, "Info", to: "/#info"
     marquee aria-hidden="true"
-      span Ticket sales go to charity
-      span Ticket sales go to charity
-      span Ticket sales go to charity
-      span Ticket sales go to charity
-      span Ticket sales go to charity
-      span Ticket sales go to charity
+      span All proceeds are for charity
+      span This is a carbon-free event
+      span We plant a tree for each attendee
+      span All proceeds are for charity
+      span This is a carbon-free event
+      span We plant a tree for each attendee
+      span All proceeds are for charity
+      span This is a carbon-free event
+      span We plant a tree for each attendee
+
     /* a Schedule */
     = link @env, "Tickets", to: "/tickets"
 

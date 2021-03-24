@@ -1,6 +1,6 @@
 ---
 seo_title: Alchemy Conf 2021 | May 28, 2021
-description: The most exquisite Elixir conference in Portugal
+description: The most exquisite Elixir conference in Portugal.
 keywords: elixir, conference, conf, beam, erlang, event
 url: <%= Still.Utils.config!(:base_url) %>
 banner_url: <%= url_for("/public/meta.png") %>

@@ -20,7 +20,7 @@ footer class="Footer #{if @env[:alt], do: "Footer--alt"}"
     div
       p.title Alchemy <br /> Conf 2021
     div
-      p.tagLine COPY TAG LINE GOES HERE
+      p.tagLine Brewing magic with Elixir. Virtually.
     div
       div
         div Powered by #{link @env, "Subvisual", to: "https://subvisual.com/"}
@@ -41,11 +41,17 @@ footer class="Footer #{if @env[:alt], do: "Footer--alt"}"
 
             /* li = responsive_image "_includes/icons/LINKEDIN.png", alt: "LinkedIn" */
     div
-      p &copy; 2021 ALCHEMY CONF All Rights reserved
+      p
+        | &copy; 2021 ALCHEMY CONF
+        br
+        | All Rights reserved
     div
       = link @env, to: "mailto:#{email()}" do
         p Get in touch
         p = email()
     div
-      p Braga, Portugal.
+      p
+      | Braga, Portugal.
+      br
+      | Or in a screen near you.
     div

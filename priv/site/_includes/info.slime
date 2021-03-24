@@ -2,13 +2,16 @@
   .header
     div
       h2 About Alchemy Conf
-      p A virtual conference for Elixir developers
+      p Brewing magic with Elixir. Virtually
   .details
     p
-      | Mirror Conf is a conference designed to empower designers and front-end
-        developers who have a thirst for knowledge and want to broaden their
-        horizons. It aims to create the perfect set to blur the differences between
-        these two worlds and point towards a more collaborative future.
+      | Alchemy Conf is our gift to the Elixir community. It is a magical event
+        where all Elixir, Erlang and BEAM developers and enthusiasts come
+        together, share knowledge and grow close to one another. It is about
+        the community giving back to itself and to those around us. It is a
+        non-profit, carbon-free event. All proceeds are for charity
+        institutions. We plant a tree for each attendee joining. It is your
+        event. Help us brew magic.
 
   .rectangles aria-hidden="true"
     div
@@ -32,7 +35,7 @@
       <svg width="2150" height="698" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="504" cy="671" r="26.5" transform="rotate(90 504 671)" stroke="#CDFF63"/><path d="M134 643.5c-8.008 0-14.5-6.492-14.5-14.5s6.492-14.5 14.5-14.5 14.5 6.492 14.5 14.5-6.492 14.5-14.5 14.5z" fill="#E5E5E5" stroke="#CDFF63"/><circle cx="436.5" cy="235.5" r="14" transform="rotate(90 436.5 235.5)" fill="#E5E5E5" stroke="#CDFF63"/><circle cx="10" cy="231" r="9.5" transform="rotate(90 10 231)" fill="#E5E5E5" stroke="#CDFF63"/><path d="M749 166L501 668m0 0l-64-432-302 396L11 236l490 432z" stroke="#CDFF63"/><circle cx="752" cy="163" r="26.5" transform="rotate(90 752 163)" fill="#E5E5E5" stroke="#CDFF63"/><circle cx="1251.5" cy="175.5" r="25" stroke="#CDFF63"/><circle cx="681.5" cy="508.5" r="49" fill="#CDFF63" stroke="#CDFF63"/><circle cx="1636.5" cy="321.5" r="25" fill="#CDFF63" stroke="#CDFF63"/><circle cx="2123" cy="27" r="26.5" transform="rotate(90 2123 27)" fill="#E5E5E5" stroke="#CDFF63"/><circle cx="1875" cy="535" r="26.5" transform="rotate(90 1875 535)" fill="#E5E5E5" stroke="#CDFF63"/><path d="M1505 507.5c-8.01 0-14.5-6.492-14.5-14.5s6.49-14.5 14.5-14.5 14.5 6.492 14.5 14.5-6.49 14.5-14.5 14.5z" fill="#E5E5E5" stroke="#CDFF63"/><circle cx="1807.5" cy="99.5" r="14" transform="rotate(90 1807.5 99.5)" fill="#E5E5E5" stroke="#CDFF63"/><circle cx="1381" cy="95" r="9.5" transform="rotate(90 1381 95)" fill="#E5E5E5" stroke="#CDFF63"/><path d="M2120 30l-248 502m0 0l-64-432-302 396-124-396 490 432z" stroke="#CDFF63"/></svg>
 
   .lead
-    p A virtual conference for those interested in elixir and its powerful magic
+    p A virtual conference for the Elixir & Erlang community and those interested in the BEAM's magic powers.
 
   .points
     ul
@@ -41,19 +44,19 @@
           <line y1="15" x1="0" y2="15" x2="29" stroke-width="2" stroke="#fff" />
           <path d="M 21 5 L 29 15 L 21 25" stroke-width="2" stroke="#fff" fill="transparent" />
         </svg>
-        span Nine Speakers
+        span One Day
       li
         <svg alt="" viewbox="0 0 30 30">
           <line y1="15" x1="0" y2="15" x2="29" stroke-width="2" stroke="#fff" />
           <path d="M 21 5 L 29 15 L 21 25" stroke-width="2" stroke="#fff" fill="transparent" />
         </svg>
-        span  One Day
+        span 100% Online
       li
         <svg alt="" viewbox="0 0 30 30">
           <line y1="15" x1="0" y2="15" x2="29" stroke-width="2" stroke="#fff" />
           <path d="M 21 5 L 29 15 L 21 25" stroke-width="2" stroke="#fff" fill="transparent" />
         </svg>
-        span Online
+        span 8h+ of Content
     div
       p.signUp
         <svg alt="" viewbox="0 0 30 30">
@@ -61,23 +64,23 @@
           <path d="M 21 5 L 29 15 L 21 25" stroke-width="2" stroke="#fff" fill="transparent" />
         </svg>
         = link @env, to: twitter_url() do
-          span.underline Follow us for updates
+          span.underline Sign-up for updates
       p.description
-        | Mirror Conf is a conference designed to empower designers and front-end
-          developers who have a thirst for knowledge and want to broaden their
-          horizons.
+        | Alchemy Conf is a virtual conference where all Elixir, Erlang and
+          BEAM developers and enthusiasts come together, share knowledge and grow
+          close to one another.
 
   marquee.marquee loop="-1" aria-hidden="true"
     = link @env, to: twitter_url() do
-      span Follow us
-      span Coming soon
-      span Follow us
-      span Coming soon
-      span Follow us
-      span Coming soon
-      span Follow us
-      span Coming soon
-      span Follow us
-      span Coming soon
-      span Follow us
-      span Coming soon
+      span Join us
+      span Soon in a screen near you
+      span Join us
+      span Soon in a screen near you
+      span Join us
+      span Soon in a screen near you
+      span Join us
+      span Soon in a screen near you
+      span Join us
+      span Soon in a screen near you
+      span Join us
+      span Soon in a screen near you
