@@ -8,6 +8,9 @@ jobs:
   site:
     runs-on: ubuntu-latest
     steps:
+      - run: 'git config --global url."https://github.com/".insteadOf git@github.com:'
+      - run: 'git config --global url."https://".insteadOf git://'
+
       - uses: actions/checkout@v2
 
       - uses: erlef/setup-elixir@v1
