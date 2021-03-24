@@ -54,14 +54,15 @@
       }
     }
 
-    .ticket > .logo {
+    .ticket .logo {
       // placeholders
       width: 100px;
       height: 100px;
       border-radius: 50px;
       background-color: var(--c-white);
-      background-size: cover;
+      background-size: contain;
       background-position: center center;
+      background-repeat: no-repeat;
     }
 
     .ticket > .header {
@@ -72,6 +73,7 @@
 
       &.right {
         display: flex;
+        flex-direction: row-reverse;
         justify-content: space-between;
       }
     }

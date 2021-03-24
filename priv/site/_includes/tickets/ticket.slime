@@ -1,13 +1,16 @@
 .ticket
-  div.header #{@charity[:name]}
+  div.header
+    = link @env, @charity[:name], to: @charity[:website]
+
   div.header.right
-    a.link href="#"
+    = link @env, to: tito_url(), class: "link" do
       span Get Tickets
       <svg width="19" height="14" viewBox="0 0 19 14" fill="none">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0618 7L12.2842 1.00727L13.3838 0L18.9644 7L13.3838 14L12.2842 12.9927L17.0618 7Z" fill="black"/>
         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.342773 6.22473L17.8605 6.22473V7.77517L0.342773 7.77517L0.342773 6.22473Z" fill="black"/>
       </svg>
 
-  .logo style="background-image: url(#{url_for(@charity[:logo])})"
+  = link @env, to: @charity[:website] do
+    .logo style="background-image: url(#{url_for(@charity[:logo])})"
 
   p.info #{@charity[:description]}

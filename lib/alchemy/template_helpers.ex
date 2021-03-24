@@ -1,13 +1,14 @@
 defmodule Alchemy.TemplateHelpers do
   @email "hello@alchemyconf.com"
   @mailchimp_url "#"
+  @tito_url "https://ti.to/subvisual/alchemy-conf-2021"
   @twitter_url "https://twitter.com/Alchemy_Conf"
 
   @charities [
     %{
       name: "From Kibera With Love",
       website: "https://fromkiberawithlove.com/en",
-      logo: "public/charities/fkwl.svg",
+      logo: "public/charities/fkwl.png",
       description:
         "From Kibera with Love is an NGOD located in the largest urban slum in Africa. It's focused on children who lack one fundamental right: their access to education. For these children education is a privilege and not a right and that's why FKWL currently finances and supports more than 70 children and their families providing education, extracurricular activities, health, food, clothing, footwear, and much more."
     },
@@ -28,6 +29,8 @@ defmodule Alchemy.TemplateHelpers do
   ]
 
   def mailchimp_url, do: @mailchimp_url
+
+  def tito_url, do: @tito_url
 
   def twitter_url, do: @twitter_url
 
