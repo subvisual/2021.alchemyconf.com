@@ -34,7 +34,7 @@ footer class="Footer #{if @env[:alt], do: "Footer--alt"}"
             li
               = link @env, to: twitter_url() do
                 span.visually-hidden Twitter
-                = if @alt do
+                = if @env[:alt] do
                   = include(@env, "_includes/icons/twitter-alt.svg", alt: "Twitter")
                 - else
                   = include(@env, "_includes/icons/twitter.svg", alt: "Twitter")
