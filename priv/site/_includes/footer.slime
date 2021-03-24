@@ -13,8 +13,8 @@ footer class="Footer #{if @env[:alt], do: "Footer--alt"}"
         /* li = responsive_image "_includes/icons/LINKEDIN.png", alt: "LinkedIn" */
     footer.footer
       p Alchemy Conf
-      time datetime="2021-05-14"
-        | 14th May 2021
+      time datetime="2021-05-28"
+        | May 28 2021
 
   .content
     div
