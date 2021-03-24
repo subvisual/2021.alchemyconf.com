@@ -76,14 +76,14 @@
   marquee.marquee loop="-1" aria-hidden="true"
     = link @env, to: twitter_url() do
       span Join us
-      span Soon in a screen near you
+      span Soon on a screen near you
       span Join us
-      span Soon in a screen near you
+      span Soon on a screen near you
       span Join us
-      span Soon in a screen near you
+      span Soon on a screen near you
       span Join us
-      span Soon in a screen near you
+      span Soon on a screen near you
       span Join us
-      span Soon in a screen near you
+      span Soon on a screen near you
       span Join us
-      span Soon in a screen near you
+      span Soon on a screen near you

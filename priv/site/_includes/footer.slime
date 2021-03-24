@@ -51,7 +51,7 @@ footer class="Footer #{if @env[:alt], do: "Footer--alt"}"
         p = email()
     div
       p
-      | In a screen near you
+      | On a screen near you
       br
       | Anywhere in the world.
     div
