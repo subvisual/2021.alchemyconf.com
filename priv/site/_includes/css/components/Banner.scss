@@ -56,10 +56,6 @@
     grid-template-columns: min-content min-content 1fr min-content min-content;
     grid-column-gap: var(--s-4);
 
-    a {
-      text-decoration: none;
-    }
-
     > * {
       background-color: white;
       border-radius: 4px;

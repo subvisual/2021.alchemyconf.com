@@ -23,7 +23,7 @@ header.Banner
 
   nav.nav
     = link @env, "Home", to: "/"
-    a Info
+    = link @env, "Info", to: "/#info"
     marquee aria-hidden="true"
       span Ticket sales go to charity
       span Ticket sales go to charity
@@ -31,8 +31,8 @@ header.Banner
       span Ticket sales go to charity
       span Ticket sales go to charity
       span Ticket sales go to charity
-    a Schedule
-    a Tickets
+    /* a Schedule */
+    = link @env, "Tickets", to: "/tickets"
 
   .mobile
     p.title Alchemy Conf 2021

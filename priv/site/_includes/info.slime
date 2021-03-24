@@ -1,4 +1,4 @@
-.Info
+.Info#info
   .header
     div
       h2 About Alchemy Conf
@@ -51,22 +51,24 @@
           <line y1="15" x1="0" y2="15" x2="29" stroke-width="2" stroke="#fff" />
           <path d="M 21 5 L 29 15 L 21 25" stroke-width="2" stroke="#fff" fill="transparent" />
         </svg>
-        span.underline Sign-up for updates
+        = link @env, to: twitter_url() do
+          span.underline Follow us for updates
       p.description
         | Mirror Conf is a conference designed to empower designers and front-end
           developers who have a thirst for knowledge and want to broaden their
           horizons.
 
   marquee.marquee loop="-1" aria-hidden="true"
-    span Follow us
-    span Coming soon
-    span Follow us
-    span Coming soon
-    span Follow us
-    span Coming soon
-    span Follow us
-    span Coming soon
-    span Follow us
-    span Coming soon
-    span Follow us
-    span Coming soon
+    = link @env, to: twitter_url() do
+      span Follow us
+      span Coming soon
+      span Follow us
+      span Coming soon
+      span Follow us
+      span Coming soon
+      span Follow us
+      span Coming soon
+      span Follow us
+      span Coming soon
+      span Follow us
+      span Coming soon
