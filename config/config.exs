@@ -19,6 +19,6 @@ config :still,
     ".scss" => [AddContent, EEx, Alchemy.SassPreprocessor, OutputPath, Save],
     ".svg" => [AddContent]
   },
-  pass_through_copy: ["public", "videos"]
+  pass_through_copy: ["public", "videos", "CNAME"]
 
 import_config("#{Mix.env()}.exs")
