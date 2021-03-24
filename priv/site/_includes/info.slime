@@ -63,7 +63,7 @@
           <line y1="15" x1="0" y2="15" x2="29" stroke-width="2" stroke="#fff" />
           <path d="M 21 5 L 29 15 L 21 25" stroke-width="2" stroke="#fff" fill="transparent" />
         </svg>
-        = link @env, to: twitter_url() do
+        = link @env, to: mailchimp_url() do
           span.underline Sign-up for updates
       p.description
         | Alchemy Conf is a virtual conference where all Elixir, Erlang and

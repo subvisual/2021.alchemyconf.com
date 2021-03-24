@@ -1,6 +1,6 @@
 defmodule Alchemy.TemplateHelpers do
   @email "hello@alchemyconf.com"
-  @mailchimp_url "#"
+  @mailchimp_url "http://eepurl.com/ht5NBT"
   @tito_url "https://ti.to/subvisual/alchemy-conf-2021"
   @twitter_url "https://twitter.com/Alchemy_Conf"
 
