@@ -657,13 +657,14 @@ a {
 .Tickets .hero .ticket svg {
   margin-left: var(--s-2); }
 
-.Tickets .hero .ticket > .logo {
+.Tickets .hero .ticket .logo {
   width: 100px;
   height: 100px;
   border-radius: 50px;
   background-color: var(--c-white);
-  background-size: cover;
-  background-position: center center; }
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat; }
 
 .Tickets .hero .ticket > .header {
   border-top: 1px solid var(--c-black);
@@ -673,6 +674,7 @@ a {
 
 .Tickets .hero .ticket > .header.right {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between; }
 
 .Tickets .hero p.description {
