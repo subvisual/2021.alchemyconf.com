@@ -5,13 +5,16 @@
       p Brewing magic with Elixir. Virtually
   .details
     p
-      | Alchemy Conf is our gift to the Elixir community. It is a magical event
-        where all Elixir, Erlang and BEAM developers and enthusiasts come
-        together, share knowledge and grow close to one another. It is about
-        the community giving back to itself and to those around us. It is a
-        non-profit, carbon-free event. All proceeds are for charity
-        institutions. We plant a tree for each attendee joining. It is your
-        event. Help us brew magic.
+      | Alchemy Conf is a gift to the Elixir community from Subvisual. It is a
+        magical one day event where all Elixir, Erlang and BEAM developers and
+        enthusiasts come together, share knowledge and foster the community.
+      br
+      br
+      | It is a non-profit, carbon-neutral conference. All proceeds go to
+        charity and we plant a tree for each attendee joining us.
+      br
+      br
+      | This event is for you. Brew some magic!
 
   .rectangles aria-hidden="true"
     div
@@ -66,9 +69,9 @@
         = link @env, to: mailchimp_url() do
           span.underline Sign-up for updates
       p.description
-        | Alchemy Conf is a virtual conference where all Elixir, Erlang and
-          BEAM developers and enthusiasts come together, share knowledge and grow
-          close to one another.
+        | Alchemy Conf is a virtual conference where all Elixir, Erlang
+          and BEAM developers and enthusiasts gather to exchange
+          knowledge and get to know one another.
 
   marquee.marquee loop="-1" aria-hidden="true"
     = link @env, to: twitter_url() do

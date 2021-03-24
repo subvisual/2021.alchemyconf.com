@@ -24,7 +24,7 @@ footer class="Footer #{if @env[:alt], do: "Footer--alt"}"
     div
       div
         div Powered by #{link @env, "Subvisual", to: "https://subvisual.com/"}
-        div Design by #{link @env, "Onda", to: "https://ondastudio.co/"}
+        div Designed by #{link @env, "Onda", to: "https://ondastudio.co/"}
     div
       p.followUs Follow Us
       p
@@ -51,7 +51,7 @@ footer class="Footer #{if @env[:alt], do: "Footer--alt"}"
         p = email()
     div
       p
-      | Braga, Portugal.
+      | In a screen near you
       br
-      | Or in a screen near you.
+      | Anywhere in the world.
     div

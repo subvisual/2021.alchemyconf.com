@@ -9,10 +9,30 @@
     h1.title TICKETS
 
     p.description
-      | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a eget quis arcu ultrices. Turpis vitae adipiscing massa egestas. Mattis diam risus metus, sit aliquam. Facilisis at sit commodo nisl. Vitae scelerisque quam congue cras dui tempor velit auctor orci.
+      | We can have fun and we can do good at the same time. With Alchemy Conf,
+        all participants get to nurture social causes and their people.
+      br
+      br
+      | All the proceeds will be split between the institutions Virar a Página
+        and Kibera With Love.
 
     p.description
-      | Tree This is a small family venture working towards a more sustainable way of life. They our very special partners in making this as much of a carbon-free conference as we can! For every attendee that joins the conference, we will be planting a tree and help reduce our carbon footprint and, if possible, leave the world just a little bit better than before.
+      strong How does this work?
+
+    p.description
+      | The base price is 25€. Everyone is free to donate any amount on top of
+        that. The amount will be donated to the above mentioned causes. We will
+        make sure it gets equally split among both institutions.
+      br
+      br
+      | We are also doing our best to be as carbon-neutral as possible. We
+        teamed up with treethis, our very special ecological partners in making
+        this as much of a green conference as we can! For every attendee that
+        joins us, we will be planting a tree to help reduce our carbon footprint
+        and, if possible, leave the world just a little bit better than before.
+
+    p.description
+      | Let's brew magic together. #{link @env, "Grab your ticket now!", to: tito_url()}
 
     .list
       = for charity <- charities() do
