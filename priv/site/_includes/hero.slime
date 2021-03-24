@@ -59,17 +59,18 @@ header.Banner
             = link @env, "tickets", to: "/tickets", class: "BigLink red"
           footer.footer
             p Virtual Conference
-            time datetime="2021-05-14"
-              | 14th May 2021
+            time datetime="2021-05-28"
+              | May 28 2021
 
 
 div.Video
-  video autoplay=true muted=true loop=true src="<%= url_for("videos/hero.mp4") %>" poster="<%= url_for("videos/hero.jpg") %>" type="video/mp4"
+  video autoplay=true muted=true loop=true  poster="<%= url_for("videos/hero.jpg") %>"
+    source src="<%= url_for("videos/hero.webm") %>" type="video/webm"
+    source src="<%= url_for("videos/hero.mp4") %>" type="video/mp4"
 
 javascript:
   MicroModal.init({
           onClose: function(modal, element, event) {
-              console.log('asd')
               event.preventDefault();
               event.stopPropagation();
           }

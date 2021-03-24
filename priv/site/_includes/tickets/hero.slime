@@ -1,6 +1,8 @@
 .hero
   .video
-    video autoplay=true muted=true loop=true src="<%= url_for("videos/tickets.webm") %>" poster="<%= url_for("videos/tickets.jpg") %>" type="video/webm"
+    video autoplay=true muted=true loop=true poster="<%= url_for("videos/tickets.jpg") %>"
+      source src="<%= url_for("videos/tickets.webm") %>" type="video/webm"
+      source src="<%= url_for("videos/tickets.mp4") %>" type="video/mp4"
 
   .content
     p ALL Proceeds will go to charity
