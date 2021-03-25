@@ -14,15 +14,10 @@ header.Banner
     = link @env, "Home", to: "/"
     = link @env, "Info", to: "/#info"
     marquee aria-hidden="true"
-      span All proceeds are for charity
-      span This is a carbon-neutral event
-      span 1 attendee = 1 tree
-      span All proceeds are for charity
-      span This is a carbon-neutral event
-      span 1 attendee = 1 tree
-      span All proceeds are for charity
-      span This is a carbon-neutral event
-      span 1 attendee = 1 tree
+      = for _ <- 1..3 do
+        span All proceeds are for charity
+        span This is a carbon-neutral event
+        span 1 attendee = 1 tree
 
     /* a Schedule */
     = link @env, "Tickets", to: "/tickets"
