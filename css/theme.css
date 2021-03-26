@@ -191,11 +191,19 @@ a {
 .Video video {
   width: 100%; }
 
+.Video img {
+  height: 80vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: right; }
+
+@media (min-width: 650px) {
+  .Video img {
+    display: none; } }
+
 @media (max-width: 650px) {
   .Video video {
-    height: 80vh;
-    object-fit: cover;
-    object-position: right; } }
+    display: none; } }
 
 .Info {
   padding-top: var(--s-5); }
@@ -224,13 +232,14 @@ a {
     left: 50%;
     transform: translate(-47%, -50%);
     z-index: 1; }
-  .Info > .rectangles img,
   .Info > .rectangles video {
     max-width: var(--s-12);
     height: auto;
     width: var(--s-12);
     display: block;
     object-fit: contain; }
+  .Info > .rectangles img {
+    display: none; }
   .Info > .rectangles div:nth-child(1) {
     position: absolute;
     left: 50%;
@@ -254,9 +263,11 @@ a {
     width: 350px;
     margin-top: var(--s-7);
     margin-bottom: var(--s-7); }
-  .Info > .rectangles div video {
+  .Info > .rectangles video {
+    display: none; }
+  .Info > .rectangles img {
     height: 390px; }
-  .Info > .rectangles div:first-child video {
+  .Info > .rectangles div:first-child img {
     height: 286px; }
   .Info > .rectangles .mobile {
     position: absolute;
