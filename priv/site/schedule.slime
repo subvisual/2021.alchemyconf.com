@@ -1,0 +1,64 @@
+---
+layout: _layout.slime
+---
+
+.Hero
+  .Hero-Content
+    p May 14th 2021. 09:00-18:30
+    h1.Hero-title Schedule
+
+    ul.Hero-list
+      li
+        <span>9:00-9:15</span>
+        <span>Introduction</span>
+        <span>Alchemy Team<span>
+      li
+        <span>9:00-9:15</span>
+        <span>Introduction</span>
+        <span>Alchemy Team</span>
+      li
+        <span>9:00-9:15</span>
+        <span>Introduction</span>
+        <span>Alchemy Team</span>
+      li
+        <span>9:00-9:15</span>
+        <span>Introduction</span>
+        <span>Alchemy Team</span>
+      li
+        <span>9:00-9:15</span>
+        <span>Introduction</span>
+        <span>Alchemy Team</span>
+      li
+        <span>9:00-9:15</span>
+        <span>Introduction</span>
+        <span>Alchemy Team</span>
+      li
+        <span>9:00-9:15</span>
+        <span>Introduction</span>
+        <span>Alchemy Team</span>
+      li
+        <span>9:00-9:15</span>
+        <span>Introduction</span>
+        <span>Alchemy Team</span>
+      li
+        <span>9:00-9:15</span>
+        <span>Introduction</span>
+        <span>Alchemy Team</span>
+      li
+        <span>9:00-9:15</span>
+        <span>Introduction</span>
+        <span>Alchemy Team</span>
+      li
+        <span>9:00-9:15</span>
+        <span>Introduction</span>
+        <span>Alchemy Team</span>
+      li
+        <span>9:00-9:15</span>
+        <span>Introduction</span>
+        <span>Alchemy Team</span>
+      li
+        <span>9:00-9:15</span>
+        <span>Introduction</span>
+        <span>Alchemy Team</span>
+
+  img.Hero-image src="public/schedule_hero_image.jpg"
