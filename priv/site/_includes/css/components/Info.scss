@@ -29,13 +29,16 @@
         z-index: 1;
       }
 
-      img,
       video {
         max-width: var(--s-12);
         height: auto;
         width: var(--s-12);
         display: block;
         object-fit: contain;
+      }
+
+      img {
+        display: none;
       }
 
       div:nth-child(1) {
@@ -67,14 +70,16 @@
       margin-top: var(--s-7);
       margin-bottom: var(--s-7);
 
-      div {
-        video {
-          height: 390px;
-        }
+      video {
+        display: none;
+      }
 
-        &:first-child video {
-          height: 286px;
-        }
+      img {
+        height: 390px;
+      }
+
+      div:first-child img {
+        height: 286px;
       }
 
       .mobile {

@@ -3,11 +3,24 @@
 
   video {
     width: 100%;
+  }
 
-    @media (max-width: 650px) {
-      height: 80vh;
-      object-fit: cover;
-      object-position: right;
+  img {
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  @media (min-width: 650px) {
+    img {
+      display: none;
+    }
+  }
+
+  @media (max-width: 650px) {
+    video {
+      display: none;
     }
   }
 }

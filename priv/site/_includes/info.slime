@@ -22,6 +22,7 @@
         video.lozad autoplay=true muted=true loop=true data-poster=url_for("videos/#{source}.jpg")
           source data-src=url_for("videos/#{source}.webm") type="video/webm"
           source data-src=url_for("videos/#{source}.mp4") type="video/mp4"
+        = responsive_image "videos/#{source}.jpg"
 
     .mobile
       <svg width="741" height="533" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M256.5 317.5c13.807 0 25-11.193 25-25s-11.193-25-25-25-25 11.193-25 25 11.193 25 25 25z" fill="#CDFF63" stroke="#E43640"/><path d="M468.5 506c0 14.636 11.864 26.5 26.5 26.5s26.5-11.864 26.5-26.5-11.864-26.5-26.5-26.5-26.5 11.864-26.5 26.5zM413.5 70.5c0 7.732 6.268 14 14 14s14-6.268 14-14-6.268-14-14-14-14 6.268-14 14z" fill="#E5E5E5" stroke="#E43640"/><path d="M740 1L492 503 740 1zM492 503L428 71 126 467 2 71l490 432z" stroke="#E43640"/></svg>
