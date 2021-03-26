@@ -14,3 +14,10 @@ script src="https://unpkg.com/micromodal/dist/micromodal.min.js"
 javascript:
   const observer = lozad();
   observer.observe();
+
+  MicroModal.init({
+    onClose: function(modal, element, event) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  });

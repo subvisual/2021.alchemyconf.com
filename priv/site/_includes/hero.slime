@@ -55,11 +55,3 @@ div.Video
   video autoplay=true muted=true loop=true  poster="<%= url_for("videos/hero.jpg") %>"
     source src="<%= url_for("videos/hero.webm") %>" type="video/webm"
     source src="<%= url_for("videos/hero.mp4") %>" type="video/mp4"
-
-javascript:
-  MicroModal.init({
-          onClose: function(modal, element, event) {
-              event.preventDefault();
-              event.stopPropagation();
-          }
-      });
