@@ -1,16 +1,15 @@
-section.details
+section.details id="#{String.replace(@speaker[:name], " ", "")}"
   .photo
-    h2.name Sarah SOUEIDAN
-    img alt="Sarah's picture" src="http://placekitten.com/360/320"
+    h2.name #{@speaker[:name]}
+    img alt="#{@speaker[:name]}'s picture" src="#{@speaker[:picture]}"
 
   .content
-    p.title FRONT-END WEB DEVELOPER
+    p.title = @speaker[:tagline]
 
-    h2.name Sarah SOUEIDAN
+    h2.name = @speaker[:name]
 
-    p.description Sarah is an award-winning freelance front-end Web developer and author from Lebanon. She runs workshops and helps companies and agencies build clean front-end (HTML5, SVG, CSS, JS) foundations for Web sites & applications, with strong focus on progressive enhancement, performance and accessibility.
+    p.description = @speaker[:description]
 
     .social
-      p.handler @sarah.soueidan
-      a href="#" LinkedIn
-      a href="#" Twitter
+      p.handler
+        = link @env, "@#{@speaker[:twitter_handle]}", to: "https://twitter.com/#{@speaker[:twitter_handle]}"

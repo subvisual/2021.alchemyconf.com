@@ -48,11 +48,11 @@
 
         list-style: none;
 
-        > .item:first-child {
+        .item:first-child {
           border-top: 1px solid var(--c-black);
         }
 
-        > .item {
+        .item {
           display: flex;
           justify-content: space-between;
 
@@ -64,7 +64,7 @@
           line-height: 16px;
           text-transform: uppercase;
 
-          > .name {
+          .name {
             font-weight: 600;
           }
         }

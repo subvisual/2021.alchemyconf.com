@@ -1,6 +1,7 @@
 defmodule Alchemy.TemplateHelpers do
   @email "hello@alchemyconf.com"
   @mailchimp_url "http://eepurl.com/ht5NBT"
+  @papercall_url "https://www.papercall.io/alchemy-conf"
   @tito_url "https://ti.to/subvisual/alchemy-conf-2021"
   @twitter_url "https://twitter.com/Alchemy_Conf"
 
@@ -28,13 +29,38 @@ defmodule Alchemy.TemplateHelpers do
     }
   ]
 
+  @speakers [
+    %{
+      name: "Michał Muskała",
+      picture: "public/speakers/michalmuskala.jpg",
+      tagline: "Software Engineer",
+      description: """
+      Software engineer, open-source developer, speaker and trainer. He
+      contributes to multiple open source projects including Elixir and OPT and
+      maintains some of his own including Jason - the most popular projects on
+      hex.pm.
+      <br>
+      <br>
+      When not programming, he enjoys reading, travelling, and sailing - no
+      matter if sunny, rainy or stormy. It's even better if all of those are
+      combined!
+      """,
+      twitter_handle: "michalmuskala",
+      socials: []
+    }
+  ]
+
   def mailchimp_url, do: @mailchimp_url
 
   def tito_url, do: @tito_url
+
+  def papercall_url, do: @papercall_url
 
   def twitter_url, do: @twitter_url
 
   def email, do: @email
 
   def charities, do: @charities
+
+  def speakers, do: @speakers
 end

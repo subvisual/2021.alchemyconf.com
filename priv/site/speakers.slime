@@ -5,9 +5,7 @@ layout: _layout.slime
 .Speakers
   = include(@env, "_includes/speakers/hero.slime")
 .Speakers
-  = include(@env, "_includes/speakers/details.slime")
-  = include(@env, "_includes/speakers/details.slime")
-  = include(@env, "_includes/speakers/details.slime")
-  = include(@env, "_includes/speakers/details.slime")
+  = for speaker <- speakers() do
+    = include(@env, "_includes/speakers/details.slime", speaker: speaker)
 
 = include(@env, "_includes/footer.slime")
