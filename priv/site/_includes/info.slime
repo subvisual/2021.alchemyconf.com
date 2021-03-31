@@ -1,8 +1,8 @@
 .Info#info
   .header
     div
-      h2 About Alchemy Conf
-      p Brewing magic with Elixir. Virtually
+      h2 Brewing magic with Elixir. Virtually
+      p 28.05.2021
   .details
     p
       | Alchemy Conf is a gift to the Elixir community from Subvisual. It is a
@@ -72,4 +72,4 @@
     = link @env, to: tito_url() do
       = for _ <- 1..6 do
         span Join us
-        span Soon on a screen near you
+        span 28.05.2021 on a screen near you
