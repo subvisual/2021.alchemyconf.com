@@ -2,40 +2,24 @@ main.hero
   .content
     .dateTime
       time datetime="2021-05-28"
-        | May 28 2021
-      p 09:00 - 18:30
+        | May 28, 2021
+      /* p 09:00 - 18:30 */
 
     h1.title
       | Speakers
       img.arrow src="/public/arrow.svg"
 
     ul.lineup
-      li.item
-        p.name Sarah SOUEIDAN
-        p.title JOB TITLE AND PROFESSION
+      = for speaker <- speakers() do
+        = link @env, to: "##{String.replace(speaker[:name], " ", "")}" do
+          li.item
+            p.name = speaker[:name]
+            p.title = speaker[:tagline]
 
-      li.item
-        p.name Sarah SOUEIDAN
-        p.title JOB TITLE AND PROFESSION
-
-      li.item
-        p.name Sarah SOUEIDAN
-        p.title JOB TITLE AND PROFESSION
-
-      li.item
-        p.name Sarah SOUEIDAN
-        p.title JOB TITLE AND PROFESSION
-
-      li.item
-        p.name Sarah SOUEIDAN
-        p.title JOB TITLE AND PROFESSION
-
-      li.item
-        p.name Sarah SOUEIDAN
-        p.title JOB TITLE AND PROFESSION
-
-      li.item
-        p.name Sarah SOUEIDAN
-        p.title JOB TITLE AND PROFESSION
+      = for _ <- 1..7 do
+        = link @env, to: papercall_url() do
+          li.item
+            p.name THIS COULD BE YOU!
+            p.title CFP OPEN
 
   img src="public/STILL_01.png"
