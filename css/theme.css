@@ -445,10 +445,10 @@ a {
   color: var(--c-black);
   list-style: none; }
 
-.Speakers > .hero > .content > .lineup > .item:first-child {
+.Speakers > .hero > .content > .lineup .item:first-child {
   border-top: 1px solid var(--c-black); }
 
-.Speakers > .hero > .content > .lineup > .item {
+.Speakers > .hero > .content > .lineup .item {
   display: flex;
   justify-content: space-between;
   padding: var(--s-1) 0;
@@ -457,7 +457,7 @@ a {
   line-height: 16px;
   text-transform: uppercase; }
 
-.Speakers > .hero > .content > .lineup > .item > .name {
+.Speakers > .hero > .content > .lineup .item .name {
   font-weight: 600; }
 
 .Speakers > .details > .photo {
