@@ -1,6 +1,6 @@
 header.Banner
   p.info
-    span.visually-hidden Virtual Elixir Conference 2021
+    span.visually-hidden Virtual Elixir Conference 28-05-2021
     = for keyword <- ["Virtual", "Elixir", "Conference"] do
       span aria-hidden="true" #{keyword}
       <svg aria-hidden="true" alt="" viewbox="0 0 30 30">
@@ -8,7 +8,7 @@ header.Banner
         <line x1="10" y1="25" x2="30" y2="15" stroke-width="2" stroke="#fff" />
         <line x1="0" y1="0" x2="0" y2="30" stroke-width="4" stroke="#fff" />
       </svg>
-    span aria-hidden="true" 2021
+    span aria-hidden="true" 28.05.2021
 
   nav.nav
     = link @env, "Home", to: "/"
@@ -18,6 +18,7 @@ header.Banner
         span All proceeds are for charity
         span This is a carbon-neutral event
         span 1 attendee = 1 tree
+        span 28.05.2021 on a screen near you
 
     /* a Schedule */
     = link @env, "Speakers", to: "/speakers"
