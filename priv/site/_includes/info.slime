@@ -16,6 +16,9 @@
       br
       | This event is for you. Brew some magic!
 
+  .cta
+    = link @env, "Interested in speaking at Alchemy Conf? Apply here", to: papercall_url()
+
   .rectangles aria-hidden="true"
     = for source <- ["schedule", "tickets", "info" ] do
       div
