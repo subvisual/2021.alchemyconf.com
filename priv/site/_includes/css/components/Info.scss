@@ -240,6 +240,24 @@
     }
   }
 
+  > .cta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: var(--s-9) 0 0;
+    padding: 0 var(--s-8);
+    text-align: center;
+
+    > * {
+      display: inline-block;
+      background-color: var(--c-green);
+      color: var(--c-black);
+      border-radius: 4px;
+      padding: 0 var(--s-2);
+      text-transform: uppercase;
+    }
+  }
+
   .underline {
     text-decoration: underline;
   }
