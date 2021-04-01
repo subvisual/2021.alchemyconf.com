@@ -47,6 +47,19 @@ defmodule Alchemy.TemplateHelpers do
       """,
       twitter_handle: "michalmuskala",
       socials: []
+    },
+    %{
+      name: "Ben Smith",
+      picture: "public/speakers/bensmith.jpg",
+      tagline: "",
+      description: """
+      Ben has been building event-driven Elixir applications for the past few
+      years. His popular open source Commanded and EventStore libraries provide
+      a solid technical foundation allowing companies to focus on modelling
+      their business using domain-specific events.
+      """,
+      twitter_handle: "slashdotdash",
+      socials: []
     }
   ]
 
