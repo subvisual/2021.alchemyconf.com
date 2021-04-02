@@ -105,9 +105,14 @@
     font-size: var(--s-8);
     line-height: var(--s-9);
     text-transform: uppercase;
+    height: var(--s-9);
+
+    a {
+      display: flex;
+    }
 
     svg {
-      margin: 0 var(--s-4);
+      margin: var(--s-5) var(--s-4) 0;
     }
   }
 }
@@ -124,7 +129,6 @@
       > .content {
         width: 50%;
         padding: var(--s-10) var(--s-8) var(--s-8);
-
       }
 
       video {

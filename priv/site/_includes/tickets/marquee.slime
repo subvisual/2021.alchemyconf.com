@@ -1,9 +1,11 @@
-marquee.marquee
-  = for _ <- 1..4 do
-    = link @env, to: tito_url() do
-      span Buy Tickets Here
-      <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="56" height="56" fill="#E5E5E5"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M44.8681 27.6127L33.9229 14.7288L36.4419 12.5632L49.2268 27.6127L36.4419 42.6622L33.9229 40.4966L44.8681 27.6127Z" fill="black"/>
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.56641 25.946L46.6983 25.946L46.6983 29.2794L6.56641 29.2794L6.56641 25.946Z" fill="black"/>
-      </svg>
+.Marquee.marquee
+  = for _ <- 1..2 do
+    div
+      = for _ <- 1..8 do
+        = link @env, to: tito_url() do
+          span Buy Tickets Here
+          <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="56" height="56" fill="#E5E5E5"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M44.8681 27.6127L33.9229 14.7288L36.4419 12.5632L49.2268 27.6127L36.4419 42.6622L33.9229 40.4966L44.8681 27.6127Z" fill="black"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.56641 25.946L46.6983 25.946L46.6983 29.2794L6.56641 29.2794L6.56641 25.946Z" fill="black"/>
+          </svg>

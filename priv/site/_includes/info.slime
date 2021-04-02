@@ -68,8 +68,9 @@
           and BEAM developers and enthusiasts gather to exchange
           knowledge and get to know one another.
 
-  marquee.marquee loop="-1" aria-hidden="true"
-    = link @env, to: tito_url() do
-      = for _ <- 1..6 do
-        span Join us
-        span 28.05.2021 on a screen near you
+  .Marquee.marquee aria-hidden="true"
+    = for _ <- 1..2 do
+      = link @env, to: tito_url() do
+        = for _ <- 1..7 do
+          span Join us
+          span 28.05.2021 on a screen near you
