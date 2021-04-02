@@ -53,6 +53,10 @@
   }
 
   @media (max-width: 1200px) {
+    padding: var(--s-5) var(--s-4);
+  }
+
+  @media (max-width: 650px) {
     display: none;
   }
 }

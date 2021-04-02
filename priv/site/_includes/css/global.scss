@@ -30,6 +30,7 @@ html {
   font-family: "Chakra Petch", input-mono, monospace, sans-serif;
   color: var(--c-white);
   overflow-x: hidden;
+  overscroll-behavior: none;
 }
 
 body {

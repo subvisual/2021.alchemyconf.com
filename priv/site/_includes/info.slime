@@ -20,7 +20,7 @@
     = link @env, "Interested in speaking at Alchemy Conf? Apply here", to: papercall_url()
 
   .rectangles aria-hidden="true"
-    = for source <- ["schedule", "tickets", "info" ] do
+    = for source <- ["schedule", "info", "tickets" ] do
       div
         video.lozad autoplay=true muted=true loop=true data-poster=url_for("videos/#{source}.jpg")
           source data-src=url_for("videos/#{source}.webm") type="video/webm"
@@ -68,8 +68,9 @@
           and BEAM developers and enthusiasts gather to exchange
           knowledge and get to know one another.
 
-  marquee.marquee loop="-1" aria-hidden="true"
-    = link @env, to: tito_url() do
-      = for _ <- 1..6 do
-        span Join us
-        span 28.05.2021 on a screen near you
+  .Marquee.marquee aria-hidden="true"
+    = for _ <- 1..2 do
+      = link @env, to: tito_url() do
+        = for _ <- 1..7 do
+          span Join us
+          span 28.05.2021 on a screen near you

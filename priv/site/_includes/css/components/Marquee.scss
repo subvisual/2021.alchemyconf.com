@@ -1,0 +1,31 @@
+.Marquee {
+  overflow: hidden;
+  position: relative;
+
+  > * {
+    top: 0;
+    position: absolute;
+    display: flex;
+    width: min-content;
+    animation: marquee 50s linear infinite;
+    left: 100%;
+
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  > *:nth-child(2) {
+    animation-delay: 25s;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-200%, 0, 0);
+  }
+}

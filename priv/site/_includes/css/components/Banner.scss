@@ -3,34 +3,6 @@
   width: 100%;
   z-index: 99;
 
-  .mobile {
-    color: var(--c-black);
-    justify-content: space-between;
-    background-color: var(--c-gray);
-    padding: var(--s-3);
-    display: flex;
-    align-items: center;
-
-    .title {
-      background-color: white;
-      padding: var(--s-1) var(--s-3);
-      text-transform: uppercase;
-      font-weight: bold;
-      border-radius: 5px;
-      line-height: 1.2;
-    }
-
-    .button {
-      display: flex;
-      background-color: transparent;
-      border: 0;
-    }
-
-    @media (min-width: 650px) {
-      display: none;
-    }
-  }
-
   > .info {
     display: flex;
     justify-content: space-evenly;
@@ -55,6 +27,7 @@
     display: grid;
     grid-template-columns: min-content min-content 1fr min-content min-content;
     grid-column-gap: var(--s-4);
+    width: 100%;
 
     > * {
       background-color: white;
@@ -83,66 +56,5 @@
     @media (max-width: 650px) {
       display: none;
     }
-  }
-
-  [data-micromodal-close] * {
-    pointer-events: none;
-  }
-
-  .modal {
-    display: none;
-
-    .overlay {
-      background-color: var(--c-green);
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 1;
-    }
-
-    .content {
-      width: 100%;
-      display: grid;
-      grid-row-gap: var(--s-5);
-      padding: var(--s-7) var(--s-4);
-      flex: 1;
-      align-content: flex-start;
-    }
-
-    .header {
-      color: var(--c-black);
-      justify-content: space-between;
-      background-color: transparent;
-      padding: var(--s-3);
-      display: flex;
-      align-items: center;
-    }
-
-    .container {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .footer {
-      font-size: var(--s-3);
-      line-height: 1;
-      padding: var(--s-4);
-      text-transform: uppercase;
-      font-weight: bold;
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-
-  .modal.is-open {
-    display: block;
   }
 }
