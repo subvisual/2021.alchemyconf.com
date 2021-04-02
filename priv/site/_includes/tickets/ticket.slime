@@ -1,8 +1,7 @@
 .ticket
-  div.header
+  .top
     = link @env, @charity[:name], to: @charity[:website]
 
-  div.header.right
     = link @env, to: tito_url(), class: "link" do
       span Get Tickets
       <svg width="19" height="14" viewBox="0 0 19 14" fill="none">

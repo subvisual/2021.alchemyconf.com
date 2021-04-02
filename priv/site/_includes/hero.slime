@@ -26,34 +26,8 @@ header.Banner
     = link @env, "Speakers", to: "/speakers"
     = link @env, "Tickets", to: "/tickets"
 
-  .mobile
-    p.title Alchemy Conf 2021
-    button.button(data-micromodal-trigger="modal-menu")
-      <svg width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 2.78944V0.973145H30.9091V2.78944H0ZM30.9091 10.0546V11.8709H0V10.0546H30.9091ZM0 19.1361H30.9091V20.9524H0V19.1361Z" fill="black"/>
-      </svg>
 
-
-    .modal#modal-menu aria-hidden="true"
-      .overlay
-        .container role="dialog" aria-modal="true" aria-labelledby="modal-menu-title"
-          header.header
-            h2.title#modal-menu-title Alchemy Conf 2021
-            button.button(aria-label="Close modal" data-micromodal-close)
-              <svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="0.353553" y1="0.646447" x2="28.3536" y2="28.6464" stroke="black"/>
-                <line x1="28.3536" y1="1.35355" x2="0.353551" y2="29.3536" stroke="black"/>
-              </svg>
-
-          .content#modal-menu-content
-            /*= link @env, "schedule", to: "/schedule", class: "BigLink"*/
-            = link @env, "speakers", to: "/speakers", class: "BigLink black"
-            = link @env, "tickets", to: "/tickets", class: "BigLink red"
-          footer.footer
-            p Virtual Conference
-            time datetime="2021-05-28"
-              | May 28 2021
-
+  = include(@env, "_includes/mobile_nav.slime")
 
 div.Video aria-hidden="true"
   video autoplay=true muted=true loop=true  poster="<%= url_for("videos/hero.jpg") %>"
