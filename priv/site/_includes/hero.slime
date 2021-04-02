@@ -33,7 +33,7 @@ header.Banner
 
 
     .modal#modal-menu aria-hidden="true"
-      .overlay(tabindex="-1" data-micromodal-close)
+      .overlay
         .container role="dialog" aria-modal="true" aria-labelledby="modal-menu-title"
           header.header
             h2.title#modal-menu-title Alchemy Conf 2021
