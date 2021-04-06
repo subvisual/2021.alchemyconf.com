@@ -51,7 +51,7 @@ defmodule Alchemy.TemplateHelpers do
     %{
       name: "Ben Smith",
       picture: "public/speakers/bensmith.jpg",
-      tagline: "",
+      tagline: "Creator of Commanded CQRS/ES",
       description: """
       Ben has been building event-driven Elixir applications for the past few
       years. His popular open source Commanded and EventStore libraries provide
