@@ -31,6 +31,33 @@ defmodule Alchemy.TemplateHelpers do
 
   @speakers [
     %{
+      name: "Ben Smith",
+      picture: "public/speakers/bensmith.jpg",
+      tagline: "Creator of Commanded CQRS/ES",
+      description: """
+      Ben has been building event-driven Elixir applications for the past few
+      years. His popular open source Commanded and EventStore libraries provide
+      a solid technical foundation allowing companies to focus on modelling
+      their business using domain-specific events.
+      """,
+      twitter_handle: "slashdotdash",
+      socials: []
+    },
+    %{
+      name: "José Valim",
+      picture: "public/speakers/josevalim.jpg",
+      tagline: "Creator of Elixir",
+      description: """
+      José Valim is the creator of the Elixir programming language and Chief
+      Adoption Officer at Dashbit, a company that focuses on Sustainable Open
+      Source and Continuous Adoption to boost the Elixir ecosystem. He is
+      also a seasoned speaker, the author of three programming books, and an
+      active member of the Open Source community.
+      """,
+      twitter_handle: "josevalim",
+      socials: []
+    },
+    %{
       name: "Michał Muskała",
       picture: "public/speakers/michalmuskala.jpg",
       tagline: "Software Engineer",
@@ -46,19 +73,6 @@ defmodule Alchemy.TemplateHelpers do
       combined!
       """,
       twitter_handle: "michalmuskala",
-      socials: []
-    },
-    %{
-      name: "Ben Smith",
-      picture: "public/speakers/bensmith.jpg",
-      tagline: "Creator of Commanded CQRS/ES",
-      description: """
-      Ben has been building event-driven Elixir applications for the past few
-      years. His popular open source Commanded and EventStore libraries provide
-      a solid technical foundation allowing companies to focus on modelling
-      their business using domain-specific events.
-      """,
-      twitter_handle: "slashdotdash",
       socials: []
     }
   ]
