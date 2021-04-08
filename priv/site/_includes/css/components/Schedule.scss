@@ -1,52 +1,166 @@
-.Hero {
-  display: flex;
-  background-color: var(--c-red);
-}
+.Schedule {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--c-red);
 
-.Hero-Content {
-  flex: 1;
-}
+    > .content {
+      padding: var(--s-4);
+      padding-bottom: var(--s-6);
 
-.Hero-image {
-  flex: 1;
-  max-width: 50%;
-}
+      > .dateTime {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
-.Hero-title {
-  padding: var(--s-3);
-  padding-right: var(--s-6);
-  margin-bottom: var(--s-6);
-  background-color: var(--c-gray);
-  color: var(--c-black);
-  font-size: var(--s-7);
-  line-height: 90%;
-  font-weight: normal;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-}
+        margin-bottom: var(--s-6);
 
-.Hero-list li {
-  display: flex;
-  justify-content: space-between;
-  padding: var(--s-2) 0;
-  border-top: 1px solid var(--c-black);
-  color: var(--c-black);
-}
+        color: var(--c-black);
+        font-size: var(--s-4);
+        font-weight: 600;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+      }
+    }
 
-.Hero-list li:last-child {
-  border-bottom: 1px solid var(--c-black);
-}
+    > .image {
+      display: none;
 
-.Hero-list li:nth-child(odd) {
-  > span:nth-child(2) {
-    color: var(--c-white);
+      width: 50%;
+    }
+
+    .title {
+      padding: var(--s-3);
+      padding-right: var(--s-6);
+      margin-bottom: var(--s-6);
+      background-color: var(--c-gray);
+      color: var(--c-black);
+      font-size: var(--s-7);
+      line-height: 90%;
+      font-weight: normal;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+    }
+
+    .list {
+      > li {
+        display: flex;
+        justify-content: space-between;
+        padding: var(--s-2) 0;
+        border-top: 1px solid var(--c-black);
+        color: var(--c-black);
+
+        > .time {
+          font-family: "Chakra Petch";
+          font-weight: 600;
+        }
+
+        > .talk-title {
+          font-family: "input-mono";
+          font-weight: 400;
+        }
+
+        > .speaker {
+          display: none;
+        }
+      }
+
+      > li:last-child {
+        border-bottom: 1px solid var(--c-black);
+      }
+    }
   }
 }
 
+.Schedule .marquee {
+  background-color: var(--c-light-gray);
+  color: var(--c-black);
+  font-size: var(--s-8);
+  line-height: var(--s-9);
+  text-transform: uppercase;
+}
+
+.speakers {
+  > .speaker {
+    background-color: var(--c-gray);
+
+    > .photo {
+      width: 100%;
+      padding: var(--s-4) 0;
+      display: grid;
+      justify-content: center;
+
+      > img, .name {
+        border: 1px solid var(--c-black);
+      }
+
+      > .name {
+        background-color: var(--c-white);
+        text-align: center;
+        color: var(--c-black);
+        font-size: var(--s-5);
+        line-height: var(--s-7);
+        text-transform: uppercase;
+        font-family: "Chakra Petch";
+        font-weight: 500;
+        border-top: 0;
+      }
+    }
+
+    > .content {
+      > .talk-title {
+        text-align: center;
+        color: var(--c-black);
+        font-size: var(--s-4);
+        line-height: var(--s-5);
+        text-transform: uppercase;
+        font-family: "Chakra Petch";
+        font-weight: 500;
+        padding-bottom: var(--s-2);
+      }
+    }
+  }
+}
+
+
+
 @media (min-width: 1200px) {
-  .Hero-title {
-    position: relative;
-    margin-bottom: var(--s-7);
-    font-size: var(--s-9);
+  .Schedule {
+    .hero {
+      flex-direction: row-reverse;
+
+      > .content {
+        width: 50%;
+        padding: var(--s-10) var(--s-8) var(--s-8);
+      }
+
+      > .image {
+        display: inherit;
+        max-height: 1258px;
+      }
+
+      .title {
+        font-size: var(--s-9);
+      }
+
+      .list {
+        > li {
+          > .speaker {
+            display: inherit;
+          }
+        }
+
+        > li:last-child {
+          border-bottom: 1px solid var(--c-black);
+        }
+
+        > li:nth-child(odd) {
+          > span:nth-child(2) {
+            color: var(--c-white);
+          }
+        }
+      }
+    }
   }
 }
