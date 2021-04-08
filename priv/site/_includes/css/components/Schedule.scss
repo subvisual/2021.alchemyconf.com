@@ -1,76 +1,71 @@
-.Schedule {
-  .hero {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--c-red);
+.Schedule {}
 
-    > .content {
-      padding: var(--s-4);
-      padding-bottom: var(--s-6);
+.Schedule-hero {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--c-red);
+}
 
-      > .dateTime {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+.Schedule-heroImage {
+  display: none;
+  width: 50%;
+}
 
-        margin-bottom: var(--s-6);
+.Schedule-content {
+  padding: var(--s-4);
+  padding-bottom: var(--s-6);
+}
 
-        color: var(--c-black);
-        font-size: var(--s-4);
-        font-weight: 600;
-        line-height: 28px;
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
-      }
-    }
+.Schedule-contentDateTime {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: var(--s-6);
+  color: var(--c-black);
+  font-size: var(--s-4);
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+      
+.Schedule-contentTitle {
+  padding: var(--s-3);
+  padding-right: var(--s-6);
+  margin-bottom: var(--s-6);
+  background-color: var(--c-gray);
+  color: var(--c-black);
+  font-size: var(--s-7);
+  line-height: 90%;
+  font-weight: normal;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
 
-    > .image {
-      display: none;
+.Schedule-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--s-2) 0;
+  border-top: 1px solid var(--c-black);
+  color: var(--c-black);
+}
 
-      width: 50%;
-    }
+.Schedule-list li:last-child {
+  border-bottom: 1px solid var(--c-black);
+}
 
-    .title {
-      padding: var(--s-3);
-      padding-right: var(--s-6);
-      margin-bottom: var(--s-6);
-      background-color: var(--c-gray);
-      color: var(--c-black);
-      font-size: var(--s-7);
-      line-height: 90%;
-      font-weight: normal;
-      letter-spacing: -0.02em;
-      text-transform: uppercase;
-    }
+.Schedule-listTime {
+  font-family: "Chakra Petch";
+  font-weight: 600;
+}
 
-    .list {
-      > li {
-        display: flex;
-        justify-content: space-between;
-        padding: var(--s-2) 0;
-        border-top: 1px solid var(--c-black);
-        color: var(--c-black);
+.Schedule-listTalkTitle {
+  font-family: "input-mono";
+  font-weight: 400;
+}
 
-        > .time {
-          font-family: "Chakra Petch";
-          font-weight: 600;
-        }
-
-        > .talk-title {
-          font-family: "input-mono";
-          font-weight: 400;
-        }
-
-        > .speaker {
-          display: none;
-        }
-      }
-
-      > li:last-child {
-        border-bottom: 1px solid var(--c-black);
-      }
-    }
-  }
+.Schedule-listSpeaker {
+  display: none;
 }
 
 .Schedule .marquee {
@@ -81,86 +76,117 @@
   text-transform: uppercase;
 }
 
-.speakers {
-  > .speaker {
-    background-color: var(--c-gray);
-
-    > .photo {
-      width: 100%;
-      padding: var(--s-4) 0;
-      display: grid;
-      justify-content: center;
-
-      > img, .name {
-        border: 1px solid var(--c-black);
-      }
-
-      > .name {
-        background-color: var(--c-white);
-        text-align: center;
-        color: var(--c-black);
-        font-size: var(--s-5);
-        line-height: var(--s-7);
-        text-transform: uppercase;
-        font-family: "Chakra Petch";
-        font-weight: 500;
-        border-top: 0;
-      }
-    }
-
-    > .content {
-      > .talk-title {
-        text-align: center;
-        color: var(--c-black);
-        font-size: var(--s-4);
-        line-height: var(--s-5);
-        text-transform: uppercase;
-        font-family: "Chakra Petch";
-        font-weight: 500;
-        padding-bottom: var(--s-2);
-      }
-    }
-  }
+.Speakers {
+  background-color: var(--c-gray);
 }
 
+.Speakers-presentation {
+  display: none;
+}
 
+.Speakers-speakerPhoto {
+  width: 100%;
+  padding: var(--s-4) 0;
+  display: grid;
+  justify-content: center;
+}
+
+.Speakers-speakerPhoto img, .Speakers-speakerName {
+  border: 1px solid var(--c-black);
+}
+
+.Speakers-speakerName {
+  background-color: var(--c-white);
+  text-align: center;
+  color: var(--c-black);
+  font-size: var(--s-5);
+  line-height: var(--s-7);
+  text-transform: uppercase;
+  font-family: "Chakra Petch";
+  font-weight: 500;
+  border-top: 0;
+}
+
+.Speakers-contentTalkTitle {
+  text-align: center;
+  color: var(--c-black);
+  font-size: var(--s-4);
+  line-height: var(--s-5);
+  text-transform: uppercase;
+  font-family: "Chakra Petch";
+  font-weight: 500;
+  padding-bottom: var(--s-2);
+}
 
 @media (min-width: 1200px) {
-  .Schedule {
-    .hero {
-      flex-direction: row-reverse;
 
-      > .content {
-        width: 50%;
-        padding: var(--s-10) var(--s-8) var(--s-8);
-      }
+  .Schedule-hero {
+    flex-direction: row-reverse;
+  }
 
-      > .image {
-        display: inherit;
-        max-height: 1258px;
-      }
+  .Schedule-heroImage {
+    display: inherit;
+    max-height: 1258px;
+  }
 
-      .title {
-        font-size: var(--s-9);
-      }
+  .Schedule-content {
+    width: 50%;
+    padding: var(--s-10) var(--s-8) var(--s-8);
+  }    
 
-      .list {
-        > li {
-          > .speaker {
-            display: inherit;
-          }
-        }
+  .Schedule-contentTitle {
+    font-size: var(--s-9);
+  }
 
-        > li:last-child {
-          border-bottom: 1px solid var(--c-black);
-        }
+  .Schedule-listSpeaker {
+    display: inherit;
+  }
 
-        > li:nth-child(odd) {
-          > span:nth-child(2) {
-            color: var(--c-white);
-          }
-        }
-      }
+  .Schedule-list li:last-child {
+    border-bottom: 1px solid var(--c-black);
+  }
+
+  .Schedule-list li:nth-child(odd) {
+    > span:nth-child(2) {
+      color: var(--c-white);
     }
   }
+
+  .Speakers-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .Speakers-presentation {
+    background-color: var(--c-white);
+    color: var(--c-black);
+    font-family: "input-mono";
+    font-weight: 400;
+    font-size: var(--s-3);
+    line-height: var(--s-4);
+    width: 486px;
+    height: 256px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: var(--s-3) var(--s-4); 
+  }
+
+  .Speakers-speaker {
+    max-width: 317px;
+  }
+
+  .Speakers-speakerPhoto img {
+    width: 100%;
+  }
+
+  .Speakers-speaker:nth-child(3n+1), .Speakers-speaker:nth-child(3n+3) {
+    padding-top: var(--s-4);
+  }
+
 }

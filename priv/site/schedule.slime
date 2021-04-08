@@ -4,85 +4,131 @@ layout: _layout.slime
 
 .Schedule
   = include(@env, "_includes/nav.slime")
-  .hero
-    .image
+  .Schedule-hero
+    .Schedule-heroImage
       img src="public/schedule_hero_image.jpg"
 
-    .content
-      .dateTime
+    .Schedule-content
+      .Schedule-contentDateTime
         time datetime="2021-05-28"
           | May 28 2021
         p 09:00 - 18:30
 
-      h1.title Schedule
+      h1.Schedule-contentTitle Schedule
 
-      ul.list
+      ul.Schedule-list
         li
-          span.time 9:00-9:15
-          span.talk-title Introduction
-          span.speaker Alchemy Team
+          span.Schedule-listTime 9:00-9:15
+          span.Schedule-listTalkTitle Introduction
+          span.Schedule-listSpeaker Alchemy Team
         li
-          span.time 9:00-9:15
-          span.talk-title Introduction
-          span.speaker Alchemy Team
+          span.Schedule-listTime 9:00-9:15
+          span.Schedule-listTalkTitle Introduction
+          span.Schedule-listSpeaker Alchemy Team
         li
-          span.time 9:00-9:15
-          span.talk-title Introduction
-          span.speaker Alchemy Team
+          span.Schedule-listTime 9:00-9:15
+          span.Schedule-listTalkTitle Introduction
+          span.Schedule-listSpeaker Alchemy Team
         li
-          span.time 9:00-9:15
-          span.talk-title Introduction
-          span.speaker Alchemy Team
+          span.Schedule-listTime 9:00-9:15
+          span.Schedule-listTalkTitle Introduction
+          span.Schedule-listSpeaker Alchemy Team
         li
-          span.time 9:00-9:15
-          span.talk-title Introduction
-          span.speaker Alchemy Team
+          span.Schedule-listTime 9:00-9:15
+          span.Schedule-listTalkTitle Introduction
+          span.Schedule-listSpeaker Alchemy Team
         li
-          span.time 9:00-9:15
-          span.talk-title Introduction
-          span.speaker Alchemy Team
+          span.Schedule-listTime 9:00-9:15
+          span.Schedule-listTalkTitle Introduction
+          span.Schedule-listSpeaker Alchemy Team
         li
-          span.time 9:00-9:15
-          span.talk-title Introduction
-          span.speaker Alchemy Team
+          span.Schedule-listTime 9:00-9:15
+          span.Schedule-listTalkTitle Introduction
+          span.Schedule-listSpeaker Alchemy Team
         li
-          span.time 9:00-9:15
-          span.talk-title Introduction
-          span.speaker Alchemy Team
+          span.Schedule-listTime 9:00-9:15
+          span.Schedule-listTalkTitle Introduction
+          span.Schedule-listSpeaker Alchemy Team
         li
-          span.time 9:00-9:15
-          span.talk-title Introduction
-          span.speaker Alchemy Team
+          span.Schedule-listTime 9:00-9:15
+          span.Schedule-listTalkTitle Introduction
+          span.Schedule-listSpeaker Alchemy Team
         li
-          span.time 9:00-9:15
-          span.talk-title Introduction
-          span.speaker Alchemy Team
+          span.Schedule-listTime 9:00-9:15
+          span.Schedule-listTalkTitle Introduction
+          span.Schedule-listSpeaker Alchemy Team
         li
-          span.time 9:00-9:15
-          span.talk-title Introduction
-          span.speaker Alchemy Team
+          span.Schedule-listTime 9:00-9:15
+          span.Schedule-listTalkTitle Introduction
+          span.Schedule-listSpeaker Alchemy Team
         li
-          span.time 9:00-9:15
-          span.talk-title Introduction
-          span.speaker Alchemy Team
+          span.Schedule-listTime 9:00-9:15
+          span.Schedule-listTalkTitle Introduction
+          span.Schedule-listSpeaker Alchemy Team
         li
-          span.time 9:00-9:15
-          span.talk-title Introduction
-          span.speaker Alchemy Team
+          span.Schedule-listTime 9:00-9:15
+          span.Schedule-listTalkTitle Introduction
+          span.Schedule-listSpeaker Alchemy Team
 
-  marquee.marquee
-    = for _ <- 1..4 do
-      = link @env, to: tito_url() do
-        p Talks
-        span 2021
+  .Marquee
+      = for _ <- 1..2 do
+        div
+          = for _ <- 1..2 do
+            span Talks
+            span 2021
 
-section.speakers
-  .speaker
-    .photo
-      img alt="Sarah's picture" src="http://placekitten.com/360/320"
-      h3.name Sarah SOUEIDAN
+section.Speakers
 
-    .content
-      p.talk-title THE FRONT END ESPRESSO SHOT
+  .Speakers-presentation
+    p This year we wanted to enlarge the Mirror experience and with that in mind we decided to give to you four amazing workshops. From design planning to front-end mastering, with experienced mentors who define the web, we are sure that these workshops will empower your craft.
+
+  .Speakers-content
+    .Speakers-speaker
+      .Speakers-speakerPhoto
+        img alt="Sarah's picture" src="http://placekitten.com/360/320"
+        h3.Speakers-speakerName Sarah SOUEIDAN
+
+      .Speakers-contentTalkTitle
+        p THE FRONT END ESPRESSO SHOT
+
+    .Speakers-speaker
+      .Speakers-speakerPhoto
+        img alt="Sarah's picture" src="http://placekitten.com/360/320"
+        h3.Speakers-speakerName Sarah SOUEIDAN
+
+      .Speakers-contentTalkTitle
+        p THE FRONT END ESPRESSO SHOT
+
+    .Speakers-speaker
+      .Speakers-speakerPhoto
+        img alt="Sarah's picture" src="http://placekitten.com/360/320"
+        h3.Speakers-speakerName Sarah SOUEIDAN
+
+      .Speakers-contentTalkTitle
+        p THE FRONT END ESPRESSO SHOT
+
+    .Speakers-speaker
+      .Speakers-speakerPhoto
+        img alt="Sarah's picture" src="http://placekitten.com/360/320"
+        h3.Speakers-speakerName Sarah SOUEIDAN
+
+      .Speakers-contentTalkTitle
+        p THE FRONT END ESPRESSO SHOT
+
+    .Speakers-speaker
+      .Speakers-speakerPhoto
+        img alt="Sarah's picture" src="http://placekitten.com/360/320"
+        h3.Speakers-speakerName Sarah SOUEIDAN
+
+      .Speakers-contentTalkTitle
+        p THE FRONT END ESPRESSO SHOT
+
+    .Speakers-speaker
+      .Speakers-speakerPhoto
+        img alt="Sarah's picture" src="http://placekitten.com/360/320"
+        h3.Speakers-speakerName Sarah SOUEIDAN
+
+      .Speakers-contentTalkTitle
+        p THE FRONT END ESPRESSO SHOT
 
 = include(@env, "_includes/footer.slime")
