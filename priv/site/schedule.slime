@@ -2,63 +2,87 @@
 layout: _layout.slime
 ---
 
-.Hero
-  .Hero-Content
-    p May 14th 2021. 09:00-18:30
-    h1.Hero-title Schedule
+.Schedule
+  = include(@env, "_includes/nav.slime")
+  .hero
+    .image
+      img src="public/schedule_hero_image.jpg"
 
-    ul.Hero-list
-      li
-        <span>9:00-9:15</span>
-        <span>Introduction</span>
-        <span>Alchemy Team<span>
-      li
-        <span>9:00-9:15</span>
-        <span>Introduction</span>
-        <span>Alchemy Team</span>
-      li
-        <span>9:00-9:15</span>
-        <span>Introduction</span>
-        <span>Alchemy Team</span>
-      li
-        <span>9:00-9:15</span>
-        <span>Introduction</span>
-        <span>Alchemy Team</span>
-      li
-        <span>9:00-9:15</span>
-        <span>Introduction</span>
-        <span>Alchemy Team</span>
-      li
-        <span>9:00-9:15</span>
-        <span>Introduction</span>
-        <span>Alchemy Team</span>
-      li
-        <span>9:00-9:15</span>
-        <span>Introduction</span>
-        <span>Alchemy Team</span>
-      li
-        <span>9:00-9:15</span>
-        <span>Introduction</span>
-        <span>Alchemy Team</span>
-      li
-        <span>9:00-9:15</span>
-        <span>Introduction</span>
-        <span>Alchemy Team</span>
-      li
-        <span>9:00-9:15</span>
-        <span>Introduction</span>
-        <span>Alchemy Team</span>
-      li
-        <span>9:00-9:15</span>
-        <span>Introduction</span>
-        <span>Alchemy Team</span>
-      li
-        <span>9:00-9:15</span>
-        <span>Introduction</span>
-        <span>Alchemy Team</span>
-      li
-        <span>9:00-9:15</span>
-        <span>Introduction</span>
-        <span>Alchemy Team</span>
+    .content
+      .dateTime
+        time datetime="2021-05-28"
+          | May 28 2021
+        p 09:00 - 18:30
 
-  img.Hero-image src="public/schedule_hero_image.jpg"
+      h1.title Schedule
+
+      ul.list
+        li
+          span.time 9:00-9:15
+          span.talk-title Introduction
+          span.speaker Alchemy Team
+        li
+          span.time 9:00-9:15
+          span.talk-title Introduction
+          span.speaker Alchemy Team
+        li
+          span.time 9:00-9:15
+          span.talk-title Introduction
+          span.speaker Alchemy Team
+        li
+          span.time 9:00-9:15
+          span.talk-title Introduction
+          span.speaker Alchemy Team
+        li
+          span.time 9:00-9:15
+          span.talk-title Introduction
+          span.speaker Alchemy Team
+        li
+          span.time 9:00-9:15
+          span.talk-title Introduction
+          span.speaker Alchemy Team
+        li
+          span.time 9:00-9:15
+          span.talk-title Introduction
+          span.speaker Alchemy Team
+        li
+          span.time 9:00-9:15
+          span.talk-title Introduction
+          span.speaker Alchemy Team
+        li
+          span.time 9:00-9:15
+          span.talk-title Introduction
+          span.speaker Alchemy Team
+        li
+          span.time 9:00-9:15
+          span.talk-title Introduction
+          span.speaker Alchemy Team
+        li
+          span.time 9:00-9:15
+          span.talk-title Introduction
+          span.speaker Alchemy Team
+        li
+          span.time 9:00-9:15
+          span.talk-title Introduction
+          span.speaker Alchemy Team
+        li
+          span.time 9:00-9:15
+          span.talk-title Introduction
+          span.speaker Alchemy Team
+
+  marquee.marquee
+    = for _ <- 1..4 do
+      = link @env, to: tito_url() do
+        p Talks
+        span 2021
+
+section.speakers
+  .speaker
+    .photo
+      img alt="Sarah's picture" src="http://placekitten.com/360/320"
+      h3.name Sarah SOUEIDAN
+
+    .content
+      p.talk-title THE FRONT END ESPRESSO SHOT
+
+= include(@env, "_includes/footer.slime")
