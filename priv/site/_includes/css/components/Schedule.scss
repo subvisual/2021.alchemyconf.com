@@ -1,9 +1,10 @@
-.Schedule {
-  background-color: var(--c-red);
+//temporary
+.MobileNav {
+  border-bottom: 1px solid var(--c-black);
 }
 
-.u-desktop {
-  display: none;
+.Schedule {
+  background-color: var(--c-red);
 }
 
 .Schedule-hero {
@@ -16,11 +17,11 @@
   width: 50%;
 }
 
-.Schedule-content {
+.Schedule-heroContent {
   padding: var(--s-10) var(--s-4) 0;
 }
 
-.Schedule-contentDateTime {
+.Schedule-heroContentDateTime {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -33,7 +34,7 @@
   text-transform: uppercase;
 }
       
-.Schedule-contentTitle {
+.Schedule-heroContentTitle {
   padding: var(--s-3);
   padding-right: var(--s-6);
   margin-bottom: var(--s-6);
@@ -80,22 +81,26 @@
   text-transform: uppercase;
 }
 
-.Speakers {
+.scheduleSpeakers {
   background-color: var(--c-gray);
 }
 
-.Speakers-speakerPhoto {
+.scheduleSpeakers-presentation {
+  display: none;
+} 
+
+.scheduleSpeakers-speakerPhoto {
   padding-top: var(--s-5);
   padding-bottom: var(--s-5);
   display: grid;
   justify-content: center;
 }
 
-.Speakers-speakerPhoto img, .Speakers-speakerName {
+.scheduleSpeakers-speakerPhoto img, .scheduleSpeakers-speakerName {
   border: 1px solid var(--c-black);
 }
 
-.Speakers-speakerName {
+.scheduleSpeakers-speakerName {
   background-color: var(--c-white);
   text-align: center;
   color: var(--c-black);
@@ -107,7 +112,7 @@
   border-top: 0;
 }
 
-.Speakers-contentTalkTitle {
+.scheduleSpeakers-contentTalkTitle {
   text-align: center;
   color: var(--c-black);
   font-size: var(--s-4);
@@ -119,32 +124,28 @@
 }
 
 @media (max-width: 650px) {
-  .Schedule-content {
+  .Schedule-heroContent {
     padding: var(--s-5);
   }
 }
 
 @media (min-width: 1200px) {
 
-  .u-desktop {
-    display: block;
-  }
-
   .Schedule-hero {
     flex-direction: row-reverse;
+    max-height: 1258px;
   }
 
   .Schedule-heroImage {
     display: inherit;
-    max-height: 1258px;
   }
 
-  .Schedule-content {
+  .Schedule-heroContent {
     width: 50%;
     padding: var(--s-10) var(--s-7) var(--s-8);
   }    
 
-  .Schedule-contentTitle {
+  .Schedule-heroContentTitle {
     font-size: var(--s-9);
   }
 
@@ -162,7 +163,7 @@
     }
   }
 
-  .Speakers-content {
+  .scheduleSpeakers-content {
     display: grid;
     justify-content: space-between;
     grid-template-columns: 1fr 1fr 1fr;
@@ -171,11 +172,12 @@
     margin: auto;
   }
 
-  .Speakers-presentation {
+  .scheduleSpeakers-presentation {
+    display: block;
     padding: var(--s-7) 0 var(--s-8); 
   }
 
-  .Speakers-presentation p {
+  .scheduleSpeakers-presentation p {
     background-color: var(--c-white);
     color: var(--c-black);
     font-family: "input-mono";
@@ -188,21 +190,21 @@
     width: var(--s-13);
   }
 
-  .Speakers-speaker {
+  .scheduleSpeakers-speaker {
     max-width: var(--s-12);
     margin: 0 auto;
   }
 
-  .Speakers-speakerPhoto {
+  .scheduleSpeakers-speakerPhoto {
     padding-top: 0;
   }
 
-  .Speakers-speakerPhoto img {
+  .scheduleSpeakers-speakerPhoto img {
     width: 100%;
     height: var(--s-12);
   }
 
-  .Speakers-speaker:nth-child(3n+1), .Speakers-speaker:nth-child(3n+3) {
+  .scheduleSpeakers-speaker:nth-child(3n+1), .scheduleSpeakers-speaker:nth-child(3n+3) {
     padding-top: var(--s-4);
   }
 

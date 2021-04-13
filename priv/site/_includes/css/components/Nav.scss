@@ -8,18 +8,14 @@
 
   padding: var(--s-5) var(--s-7);
 
-  nav {
-    width: 100%;
+  color: var(--c-black);
 
-    color: var(--c-black);
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: var(--s-5);
 
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: var(--s-5);
-
-    border-bottom: 1px solid var(--c-black);
-  }
-
+  border-bottom: 1px solid var(--c-black);
+  
   .entry {
     display: flex;
 

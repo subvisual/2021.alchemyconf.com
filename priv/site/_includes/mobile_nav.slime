@@ -1,4 +1,4 @@
-.MobileNav style="--text-color: var(--c-<%= @env[:color] || "white" %>); border-color: var(--c-<%= @env[:color] || "white" %>)"
+.MobileNav style="--text-color: var(--c-<%= @env[:color] || "white" %>)"
   p.title Alchemy Conf
   button.button(data-micromodal-trigger="modal-menu")
     <svg width="31" height="21" viewBox="0 0 31 21" fill="none" xmlns="http://www.w3.org/2000/svg">

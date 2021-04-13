@@ -1,10 +1,9 @@
-.Nav
-  nav
-    div.entry
-      = link @env, "Home", to: "/"
-      = link @env, "Info", to: "/#info"
-    div.entry
-      span Alchemy Conf
-    div.entry
-      = link @env, "Schedule", to: "/schedule"
-      = link @env, "Tickets", to: "/tickets"
+nav.Nav
+  div.entry
+    = link @env, "Home", to: "/"
+    = link @env, "Info", to: "/#info"
+  div.entry
+    span Alchemy Conf
+  div.entry
+    = link @env, "Schedule", to: "/schedule"
+    = link @env, "Tickets", to: "/tickets"
