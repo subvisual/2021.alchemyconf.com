@@ -21,40 +21,38 @@
 }
 
 .Schedule-heroContentDateTime {
+  color: var(--c-black);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin-bottom: var(--s-6);
-  color: var(--c-black);
-  font-size: var(--s-4);
   font-family: "Chakra Petch";
+  font-size: var(--s-4);
   font-weight: 600;
-  line-height: 28px;
+  justify-content: space-between;
   letter-spacing: 0.02em;
+  line-height: var(--s-5);
   text-transform: uppercase;
 }
       
 .Schedule-heroContentTitle {
-  padding: var(--s-3);
-  padding-right: var(--s-6);
-  margin-bottom: var(--s-6);
   background-color: var(--c-gray);
-  color: var(--c-black);
-  font-size: var(--s-7);
-  line-height: 90%;
-  font-weight: normal;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
+  color: var(--c-black); 
   font-family: "Chakra Petch";
+  font-size: var(--s-7);
   font-weight: 400;
+  line-height: 90%;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--s-6); 
+  padding: var(--s-3) var(--s-6) var(--s-3) var(--s-3);  
+  text-transform: uppercase;
 }
 
 .Schedule-list li {
-  display: flex;
-  justify-content: space-between;
-  padding: var(--s-2) 0;
   border-top: 1px solid var(--c-black);
   color: var(--c-black);
+  display: flex;
+  justify-content: space-between;
+  padding: var(--s-2) 0; 
 }
 
 .Schedule-list li:last-child {
@@ -63,15 +61,15 @@
 
 .Schedule-listTime {
   font-family: "Chakra Petch";
-  font-weight: 600;
   font-size: var(--s-3);
+  font-weight: 600; 
   line-height: var(--s-4);
 }
 
 .Schedule-listTalkTitle {
   font-family: "input-mono";
-  font-weight: 400;
   font-size: var(--s-3);
+  font-weight: 400;
   line-height: var(--s-4);
 }
 
@@ -82,11 +80,11 @@
 .marquee {
   background-color: var(--c-light-gray);
   font-family: "Chakra Petch";
-  font-weight: 400;
   font-size: var(--s-6);
-  line-height: var(--s-8);
-  text-transform: uppercase;
+  font-weight: 400;
   height: var(--s-8);
+  line-height: var(--s-8);
+  text-transform: uppercase; 
 }
 
 .marquee span {
@@ -111,9 +109,9 @@
 } 
 
 .scheduleSpeakers-speakerPhoto {
-  padding-bottom: var(--s-4);
   display: grid;
   justify-content: center;
+  padding-bottom: var(--s-4);
 }
 
 .scheduleSpeakers-speakerPhoto img{
@@ -127,25 +125,25 @@
 
 .scheduleSpeakers-speakerName {
   background-color: var(--c-white);
-  text-align: center;
-  color: var(--c-black);
-  font-size: var(--s-5);
-  line-height: var(--s-6);
-  text-transform: uppercase;
-  font-family: "Chakra Petch";
-  font-weight: 500;
   border-top: 0;
+  color: var(--c-black);
+  font-family: "Chakra Petch";
+  font-size: var(--s-5);
+  font-weight: 500;
+  line-height: var(--s-6);
+  text-align: center;
+  text-transform: uppercase;
   padding: var(--s-2) 0;
 }
 
 .scheduleSpeakers-contentTalkTitle {
-  text-align: center;
   color: var(--c-black);
-  font-size: var(--s-4);
-  line-height: var(--s-5);
-  text-transform: uppercase;
   font-family: "Chakra Petch";
+  font-size: var(--s-4);
   font-weight: 500;
+  line-height: var(--s-5);
+  text-align: center;
+  text-transform: uppercase;
   padding: 0 0 var(--s-5);
 }
 
@@ -167,8 +165,8 @@
   }
 
   .Schedule-heroContent {
-    width: 50%;
     padding: var(--s-10) var(--s-7) var(--s-8);
+    width: 50%;
   }
 
   .Schedule-heroContentDateTime {
@@ -191,8 +189,8 @@
   .Schedule-listSpeaker {
     display: inherit;
     font-family: "Chakra Petch";
-    font-weight: 400;
     font-size: var(--s-4);
+    font-weight: 400;
     line-height: var(--s-4);
   }
 
@@ -215,22 +213,22 @@
     background-color: var(--c-white);
     color: var(--c-black);
     font-family: "input-mono";
-    font-weight: 400;
     font-size: var(--s-4);
+    font-weight: 400;  
     line-height: var(--s-5);
-    text-align: center;
     margin: auto;
     padding: var(--s-4) var(--s-5);
+    text-align: center; 
     width: var(--s-14);
   }
 
   .scheduleSpeakers-content {
     display: grid;
-    justify-content: space-between;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10%;
-    max-width: 80%;
+    justify-content: space-between; 
     margin: auto;
+    max-width: 80%;
     padding-top: 0;
   }
 
@@ -261,11 +259,11 @@
 
   .scheduleSpeakers-content {
     display: grid;
-    justify-content: space-between;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 10%;
-    max-width: 1200px;
+    justify-content: space-between;
     margin: auto;
+    max-width: 1200px;
   }
 
   .scheduleSpeakers-presentation {
