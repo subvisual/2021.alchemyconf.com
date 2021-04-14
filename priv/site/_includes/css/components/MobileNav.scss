@@ -1,13 +1,12 @@
 .MobileNav {
-  --text-color: var(--c-white);
 
-  color: var(--text-color);
+  color: var(--c-black);
   justify-content: space-between;
   background-color: transparent;
   padding: var(--s-4);
   display: flex;
   align-items: center;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
 
   .title {
     text-transform: uppercase;
@@ -24,7 +23,7 @@
 
   svg {
     path {
-      fill: var(--text-color);
+      fill: var(--c-black);
     }
   }
 
@@ -91,5 +90,16 @@
 
   .modal.is-open {
     display: block;
+  }
+}
+
+.MobileNav-alternate {
+  color: var(--c-white);
+  border-bottom: 1px solid white;
+  
+  svg {
+    path {
+      fill: var(--c-white);
+    }
   }
 }

@@ -8,4 +8,4 @@ nav.Nav
     = link @env, "Schedule", to: "/schedule", style: "display: none"
     = link @env, "Tickets", to: "/tickets"
 
-= include(@env, "_includes/mobile_nav.slime", alternate: true)
+= include(@env, "_includes/mobile_nav.slime")
