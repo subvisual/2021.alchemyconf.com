@@ -75,12 +75,23 @@
   display: none;
 }
 
-.Schedule .marquee {
+.marquee {
   background-color: var(--c-light-gray);
-  color: var(--c-black);
-  font-size: var(--s-8);
-  line-height: var(--s-9);
+  font-family: "Chakra Petch";
+  font-weight: 400;
+  font-size: var(--s-6);
+  line-height: var(--s-8);
   text-transform: uppercase;
+  height: var(--s-8);
+}
+
+.marquee span {
+  color: var(--c-black);
+  margin-right: var(--s-4);
+}
+
+.marquee span:nth-child(even) {
+  color: var(--c-white);
 }
 
 .scheduleSpeakers {

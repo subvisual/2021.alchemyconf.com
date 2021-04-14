@@ -69,6 +69,16 @@ layout: _layout.slime
           span.Schedule-listTime 9:00-9:15
           span.Schedule-listTalkTitle Introduction
           span.Schedule-listSpeaker Alchemy Team
+  
+
+.Marquee.marquee
+  = for _ <- 1..2 do
+    div
+      = for _ <- 1..8 do
+          span Talks
+          span 2021
+          
+
 
   / .Marquee
   /     = for _ <- 1..2 do
