@@ -1,8 +1,3 @@
-//temporary
-.MobileNav {
-  border-bottom: 1px solid var(--c-black);
-}
-
 .Schedule {
   background-color: var(--c-red);
 }
@@ -28,6 +23,7 @@
   margin-bottom: var(--s-6);
   color: var(--c-black);
   font-size: var(--s-4);
+  font-family: "Chakra Petch";
   font-weight: 600;
   line-height: 28px;
   letter-spacing: 0.02em;
@@ -45,6 +41,8 @@
   font-weight: normal;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  font-family: "Chakra Petch";
+  font-weight: 400;
 }
 
 .Schedule-list li {
@@ -62,11 +60,15 @@
 .Schedule-listTime {
   font-family: "Chakra Petch";
   font-weight: 600;
+  font-size: var(--s-3);
+  line-height: var(--s-4);
 }
 
 .Schedule-listTalkTitle {
   font-family: "input-mono";
   font-weight: 400;
+  font-size: var(--s-3);
+  line-height: var(--s-4);
 }
 
 .Schedule-listSpeaker {
@@ -89,11 +91,19 @@
   display: none;
 } 
 
+.scheduleSpeakers-content {
+  padding-top: var(--s-6);
+} 
+
 .scheduleSpeakers-speakerPhoto {
-  padding-top: var(--s-5);
-  padding-bottom: var(--s-5);
+  padding-bottom: var(--s-4);
   display: grid;
   justify-content: center;
+}
+
+.scheduleSpeakers-speakerPhoto img{
+  max-height: 352px;
+  max-width: 317px;
 }
 
 .scheduleSpeakers-speakerPhoto img, .scheduleSpeakers-speakerName {
@@ -105,11 +115,12 @@
   text-align: center;
   color: var(--c-black);
   font-size: var(--s-5);
-  line-height: var(--s-7);
+  line-height: var(--s-6);
   text-transform: uppercase;
   font-family: "Chakra Petch";
   font-weight: 500;
   border-top: 0;
+  padding: var(--s-2) 0;
 }
 
 .scheduleSpeakers-contentTalkTitle {
@@ -120,7 +131,7 @@
   text-transform: uppercase;
   font-family: "Chakra Petch";
   font-weight: 500;
-  padding: 0 var(--s-6) var(--s-2);
+  padding: 0 0 var(--s-5);
 }
 
 @media (max-width: 650px) {
@@ -129,11 +140,11 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
 
   .Schedule-hero {
     flex-direction: row-reverse;
-    max-height: 1258px;
+    max-height: 906px;
   }
 
   .Schedule-heroImage {
@@ -143,14 +154,31 @@
   .Schedule-heroContent {
     width: 50%;
     padding: var(--s-10) var(--s-7) var(--s-8);
-  }    
+  }
+
+  .Schedule-heroContentDateTime {
+    margin-bottom: var(--s-2);
+  }
 
   .Schedule-heroContentTitle {
-    font-size: var(--s-9);
+    font-size: var(--s-8);
+    line-height: 90%;
+  }
+
+  .Schedule-listTime {
+    font-size: var(--s-4);
+  }
+
+  .Schedule-listTalkTitle {
+    font-size: var(--s-4);
   }
 
   .Schedule-listSpeaker {
     display: inherit;
+    font-family: "Chakra Petch";
+    font-weight: 400;
+    font-size: var(--s-4);
+    line-height: var(--s-4);
   }
 
   .Schedule-list li:last-child {
@@ -163,18 +191,9 @@
     }
   }
 
-  .scheduleSpeakers-content {
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10%;
-    max-width: 80%;
-    margin: auto;
-  }
-
   .scheduleSpeakers-presentation {
     display: block;
-    padding: var(--s-7) 0 var(--s-8); 
+    padding: var(--s-5) 0 var(--s-9); 
   }
 
   .scheduleSpeakers-presentation p {
@@ -182,30 +201,80 @@
     color: var(--c-black);
     font-family: "input-mono";
     font-weight: 400;
-    font-size: var(--s-3);
-    line-height: var(--s-4);
+    font-size: var(--s-4);
+    line-height: var(--s-5);
     text-align: center;
     margin: auto;
-    padding: var(--s-4);
-    width: var(--s-13);
+    padding: var(--s-4) var(--s-5);
+    width: var(--s-14);
   }
 
-  .scheduleSpeakers-speaker {
-    max-width: var(--s-12);
-    margin: 0 auto;
-  }
-
-  .scheduleSpeakers-speakerPhoto {
+  .scheduleSpeakers-content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10%;
+    max-width: 80%;
+    margin: auto;
     padding-top: 0;
   }
 
   .scheduleSpeakers-speakerPhoto img {
-    width: 100%;
-    height: var(--s-12);
+    max-height: 332px;
+    max-width: 302px;
+  }
+
+  .scheduleSpeakers-contentTalkTitle {
+    padding: 0 var(--s-7) var(--s-5);
+  }
+
+  .scheduleSpeakers-speaker:last-child {
+    margin-bottom: var(--s-9);
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .Schedule-hero {
+    max-height: 950px;
+  }
+
+  .Schedule-heroContentTitle {
+    font-size: var(--s-9);
+  }
+
+  .scheduleSpeakers-content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10%;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .scheduleSpeakers-presentation {
+    padding: var(--s-7) 0 var(--s-8); 
+  }
+
+  .scheduleSpeakers-presentation p {
+    font-size: var(--s-4);
+    line-height: var(--s-5);
+    padding: var(--s-4);
+    width: var(--s-14);
+  }
+
+  .scheduleSpeakers-speakerPhoto img {
+    max-height: 352px;
+    max-width: 317px;
   }
 
   .scheduleSpeakers-speaker:nth-child(3n+1), .scheduleSpeakers-speaker:nth-child(3n+3) {
     padding-top: var(--s-4);
+  }
+
+  .scheduleSpeakers-contentTalkTitle {
+    padding: 0 var(--s-6) var(--s-9);
   }
 
 }
