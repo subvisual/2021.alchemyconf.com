@@ -1,0 +1,7 @@
+.Marquee.marquee
+    = for _ <- 1..2 do
+      div
+        = for _ <- 1..8 do
+            span Talks
+            span 2021
+            

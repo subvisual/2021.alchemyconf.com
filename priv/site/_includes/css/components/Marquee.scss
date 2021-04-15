@@ -7,8 +7,9 @@
     position: absolute;
     display: flex;
     width: min-content;
+    min-width: 100%;
     animation: marquee 50s linear infinite;
-    left: 100%;
+    left: 0%;
 
     span {
       white-space: nowrap;
@@ -16,7 +17,8 @@
   }
 
   > *:nth-child(2) {
-    animation-delay: 25s;
+    left: 100%;
+    animation-delay: 12.5s;
   }
 }
 

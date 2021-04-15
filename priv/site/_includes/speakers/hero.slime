@@ -1,25 +1,24 @@
-main.hero
-  .content
-    .dateTime
-      time datetime="2021-05-28"
-        | May 28, 2021
-      /* p 09:00 - 18:30 */
+.Speakers-hero
+    .Speakers-heroImage
+      img src="public/STILL_01.png"
 
-    h1.title
-      | Speakers
-      img.arrow src="/public/arrow.svg"
+    .Speakers-heroContent
+      .Speakers-heroContentDateTime
+        time datetime="2021-05-28"
+          | May 28 2021
+        p 09:00 - 18:30
 
-    ul.lineup
-      = for speaker <- speakers() do
-        = link @env, to: "##{String.replace(speaker[:name], " ", "")}" do
-          li.item
-            p.name = speaker[:name]
-            p.title = speaker[:tagline]
+      h1.Speakers-heroContentTitle Speakers
 
-      = for _ <- 1..7 do
-        = link @env, to: papercall_url() do
-          li.item
-            p.name THIS COULD BE YOU!
-            p.title CFP OPEN
+      ul.Speakers-list
+        = for speaker <- speakers() do
+          = link @env, to: "##{String.replace(speaker[:name], " ", "")}" do
+            li
+              span.Speakers-listSpeaker = speaker[:name]
+              span.Speakers-listTitle = speaker[:tagline]
 
-  img src="public/STILL_01.png"
+        = for _ <- 1..7 do
+          = link @env, to: papercall_url() do
+            li
+              span.Speakers-listSpeaker THIS COULD BE YOU!
+              span.Speakers-listTitle CFP OPEN

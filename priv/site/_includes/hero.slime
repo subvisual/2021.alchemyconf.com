@@ -27,7 +27,7 @@ header.Banner
     = link @env, "Tickets", to: "/tickets"
 
 
-  = include(@env, "_includes/mobile_nav.slime")
+  = include(@env, "_includes/mobile_nav.slime", alternate: true)
 
 div.Video aria-hidden="true"
   video autoplay=true muted=true loop=true  poster="<%= url_for("videos/hero.jpg") %>"
