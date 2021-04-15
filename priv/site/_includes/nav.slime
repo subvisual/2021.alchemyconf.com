@@ -5,7 +5,5 @@ nav.Nav
   div.entry
     span Alchemy Conf
   div.entry
-    = link @env, "Schedule", to: "/schedule", style: "display: none"
+    = link @env, "Schedule", to: "/schedule"
     = link @env, "Tickets", to: "/tickets"
-
-= include(@env, "_includes/mobile_nav.slime")
