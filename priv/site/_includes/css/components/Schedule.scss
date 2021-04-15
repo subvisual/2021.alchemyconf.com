@@ -76,26 +76,26 @@
   text-transform: uppercase;
 }
 
-.scheduleSpeakers {
+.ScheduleSpeakers {
   background-color: var(--c-gray);
 }
 
-.scheduleSpeakers-presentation {
+.ScheduleSpeakers-presentation {
   display: none;
 } 
 
-.scheduleSpeakers-speakerPhoto {
+.ScheduleSpeakers-speakerPhoto {
   padding-top: var(--s-5);
   padding-bottom: var(--s-5);
   display: grid;
   justify-content: center;
 }
 
-.scheduleSpeakers-speakerPhoto img, .scheduleSpeakers-speakerName {
+.ScheduleSpeakers-speakerPhoto img, .ScheduleSpeakers-speakerName {
   border: 1px solid var(--c-black);
 }
 
-.scheduleSpeakers-speakerName {
+.ScheduleSpeakers-speakerName {
   background-color: var(--c-white);
   text-align: center;
   color: var(--c-black);
@@ -107,7 +107,7 @@
   border-top: 0;
 }
 
-.scheduleSpeakers-contentTalkTitle {
+.ScheduleSpeakers-contentTalkTitle {
   text-align: center;
   color: var(--c-black);
   font-size: var(--s-4);
@@ -158,7 +158,7 @@
     }
   }
 
-  .scheduleSpeakers-content {
+  .ScheduleSpeakers-content {
     display: grid;
     justify-content: space-between;
     grid-template-columns: 1fr 1fr 1fr;
@@ -167,12 +167,12 @@
     margin: auto;
   }
 
-  .scheduleSpeakers-presentation {
+  .ScheduleSpeakers-presentation {
     display: block;
     padding: var(--s-7) 0 var(--s-8); 
   }
 
-  .scheduleSpeakers-presentation p {
+  .ScheduleSpeakers-presentation p {
     background-color: var(--c-white);
     color: var(--c-black);
     font-family: "input-mono";
@@ -185,21 +185,21 @@
     width: var(--s-13);
   }
 
-  .scheduleSpeakers-speaker {
+  .ScheduleSpeakers-speaker {
     max-width: var(--s-12);
     margin: 0 auto;
   }
 
-  .scheduleSpeakers-speakerPhoto {
+  .ScheduleSpeakers-speakerPhoto {
     padding-top: 0;
   }
 
-  .scheduleSpeakers-speakerPhoto img {
+  .ScheduleSpeakers-speakerPhoto img {
     width: 100%;
     height: var(--s-12);
   }
 
-  .scheduleSpeakers-speaker:nth-child(3n+1), .scheduleSpeakers-speaker:nth-child(3n+3) {
+  .ScheduleSpeakers-speaker:nth-child(3n+1), .ScheduleSpeakers-speaker:nth-child(3n+3) {
     padding-top: var(--s-4);
   }
 

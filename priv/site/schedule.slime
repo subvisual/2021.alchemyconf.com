@@ -70,65 +70,58 @@ layout: _layout.slime
           span.Schedule-listTalkTitle Introduction
           span.Schedule-listSpeaker Alchemy Team
 
-  / .Marquee
-  /     = for _ <- 1..2 do
-  /       div
-  /         = for _ <- 1..2 do
-  /           span Talks
-  /           span 2021
+section.ScheduleSpeakers
 
-section.scheduleSpeakers
-
-  .scheduleSpeakers-presentation
+  .ScheduleSpeakers-presentation
     p This year we wanted to enlarge the Mirror experience and with that in mind we decided to give to you four amazing workshops. From design planning to front-end mastering, with experienced mentors who define the web, we are sure that these workshops will empower your craft.
 
-  .scheduleSpeakers-content
-    .scheduleSpeakers-speaker
-      .scheduleSpeakers-speakerPhoto
+  .ScheduleSpeakers-content
+    .ScheduleSpeakers-speaker
+      .ScheduleSpeakers-speakerPhoto
         img alt="Sarah's picture" src="http://placekitten.com/360/320"
-        h3.scheduleSpeakers-speakerName Sarah SOUEIDAN
+        h3.ScheduleSpeakers-speakerName Sarah SOUEIDAN
 
-      .scheduleSpeakers-contentTalkTitle
+      .ScheduleSpeakers-contentTalkTitle
         p THE FRONT END ESPRESSO SHOT
 
-    .scheduleSpeakers-speaker
-      .scheduleSpeakers-speakerPhoto
+    .ScheduleSpeakers-speaker
+      .ScheduleSpeakers-speakerPhoto
         img alt="Sarah's picture" src="http://placekitten.com/360/320"
-        h3.scheduleSpeakers-speakerName Sarah SOUEIDAN
+        h3.ScheduleSpeakers-speakerName Sarah SOUEIDAN
 
-      .scheduleSpeakers-contentTalkTitle
+      .ScheduleSpeakers-contentTalkTitle
         p THE FRONT END ESPRESSO SHOT
 
-    .scheduleSpeakers-speaker
-      .scheduleSpeakers-speakerPhoto
+    .ScheduleSpeakers-speaker
+      .ScheduleSpeakers-speakerPhoto
         img alt="Sarah's picture" src="http://placekitten.com/360/320"
-        h3.scheduleSpeakers-speakerName Sarah SOUEIDAN
+        h3.ScheduleSpeakers-speakerName Sarah SOUEIDAN
 
-      .scheduleSpeakers-contentTalkTitle
+      .ScheduleSpeakers-contentTalkTitle
         p THE FRONT END ESPRESSO SHOT
 
-    .scheduleSpeakers-speaker
-      .scheduleSpeakers-speakerPhoto
+    .ScheduleSpeakers-speaker
+      .ScheduleSpeakers-speakerPhoto
         img alt="Sarah's picture" src="http://placekitten.com/360/320"
-        h3.scheduleSpeakers-speakerName Sarah SOUEIDAN
+        h3.ScheduleSpeakers-speakerName Sarah SOUEIDAN
 
-      .scheduleSpeakers-contentTalkTitle
+      .ScheduleSpeakers-contentTalkTitle
         p THE FRONT END ESPRESSO SHOT
 
-    .scheduleSpeakers-speaker
-      .scheduleSpeakers-speakerPhoto
+    .ScheduleSpeakers-speaker
+      .ScheduleSpeakers-speakerPhoto
         img alt="Sarah's picture" src="http://placekitten.com/360/320"
-        h3.scheduleSpeakers-speakerName Sarah SOUEIDAN
+        h3.ScheduleSpeakers-speakerName Sarah SOUEIDAN
 
-      .scheduleSpeakers-contentTalkTitle
+      .ScheduleSpeakers-contentTalkTitle
         p THE FRONT END ESPRESSO SHOT
 
-    .scheduleSpeakers-speaker
-      .scheduleSpeakers-speakerPhoto
+    .ScheduleSpeakers-speaker
+      .ScheduleSpeakers-speakerPhoto
         img alt="Sarah's picture" src="http://placekitten.com/360/320"
-        h3.scheduleSpeakers-speakerName Sarah SOUEIDAN
+        h3.ScheduleSpeakers-speakerName Sarah SOUEIDAN
 
-      .scheduleSpeakers-contentTalkTitle
+      .ScheduleSpeakers-contentTalkTitle
         p THE FRONT END ESPRESSO SHOT
 
 = include(@env, "_includes/footer.slime")
