@@ -847,12 +847,13 @@ a {
   display: flex;
   width: min-content;
   animation: marquee 50s linear infinite;
-  left: 100%; }
+  left: 0%; }
 
 .Marquee > * span {
   white-space: nowrap; }
 
 .Marquee > *:nth-child(2) {
+  left: 100%;
   animation-delay: 25s; }
 
 @keyframes marquee {
@@ -959,82 +960,116 @@ a {
   display: none;
   width: 50%; }
 
+.Schedule-heroImage img {
+  width: 100%; }
+
 .Schedule-heroContent {
-  padding: var(--s-10) var(--s-4) 0; }
+  padding: var(--s-10) var(--s-4) var(--s-5); }
 
 .Schedule-heroContentDateTime {
+  color: var(--c-black);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   margin-bottom: var(--s-6);
-  color: var(--c-black);
+  font-family: "Chakra Petch";
   font-size: var(--s-4);
   font-weight: 600;
-  line-height: 28px;
+  justify-content: space-between;
   letter-spacing: 0.02em;
+  line-height: var(--s-5);
   text-transform: uppercase; }
 
 .Schedule-heroContentTitle {
-  padding: var(--s-3);
-  padding-right: var(--s-6);
-  margin-bottom: var(--s-6);
   background-color: var(--c-gray);
   color: var(--c-black);
+  font-family: "Chakra Petch";
   font-size: var(--s-7);
+  font-weight: 400;
   line-height: 90%;
-  font-weight: normal;
   letter-spacing: -0.02em;
+  margin-bottom: var(--s-6);
+  padding: var(--s-3) var(--s-6) var(--s-3) var(--s-3);
   text-transform: uppercase; }
 
 .Schedule-list li {
+  border-top: 1px solid var(--c-black);
+  color: var(--c-black);
   display: flex;
   justify-content: space-between;
-  padding: var(--s-2) 0;
-  border-top: 1px solid var(--c-black);
-  color: var(--c-black); }
+  padding: var(--s-2) 0; }
 
 .Schedule-list li:last-child {
   border-bottom: 1px solid var(--c-black); }
 
 .Schedule-listTime {
   font-family: "Chakra Petch";
-  font-weight: 600; }
+  font-size: var(--s-3);
+  font-weight: 600;
+  line-height: var(--s-4); }
 
 .Schedule-listTalkTitle {
   font-family: "input-mono";
-  font-weight: 400; }
+  font-size: var(--s-3);
+  font-weight: 400;
+  line-height: var(--s-4); }
 
 .Schedule-listSpeaker {
   display: none; }
 
 .Schedule .marquee {
   background-color: var(--c-light-gray);
-  color: var(--c-black);
-  font-size: var(--s-8);
-  line-height: var(--s-9);
+  font-family: "Chakra Petch";
+  font-size: var(--s-6);
+  font-weight: 400;
+  height: var(--s-8);
+  line-height: var(--s-8);
   text-transform: uppercase; }
+
+.marquee span {
+  color: var(--c-black);
+  margin-right: var(--s-4); }
+
+.marquee span:nth-child(even) {
+  color: var(--c-white); }
 
 @media (max-width: 650px) {
   .Schedule-heroContent {
     padding: var(--s-5); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .Schedule-hero {
     flex-direction: row-reverse;
-    max-height: 1258px; }
+    max-height: 906px; }
   .Schedule-heroImage {
     display: inherit; }
   .Schedule-heroContent {
-    width: 50%;
-    padding: var(--s-10) var(--s-7) var(--s-8); }
+    padding: var(--s-10) var(--s-7) var(--s-8);
+    width: 50%; }
+  .Schedule-heroContentDateTime {
+    margin-bottom: var(--s-2); }
   .Schedule-heroContentTitle {
-    font-size: var(--s-9); }
+    font-size: var(--s-8);
+    line-height: 90%; }
+  .Schedule-listTime {
+    font-size: var(--s-4); }
+  .Schedule-listTalkTitle {
+    font-size: var(--s-4); }
   .Schedule-listSpeaker {
-    display: inherit; }
+    display: inherit;
+    font-family: "Chakra Petch";
+    font-size: var(--s-4);
+    font-weight: 400;
+    line-height: var(--s-4); }
   .Schedule-list li:last-child {
     border-bottom: 1px solid var(--c-black); }
   .Schedule-list li:nth-child(odd) > span:nth-child(2) {
     color: var(--c-white); } }
+
+@media (min-width: 1200px) {
+  .Schedule-hero {
+    max-height: 950px; }
+  .Schedule-heroContentTitle {
+    font-size: var(--s-9); } }
 
 .ScheduleSpeakers {
   background-color: var(--c-gray); }
@@ -1072,35 +1107,56 @@ a {
   font-weight: 500;
   padding: 0 var(--s-6) var(--s-2); }
 
-@media (min-width: 1200px) {
-  .ScheduleSpeakers-content {
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10%;
-    max-width: 80%;
-    margin: auto; }
+@media (min-width: 1024px) {
   .ScheduleSpeakers-presentation {
     display: block;
-    padding: var(--s-7) 0 var(--s-8); }
+    padding: var(--s-5) 0 var(--s-9); }
   .ScheduleSpeakers-presentation p {
     background-color: var(--c-white);
     color: var(--c-black);
     font-family: "input-mono";
+    font-size: var(--s-4);
     font-weight: 400;
-    font-size: var(--s-3);
-    line-height: var(--s-4);
-    text-align: center;
+    line-height: var(--s-5);
     margin: auto;
-    padding: var(--s-4);
-    width: var(--s-13); }
-  .ScheduleSpeakers-speaker {
-    max-width: var(--s-12);
-    margin: 0 auto; }
-  .ScheduleSpeakers-speakerPhoto {
+    padding: var(--s-4) var(--s-5);
+    text-align: center;
+    width: var(--s-14); }
+  .ScheduleSpeakers-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10%;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 80%;
     padding-top: 0; }
   .ScheduleSpeakers-speakerPhoto img {
-    width: 100%;
-    height: var(--s-12); }
+    max-height: 332px;
+    max-width: 302px; }
+  .ScheduleSpeakers-contentTalkTitle {
+    padding: 0 var(--s-7) var(--s-5); }
+  .ScheduleSpeakers-speaker:last-child {
+    margin-bottom: var(--s-9); } }
+
+@media (min-width: 1200px) {
+  .ScheduleSpeakers-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10%;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1200px; }
+  .ScheduleSpeakers-presentation {
+    padding: var(--s-7) 0 var(--s-8); }
+  .ScheduleSpeakers-presentation p {
+    font-size: var(--s-4);
+    line-height: var(--s-5);
+    padding: var(--s-4);
+    width: var(--s-14); }
+  .ScheduleSpeakers-speakerPhoto img {
+    max-height: 352px;
+    max-width: 317px; }
   .ScheduleSpeakers-speaker:nth-child(3n+1), .ScheduleSpeakers-speaker:nth-child(3n+3) {
-    padding-top: var(--s-4); } }
+    padding-top: var(--s-4); }
+  .ScheduleSpeakers-contentTalkTitle {
+    padding: 0 var(--s-6) var(--s-9); } }
