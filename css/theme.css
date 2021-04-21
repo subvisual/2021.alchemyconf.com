@@ -706,6 +706,12 @@ a {
   text-transform: none;
   font-family: input-mono; }
 
+.Footer .sponsor {
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-family: input-mono; }
+
 .Footer .title {
   font-size: var(--s-5);
   line-height: var(--s-5);
@@ -796,6 +802,10 @@ a {
 .BigLink.black {
   color: var(--c-white);
   background-color: var(--c-black); }
+
+.BigLink.transparent {
+  background-color: transparent;
+  border: 1px solid var(--c-black); }
 
 .Nav {
   position: absolute;
