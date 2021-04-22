@@ -2,102 +2,100 @@
   background-color: var(--c-green);
   color: var(--c-black);
   text-transform: uppercase;
+}
 
-  &.Footer--alt {
-    background-color: var(--c-purple);
-    color: var(--c-white);
+.Footer--alt {
+  background-color: var(--c-purple);
+  color: var(--c-white);
+}
+
+.Footer-contentMobile {
+  padding: var(--s-5) var(--s-4);
+}
+
+.Footer-grid {
+  display: grid;
+  grid-column-gap: var(--s-4);
+  grid-row-gap: var(--s-4);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Footer-footer {
+  display: flex;
+  font-size: var(--s-3);
+  font-family: "Chakra Petch";
+  font-weight: 400;
+  justify-content: space-between;
+  line-height: var(--s-4);
+  margin-top: var(--s-6);
+  text-transform: uppercase;
+}
+
+.Footer-followUs {
+  font-weight: 600;
+  text-decoration: underline;
+  text-transform: none;
+}
+
+@media (max-width: 650px) {
+  .Footer-content {
+    display: none;
+  }
+}
+
+@media (min-width: 650px) {
+  .Footer-contentMobile {
+    display: none;
   }
 
-  .followUs {
-    font-weight: bold;
-    text-decoration: underline;
-    text-transform: none;
-    font-family: input-mono;
+  .Footer-content {
+    font-family: "input-mono";
+    font-size: var(--s-3);
   }
 
-  .sponsor {
-    font-weight: bold;
-    text-decoration: underline;
-    text-transform: uppercase;
-    font-family: input-mono;
+  .Footer-grid {
+    align-items: flex-start;
+    display: grid;
+    grid-column-gap: var(--s-3);
+    grid-row-gap: var(--s-4);
+    grid-template-columns: repeat(4, minmax(min-content, var(--s-11)));
+    justify-content: space-between;
+    line-height: var(--s-4);
+    margin: 0 auto;
+    max-width: var(--s-16);
+    padding: var(--s-8) var(--s-5);
   }
 
-  .title {
+  .Footer-title {
+    font-family: "Chakra Petch";
     font-size: var(--s-5);
-    line-height: var(--s-5);
     font-weight: bold;
+    line-height: var(--s-5);
     text-align: left;
   }
 
-  .tagLine {
+  .Footer-tagLine {
     font-weight: bold;
   }
 
-  .content {
-    padding: var(--s-8) var(--s-5);
-    max-width: var(--s-16);
-    margin: 0 auto;
-    font-size: var(--s-3);
-    line-height: var(--s-4);
-    display: grid;
-    grid-template-columns: repeat(4, minmax(min-content, var(--s-11)));
-    justify-content: space-between;
-    align-items: flex-start;
-    grid-column-gap: var(--s-3);
-    grid-row-gap: var(--s-4);
-
-    nav ul {
-      margin-top: var(--s-4);
-      display: inline-grid;
-      grid-template-columns: repeat(3, min-content);
-      grid-column-gap: var(--s-4);
-    }
-
-    @media (max-width: 650px) {
-      display: none;
-    }
+  .Footer-sponsor {
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
   }
 
-  .contentMobile {
-    padding: var(--s-5) var(--s-4);
-
-    .grid {
-      display: grid;
-      grid-row-gap: var(--s-4);
-      grid-column-gap: var(--s-4);
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .social {
-      margin-top: var(--s-7);
-      display: grid;
-      grid-template-columns: repeat(3, min-content);
-      grid-column-gap: var(--s-4);
-      justify-content: flex-start;
-    }
-
-    .footer {
-      text-transform: uppercase;
-      font-weight: bold;
-      display: flex;
-      justify-content: space-between;
-      font-size: var(--s-3);
-      line-height: 1;
-      margin-top: var(--s-4);
-    }
-
-    @media (min-width: 650px) {
-      display: none;
-    }
+  .Footer-copyright {
+    font-family: "Chakra Petch";
   }
 
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
+  .Footer-develepment a, .Footer-email {
+    text-decoration: underline;
+  }
 
-    li img {
-      height: var(--s-4);
-    }
+}
+
+@media (min-width: 1200px) {
+  .Footer-grid {
+    padding: var(--s-8) var(--s-5) var(--s-10);
   }
 }
