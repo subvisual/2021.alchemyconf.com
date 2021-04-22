@@ -2,10 +2,12 @@
 layout: _layout.slime
 ---
 
+- require Integer
+
 .Speakers
   = include(@env, "_includes/speakers/hero.slime")
 .Speakers
   = for speaker <- speakers() do
     = include(@env, "_includes/speakers/details.slime", speaker: speaker)
 
-= include(@env, "_includes/footer.slime")
+= include(@env, "_includes/footer.slime", alt: speakers() |> length() |> Integer.is_even())
