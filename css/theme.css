@@ -357,7 +357,8 @@ a {
 
 .Info .marquee span {
   margin: 0 var(--s-4);
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: var(--c-white); }
 
 .Speakers {
   background-color: var(--c-green); }
