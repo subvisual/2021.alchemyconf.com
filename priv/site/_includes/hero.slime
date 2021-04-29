@@ -32,4 +32,4 @@ header.Banner
 div.Video aria-hidden="true"
   video autoplay=true muted=true loop=true  poster="<%= url_for("videos/hero.jpg") %>"
     source src="<%= url_for("videos/hero.webm") %>" type="video/webm"
-  = responsive_image "videos/hero.jpg"
+  = responsive_image "videos/home-page-hero-mobile.jpg"
