@@ -1,0 +1,19 @@
+section.Speaker-card id="#{String.replace(@speaker[:name], " ", "")}"
+  .Speaker-cardPhoto
+    img alt="#{@speaker[:name]}'s picture" src="#{@speaker[:picture]}"
+    h2.Speaker-cardPhotoName #{@speaker[:name]}
+
+  .Speaker-cardContent
+    p.Speaker-cardContentTitle = @speaker[:tagline]
+
+    h2.Speaker-cardContentName = @speaker[:name]
+
+    p.Speaker-cardContentDescription = @speaker[:description]
+
+    .Speaker-cardContentSocial
+      = if @speaker[:linkedin_handle] do
+        p.cardSocial-linkedIn 
+          = link @env, "LinkedIn", to: "https://www.linkedin.com/in/#{@speaker[:linkedin_handle]}" 
+      = if @speaker[:twitter_handle] do
+        p.cardSocial-twitter
+          = link @env, "Twitter", to: "https://twitter.com/#{@speaker[:twitter_handle]}"        

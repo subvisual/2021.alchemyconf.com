@@ -33,17 +33,17 @@
   line-height: var(--s-5);
   text-transform: uppercase;
 }
-
+ 
 .Schedule-heroContentTitle {
   background-color: var(--c-gray);
-  color: var(--c-black);
+  color: var(--c-black); 
   font-family: "Chakra Petch";
   font-size: var(--s-7);
   font-weight: 400;
   line-height: 90%;
   letter-spacing: -0.02em;
-  margin-bottom: var(--s-6);
-  padding: var(--s-3) var(--s-6) var(--s-3) var(--s-3);
+  margin-bottom: var(--s-6); 
+  padding: var(--s-3) var(--s-6) var(--s-3) var(--s-3);  
   text-transform: uppercase;
 }
 
@@ -52,7 +52,7 @@
   color: var(--c-black);
   display: flex;
   justify-content: space-between;
-  padding: var(--s-2) 0;
+  padding: var(--s-2) 0; 
 }
 
 .Schedule-list li:last-child {
@@ -62,7 +62,7 @@
 .Schedule-listTime {
   font-family: "Chakra Petch";
   font-size: var(--s-3);
-  font-weight: 600;
+  font-weight: 600; 
   line-height: var(--s-4);
 }
 
@@ -84,7 +84,7 @@
   font-weight: 400;
   height: var(--s-8);
   line-height: var(--s-8);
-  text-transform: uppercase;
+  text-transform: uppercase; 
 }
 
 .marquee span {

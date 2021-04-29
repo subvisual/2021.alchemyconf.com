@@ -5,48 +5,54 @@ section.ScheduleSpeakers
 
   .ScheduleSpeakers-content
     .ScheduleSpeakers-speaker
-      .ScheduleSpeakers-speakerPhoto
-        img alt="Sarah's picture" src="http://placekitten.com/360/320"
+      .ScheduleSpeakers-speakerCard
+        .ScheduleSpeakers-speakerPhoto
+          img alt="Sarah's picture" src="http://placekitten.com/320/360"
         h3.ScheduleSpeakers-speakerName Alchemy Team
 
       .ScheduleSpeakers-contentTalkTitle
         p THE FRONT END ESPRESSO SHOT
 
     .ScheduleSpeakers-speaker
-      .ScheduleSpeakers-speakerPhoto
-        img alt="Sarah's picture" src="http://placekitten.com/360/320"
+      .ScheduleSpeakers-speakerCard
+        .ScheduleSpeakers-speakerPhoto
+          img alt="Sarah's picture" src="http://placekitten.com/320/360"
         h3.ScheduleSpeakers-speakerName Alchemy Team
 
       .ScheduleSpeakers-contentTalkTitle
         p THE FRONT END ESPRESSO SHOT
 
     .ScheduleSpeakers-speaker
-      .ScheduleSpeakers-speakerPhoto
-        img alt="Sarah's picture" src="http://placekitten.com/360/320"
+      .ScheduleSpeakers-speakerCard
+        .ScheduleSpeakers-speakerPhoto
+          img alt="Sarah's picture" src="http://placekitten.com/320/360"
         h3.ScheduleSpeakers-speakerName Alchemy Team
 
       .ScheduleSpeakers-contentTalkTitle
         p THE FRONT END ESPRESSO SHOT
 
     .ScheduleSpeakers-speaker
-      .ScheduleSpeakers-speakerPhoto
-        img alt="Sarah's picture" src="http://placekitten.com/360/320"
+      .ScheduleSpeakers-speakerCard
+        .ScheduleSpeakers-speakerPhoto
+          img alt="Sarah's picture" src="http://placekitten.com/320/360"
         h3.ScheduleSpeakers-speakerName Alchemy Team
 
       .ScheduleSpeakers-contentTalkTitle
         p THE FRONT END ESPRESSO SHOT
 
     .ScheduleSpeakers-speaker
-      .ScheduleSpeakers-speakerPhoto
-        img alt="Sarah's picture" src="http://placekitten.com/360/320"
+      .ScheduleSpeakers-speakerCard
+        .ScheduleSpeakers-speakerPhoto
+          img alt="Sarah's picture" src="http://placekitten.com/320/360"
         h3.ScheduleSpeakers-speakerName Alchemy Team
 
       .ScheduleSpeakers-contentTalkTitle
         p THE FRONT END ESPRESSO SHOT
 
     .ScheduleSpeakers-speaker
-      .ScheduleSpeakers-speakerPhoto
-        img alt="Sarah's picture" src="http://placekitten.com/360/320"
+      .ScheduleSpeakers-speakerCard
+        .ScheduleSpeakers-speakerPhoto
+          img alt="Sarah's picture" src="http://placekitten.com/320/360"
         h3.ScheduleSpeakers-speakerName Alchemy Team
 
       .ScheduleSpeakers-contentTalkTitle

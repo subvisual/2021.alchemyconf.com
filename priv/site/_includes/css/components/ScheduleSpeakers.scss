@@ -6,14 +6,33 @@
   display: none;
 }
 
-.ScheduleSpeakers-speakerPhoto {
+.ScheduleSpeakers-content {
+  margin: auto;
+  width: 90%;
+}
+
+.ScheduleSpeakers-speakerCard {
   padding-top: var(--s-5);
   padding-bottom: var(--s-5);
   display: grid;
   justify-content: center;
 }
 
-.ScheduleSpeakers-speakerPhoto img, .ScheduleSpeakers-speakerName {
+.ScheduleSpeakers-speakerPhoto {
+  overflow: hidden;
+  text-align: center;
+}
+
+.ScheduleSpeakers-speakerPhoto img {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+}
+
+.ScheduleSpeakers-speakerPhoto, .ScheduleSpeakers-speakerName {
   border: 1px solid var(--c-black);
 }
 
@@ -41,10 +60,10 @@
 }
 
 @media (min-width: 1024px) {
-
+  
   .ScheduleSpeakers-presentation {
     display: block;
-    padding: var(--s-5) 0 var(--s-9);
+    padding: var(--s-5) 0 var(--s-9); 
   }
 
   .ScheduleSpeakers-presentation p {
@@ -52,11 +71,11 @@
     color: var(--c-black);
     font-family: "input-mono";
     font-size: var(--s-4);
-    font-weight: 400;
+    font-weight: 400;  
     line-height: var(--s-5);
     margin: auto;
     padding: var(--s-4) var(--s-5);
-    text-align: center;
+    text-align: center; 
     width: var(--s-14);
   }
 
@@ -64,15 +83,10 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 10%;
-    justify-content: space-between;
+    justify-content: space-between; 
     margin: auto;
     max-width: 80%;
     padding-top: 0;
-  }
-
-  .ScheduleSpeakers-speakerPhoto img {
-    max-height: 332px;
-    max-width: 302px;
   }
 
   .ScheduleSpeakers-contentTalkTitle {
@@ -86,17 +100,8 @@
 
 @media (min-width: 1200px) {
 
-  .ScheduleSpeakers-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10%;
-    justify-content: space-between;
-    margin: auto;
-    max-width: 1200px;
-  }
-
   .ScheduleSpeakers-presentation {
-    padding: var(--s-7) 0 var(--s-8);
+    padding: var(--s-7) 0 var(--s-8); 
   }
 
   .ScheduleSpeakers-presentation p {
@@ -106,9 +111,13 @@
     width: var(--s-14);
   }
 
-  .ScheduleSpeakers-speakerPhoto img {
-    max-height: 352px;
-    max-width: 317px;
+  .ScheduleSpeakers-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10%;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1200px;
   }
 
   .ScheduleSpeakers-speaker:nth-child(3n+1), .ScheduleSpeakers-speaker:nth-child(3n+3) {
@@ -118,5 +127,5 @@
   .ScheduleSpeakers-contentTalkTitle {
     padding: 0 var(--s-6) var(--s-9);
   }
-
+  
 }
