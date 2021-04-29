@@ -26,4 +26,13 @@
     background-color: transparent;
     border: 1px solid var(--c-black);
   }
+
+  &.title {
+    width: auto;
+  }  
+
+  &.white {
+    background-color: var(--c-white);
+  }
+
 }
