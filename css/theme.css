@@ -106,6 +106,12 @@ a {
 .Banner > .nav > *:nth-child(4) {
   background-color: var(--c-red); }
 
+.Banner > .nav > a {
+  font-family: "input-mono";
+  font-size: var(--s-4);
+  line-height: var(--s-5);
+  padding: var(--s-1) var(--s-3); }
+
 @media (max-width: 650px) {
   .Banner > .nav {
     display: none; } }
@@ -147,8 +153,8 @@ a {
 @media (min-width: 550px) {
   .Info > .rectangles {
     height: 530px;
-    margin-top: var(--s-10);
-    margin-bottom: var(--s-10); }
+    margin-top: var(--s-9);
+    margin-bottom: var(--s-8); }
   .Info > .rectangles .mobile {
     display: none; }
   .Info > .rectangles .desktop {
@@ -230,10 +236,11 @@ a {
 
 .Info > .details {
   padding: 0 var(--s-4);
-  max-width: var(--s-14);
+  max-width: var(--s-15);
   margin: var(--s-4) auto 0;
   font-size: var(--s-3);
-  line-height: var(--s-4); }
+  line-height: var(--s-4);
+  font-family: "input-mono"; }
 
 @media (min-width: 650px) {
   .Info > .details {
@@ -287,11 +294,12 @@ a {
   position: relative;
   display: flex;
   align-items: center;
-  font-size: var(--s-4);
+  font-size: var(--s-5);
   line-height: var(--s-5); }
 
 .Info .points .description {
   margin-top: var(--s-4);
+  font-family: "input-mono";
   font-size: var(--s-3);
   line-height: var(--s-4); }
 
@@ -320,14 +328,18 @@ a {
   justify-content: center;
   margin: var(--s-9) 0 0;
   padding: 0 var(--s-8);
-  text-align: center; }
+  text-align: center;
+  font-size: var(--s-4);
+  line-height: var(--s-4);
+  font-family: "Chakra Petch";
+  font-weight: 500; }
 
 .Info > .cta > * {
   display: inline-block;
   background-color: var(--c-green);
   color: var(--c-black);
   border-radius: 4px;
-  padding: 0 var(--s-2);
+  padding: var(--s-4);
   text-transform: uppercase; }
 
 .Info .underline {
