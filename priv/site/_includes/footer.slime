@@ -1,63 +1,38 @@
 footer class="Footer #{if @env[:alt], do: "Footer--alt"}"
-  .contentMobile
-    .grid
+  .Footer-contentMobile
+    .Footer-grid
       = link @env, "schedule", to: "/schedule", class: "BigLink"
       = link @env, "tickets", to: "/tickets", class: "BigLink red"
       = link @env, "speakers", to: "/speakers", class: "BigLink black"
       = link @env, "sponsor", to: "/public/Alchemy_Conf-Prospectus.pdf", class: "BigLink transparent", target: "_blank"
-    nav
-      ul.social
-        /* li = responsive_image "_includes/icons/INSTAGRAM.png", alt: "Instagram" */
-        li
-          = link @env, to: twitter_url() do
-            /* = responsive_image "_includes/icons/TWITTER.png", class: "sponsor-image", alt: "Twitter" */
-        /* li = responsive_image "_includes/icons/LINKEDIN.png", alt: "LinkedIn" */
-    footer.footer
-      p Alchemy Conf
-      time datetime="2021-05-28"
-        | May 28 2021
+    .Footer-footer
+      p.Footer-copyright &copy; 2021 ALCHEMY CONF
+      div.Footer-followUs
+        | #{link @env, "Follow Us", to: twitter_url()}
 
-  .content
-    div
-      p.title Alchemy <br /> Conf 2021
-    div
-      p.tagLine Brewing magic with Elixir. Virtually.
-    div
-      div
-        div Powered by #{link @env, "Subvisual", to: "https://subvisual.com/"}
-        div Designed by #{link @env, "Onda", to: "https://ondastudio.co/"}
-    div
-      p.followUs Follow Us
-      p
-        nav
-          ul
-            /* li = responsive_image "_includes/icons/INSTAGRAM.png", alt: "Instagram" */
-            li
-              = link @env, to: twitter_url() do
-                span.visually-hidden Twitter
-                /* = if @env[:alt] do */
-                  /* = include(@env, "_includes/icons/twitter-alt.svg", alt: "Twitter") */
-                /* - else */
-                  /* = include(@env, "_includes/icons/twitter.svg", alt: "Twitter") */
-
-            /* li = responsive_image "_includes/icons/LINKEDIN.png", alt: "LinkedIn" */
-    div
-      p
+  .Footer-content
+    .Footer-grid
+      p.Footer-title Alchemy <br /> Conf 2021
+      p.Footer-tagLine Brewing magic with Elixir. Virtually.
+      div.Footer-develepment
+          div Powered by #{link @env, "Subvisual", to: "https://subvisual.com/"}
+          div Designed by #{link @env, "Onda", to: "https://ondastudio.co/"}
+      div.Footer-followUs #{link @env, "Follow Us", to: twitter_url()}
+      p.Footer-copyright
         | &copy; 2021 ALCHEMY CONF
         br
         | All Rights reserved
-    div
-      = link @env, to: "mailto:#{email()}" do
-        p Get in touch
-        p = email()
-    div
+      div
+        = link @env, to: "mailto:#{email()}" do
+          p.Footer-email Get in touch
+          p = email()
       p
-      | On a screen near you
-      br
-      | Anywhere in the world.
-    div
-      = link @env, to: "/public/Alchemy_Conf-Prospectus.pdf", target: "_blank" do
-        p.sponsor
-          | Become a sponsor
-          br
-          | of alchemy conf
+        | On a screen near you
+        br
+        | Anywhere in the world.
+      div.Footer-sponsor
+        = link @env, to: "/public/Alchemy_Conf-Prospectus.pdf", target: "_blank" do
+          p
+            | Become a sponsor
+            br
+            | of alchemy conf
