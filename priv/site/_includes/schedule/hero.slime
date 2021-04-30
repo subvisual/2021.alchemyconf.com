@@ -1,6 +1,8 @@
 .Schedule-hero
-    .Schedule-heroImage
-      img src="public/schedule_hero_image.jpg"
+    .Schedule-heroVideo
+      video autoplay=true muted=true loop=true poster="<%= url_for("videos/schedule_hero.jpg") %>"
+        source src="<%= url_for("videos/schedule_hero.webm") %>" type="video/webm"
+        source src="<%= url_for("videos/schedule_hero.mp4") %>" type="video/mp4"
 
     .Schedule-heroContent
       .Schedule-heroContentDateTime

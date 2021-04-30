@@ -7,13 +7,9 @@
   flex-direction: column;
 }
 
-.Schedule-heroImage {
+.Schedule-heroVideo {
   display: none;
   width: 50%;
-}
-
-.Schedule-heroImage img {
-  width: 100%;
 }
 
 .Schedule-heroContent {
@@ -109,7 +105,7 @@
     max-height: 906px;
   }
 
-  .Schedule-heroImage {
+  .Schedule-heroVideo {
     display: inherit;
   }
 
