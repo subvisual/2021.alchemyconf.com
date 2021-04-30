@@ -1,5 +1,5 @@
 header.Banner
-  p.info
+  p.info#info
     span.visually-hidden Virtual Elixir Conference 28-05-2021
     = for keyword <- ["Virtual", "Elixir", "Conference"] do
       span aria-hidden="true" #{keyword}
@@ -10,10 +10,10 @@ header.Banner
       </svg>
     time datetime="2021-05-28" aria-hidden="true" 28.05.2021
 
-  nav.nav
+  nav.nav#Nav
     = link @env, "Home", to: "/"
-    = link @env, "Info", to: "/#info"
-    .Marquee aria-hidden="true"
+    = link @env, "Schedule", to: "/schedule"
+    .Marquee#Marquee aria-hidden="true"
       = for _ <- 1..2 do
         div
           = for _ <- 1..2 do
@@ -21,11 +21,8 @@ header.Banner
             span This is a carbon-neutral event
             span 1 attendee = 1 tree
             span 28.05.2021 on a screen near you
-
-    /* a Schedule */
     = link @env, "Speakers", to: "/speakers"
     = link @env, "Tickets", to: "/tickets"
-
 
   = include(@env, "_includes/mobile_nav.slime", alternate: true)
 
@@ -33,3 +30,25 @@ div.Video aria-hidden="true"
   video autoplay=true muted=true loop=true  poster="<%= url_for("videos/hero.jpg") %>"
     source src="<%= url_for("videos/hero.webm") %>" type="video/webm"
   = responsive_image "videos/home-page-hero-mobile.jpg"
+
+javascript:
+
+  const nav = document.getElementById("Nav");
+  const navPosition = nav.offsetTop;
+  const info = document.getElementById("info");
+  const infoHeight = info.offsetHeight;
+  const marquee = document.getElementById("Marquee");
+
+  window.onscroll = function() {
+    if (window.scrollY >= infoHeight) {
+      nav.classList.add("is-fixed");
+    } else {
+      nav.classList.remove("is-fixed");
+    }
+    
+    if (window.scrollY > navPosition) {
+      marquee.classList.add("is-hidden");
+    } else {
+      marquee.classList.remove("is-hidden");
+    }
+  }
