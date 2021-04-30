@@ -3,9 +3,9 @@ nav.Nav
     = link @env, "Home", to: "/"
     = link @env, "Info", to: "/#info"
   div.entry
-    span Alchemy Conf
+    = link @env, "Alchemy Conf", to: "/"
   div.entry
-    = link @env, "Schedule", to: "/schedule", style: "display: none"
-    = link @env, "Tickets", to: "/tickets"
+    = link @env, "Schedule", to: "/schedule"
+    = link @env, "Speakers", to: "/speakers"
 
 = include(@env, "_includes/mobile_nav.slime")

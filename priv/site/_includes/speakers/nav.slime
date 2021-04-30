@@ -3,7 +3,7 @@ nav.Nav
     = link @env, "Home", to: "/"
     = link @env, "Info", to: "/#info"
   div.entry
-    span Alchemy Conf
+    = link @env, "Alchemy Conf", to: "/"
   div.entry
     = link @env, "Schedule", to: "/schedule"
     = link @env, "Tickets", to: "/tickets"
