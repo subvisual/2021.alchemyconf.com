@@ -7,13 +7,9 @@
   flex-direction: column;
 }
 
-.Speakers-heroImage {
+.Speakers-heroVideo {
   display: none;
   width: 50%;
-}
-
-.Speakers-heroImage img {
-  width: 100%;
 }
 
 .Speakers-heroContent {
@@ -202,7 +198,7 @@
     max-height: 745px;
   }
 
-  .Speakers-heroImage {
+  .Speakers-heroVideo {
     display: inherit;
   }
 
