@@ -367,12 +367,9 @@ a {
   display: flex;
   flex-direction: column; }
 
-.Speakers-heroImage {
+.Speakers-heroVideo {
   display: none;
   width: 50%; }
-
-.Speakers-heroImage img {
-  width: 100%; }
 
 .Speakers-heroContent {
   padding: var(--s-10) var(--s-4) var(--s-5); }
@@ -532,7 +529,7 @@ a {
   .Speakers-hero {
     flex-direction: row-reverse;
     max-height: 745px; }
-  .Speakers-heroImage {
+  .Speakers-heroVideo {
     display: inherit; }
   .Speakers-heroContent {
     padding: var(--s-10) var(--s-7) var(--s-8);
