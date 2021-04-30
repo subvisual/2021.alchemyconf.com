@@ -815,6 +815,12 @@ a {
   background-color: transparent;
   border: 1px solid var(--c-black); }
 
+.BigLink.title {
+  width: auto; }
+
+.BigLink.white {
+  background-color: var(--c-white); }
+
 .Nav {
   position: absolute;
   top: 0;
@@ -956,7 +962,8 @@ a {
   text-transform: uppercase;
   font-weight: bold;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  color: var(--c-black); }
 
 .MobileNav .modal.is-open {
   display: block; }
