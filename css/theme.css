@@ -821,6 +821,10 @@ a {
 .BigLink.white {
   background-color: var(--c-white); }
 
+.Footer--alt .BigLink.transparent {
+  color: var(--c-white);
+  border-color: var(--c-white); }
+
 .Nav {
   position: absolute;
   top: 0;
