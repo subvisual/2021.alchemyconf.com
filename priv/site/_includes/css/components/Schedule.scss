@@ -109,6 +109,12 @@
     display: inherit;
   }
 
+  .Schedule-heroVideo video {
+    width: 100%;
+    object-position: right;
+    object-fit: cover;
+  }
+
   .Schedule-heroContent {
     padding: var(--s-10) var(--s-7) var(--s-8);
     width: 50%;
@@ -154,7 +160,7 @@
 @media (min-width: 1200px) {
 
   .Schedule-hero {
-    max-height: 950px;
+    max-height: 935px;
   }
 
   .Schedule-heroContentTitle {

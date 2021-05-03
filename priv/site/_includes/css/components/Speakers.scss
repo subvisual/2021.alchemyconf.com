@@ -202,6 +202,12 @@
     display: inherit;
   }
 
+  .Speakers-heroVideo video {
+    width: 100%;
+    object-position: right;
+    object-fit: cover;
+  }
+
   .Speakers-heroContent {
     padding: var(--s-10) var(--s-7) var(--s-8);
     width: 50%;
@@ -272,7 +278,7 @@
 @media (min-width: 1200px) {
 
   .Speakers-hero {
-    max-height: 900px;
+    max-height: 935px;
   }
 
   .Speakers-heroContentTitle {
@@ -296,4 +302,14 @@
     margin-bottom: var(--s-8);
   }
 
+}
+
+@media (min-width: 1700px) {
+
+  .Speaker-cardPhoto img {
+    width: 100%;
+    object-position: right;
+    object-fit: cover;
+  }
+  
 }
