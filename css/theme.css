@@ -531,6 +531,10 @@ a {
     max-height: 745px; }
   .Speakers-heroVideo {
     display: inherit; }
+  .Speakers-heroVideo video {
+    width: 100%;
+    object-position: right;
+    object-fit: cover; }
   .Speakers-heroContent {
     padding: var(--s-10) var(--s-7) var(--s-8);
     width: 50%; }
@@ -575,7 +579,7 @@ a {
 
 @media (min-width: 1200px) {
   .Speakers-hero {
-    max-height: 900px; }
+    max-height: 935px; }
   .Speakers-heroContentTitle {
     font-size: var(--s-9); }
   .Speaker-card {
@@ -587,6 +591,12 @@ a {
     margin-bottom: var(--s-8); }
   .Speaker-cardContentDescription {
     margin-bottom: var(--s-8); } }
+
+@media (min-width: 1700px) {
+  .Speaker-cardPhoto img {
+    width: 100%;
+    object-position: right;
+    object-fit: cover; } }
 
 .Tickets {
   background-color: var(--c-gray); }
@@ -1069,6 +1079,10 @@ a {
     max-height: 906px; }
   .Schedule-heroVideo {
     display: inherit; }
+  .Schedule-heroVideo video {
+    width: 100%;
+    object-position: right;
+    object-fit: cover; }
   .Schedule-heroContent {
     padding: var(--s-10) var(--s-7) var(--s-8);
     width: 50%; }
@@ -1094,7 +1108,7 @@ a {
 
 @media (min-width: 1200px) {
   .Schedule-hero {
-    max-height: 950px; }
+    max-height: 935px; }
   .Schedule-heroContentTitle {
     font-size: var(--s-9); } }
 
