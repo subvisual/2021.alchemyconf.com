@@ -1,11 +1,11 @@
 nav.Nav
   div.entry
-    = link @env, "Home", to: "/"
-    = link @env, "Info", to: "/#info"
+    = link @env, "Home", to: "/", class: "homeButtonLink"
+    = link @env, "Info", to: "/#info", class: "infoButtonLink"
   div.entry
-    = link @env, "Alchemy Conf", to: "/"
+    = link @env, "Alchemy Conf", to: "/", class: "alchemyButtonLink"
   div.entry
-    = link @env, "Speakers", to: "/speakers"
-    = link @env, "Tickets", to: "/tickets"
+    = link @env, "Speakers", to: "/speakers", class: "speakersButtonLink"
+    = link @env, "Tickets", to: "/tickets", class: "ticketsButtonLink"
 
 = include(@env, "_includes/mobile_nav.slime")
