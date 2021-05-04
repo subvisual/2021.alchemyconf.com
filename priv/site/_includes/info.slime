@@ -22,7 +22,7 @@
   .carousel aria-hidden="true"
     .slider
       = for source <- ["schedule", "info", "tickets" ] do
-        div.sliderContent
+        div.sliderContent 
           video.lozad autoplay=true muted=true loop=true data-poster=url_for("videos/#{source}.jpg")
             source data-src=url_for("videos/#{source}.webm") type="video/webm"
             source data-src=url_for("videos/#{source}.mp4") type="video/mp4"
@@ -88,6 +88,42 @@ javascript:
   const content = document.getElementsByClassName("sliderContent");
   const parent = content[0].parentNode;
 
-  setInterval(function(){
-    parent.appendChild(content[0]);
-  }, 5000)
+  content[0].classList.add("left");
+  content[2].classList.add("right");
+
+  console.log(content);
+
+  const updateClassNames = (element) => {
+    if (element.classList.contains("left")) {
+      element.classList.remove("left");
+      element.classList.add("right");
+    } else if (element.classList.contains("right")) {
+      element.classList.remove("right");
+    } else {
+      element.classList.add("left");
+    }
+  }
+
+  setInterval(function() {
+    // Array.from(content).forEach(updateClassNames);
+  }, 1000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
