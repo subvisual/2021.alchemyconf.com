@@ -65,6 +65,7 @@
     }
 
     @media (max-width: 550px) {
+      display: none;
       flex-direction: column;
       width: 350px;
       margin-top: var(--s-7);
@@ -286,3 +287,42 @@
     }
   }
 }
+
+.carousel {
+  width: 160%;
+  height: 500px;
+  margin-left: -30%;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  display: inline-grid;
+  grid-template-columns: 27% 40% 27%;
+  grid-column-gap: 3%;
+}
+
+.slider video {
+  display: none
+}
+
+.slider .sliderContent {
+  display: flex;
+  align-items: center;
+}
+
+.slider .sliderContent img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
