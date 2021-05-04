@@ -26,7 +26,6 @@
     }
 
     > * {
-      background-color: white;
       border-radius: 4px;
       padding: 0 var(--s-2);
       text-transform: uppercase;
@@ -35,17 +34,11 @@
     &:first-child {
       > * {
         &:nth-child(2) {
-          background-color: var(--c-black);
           color: var(--c-white);
         }
       }
     }
 
-    &:last-child {
-      > *:first-child {
-        background-color: var(--c-green);
-      }
-    }
   }
 
   @media (max-width: 1200px) {
