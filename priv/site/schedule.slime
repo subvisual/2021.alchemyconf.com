@@ -3,7 +3,7 @@ layout: _layout.slime
 ---
 
 .Schedule
-  = include(@env, "_includes/schedule/nav.slime")
+  = include(@env, "_includes/nav.slime")
   = include(@env, "_includes/schedule/hero.slime") 
   = include(@env, "_includes/schedule/marquee.slime")
 

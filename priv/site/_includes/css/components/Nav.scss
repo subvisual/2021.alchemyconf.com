@@ -15,9 +15,14 @@
   padding-bottom: var(--s-5);
 
   border-bottom: 1px solid var(--c-black);
+
+  @media (max-width: 850px) {
+    font-size: var(--s-3);
+  }
   
   .entry {
     display: flex;
+    width: calc(100%/3);
 
     > a {
       &:not(:last-child) {
@@ -30,15 +35,6 @@
       padding: 0 var(--s-2);
       text-transform: uppercase;
     }
-
-    &:first-child {
-      > * {
-        &:nth-child(2) {
-          color: var(--c-white);
-        }
-      }
-    }
-
   }
 
   @media (max-width: 1200px) {
@@ -48,4 +44,41 @@
   @media (max-width: 650px) {
     display: none;
   }
+}
+
+.entry.leftButtons {
+  justify-content: flex-start;
+}
+
+.entry.centerButton {
+  justify-content: center;
+}
+
+.entry.rightButtons {
+  justify-content: flex-end;
+}
+
+.homeButtonLink {
+  background-color: var(--c-white);
+}
+
+.alchemyButtonLink {
+  background-color: var(--c-white);
+}
+
+.ticketsButtonLink {
+  background-color: var(--c-gray);
+}
+
+.speakersButtonLink {
+  background-color: var(--c-green);
+}
+
+.scheduleButtonLink {
+  background-color: var(--c-red);
+}
+
+.Schedule .scheduleButtonLink, .Speakers .speakersButtonLink, .Tickets .ticketsButtonLink {
+  background-color: var(--c-black);
+  color: var(--c-white);
 }
