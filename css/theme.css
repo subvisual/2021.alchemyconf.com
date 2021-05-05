@@ -236,7 +236,8 @@ a {
 .Info > .header {
   max-width: var(--s-15);
   margin: 0 auto;
-  padding: 0 var(--s-4); }
+  padding: 0 var(--s-4);
+  line-height: 95%; }
 
 .Info > .header > div {
   display: flex;
@@ -245,7 +246,8 @@ a {
   border-bottom: 1px solid white; }
 
 .Info > .header div > * {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: var(--s-2) 0; }
 
 @media (max-width: 750px) {
   .Info > .header p {
@@ -314,6 +316,11 @@ a {
   font-size: var(--s-5);
   line-height: var(--s-5); }
 
+@media (max-width: 650px) {
+  .Info .points .signUp {
+    margin-top: var(--s-7);
+    margin-bottom: var(--s-9); } }
+
 .Info .points .description {
   margin-top: var(--s-4);
   font-family: "input-mono";
@@ -323,7 +330,7 @@ a {
 @media (max-width: 650px) {
   .Info .points {
     text-align: center;
-    margin: 0 auto var(--s-7); }
+    margin: 0 auto; }
   .Info .points .description {
     margin: 0; }
   .Info .points ul {
@@ -338,26 +345,6 @@ a {
     flex-direction: column-reverse; }
   .Info .points span {
     margin-top: var(--s-4); } }
-
-.Info > .cta {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: var(--s-9) 0 0;
-  padding: 0 var(--s-8);
-  text-align: center;
-  font-size: var(--s-4);
-  line-height: var(--s-4);
-  font-family: "Chakra Petch";
-  font-weight: 500; }
-
-.Info > .cta > * {
-  display: inline-block;
-  background-color: var(--c-green);
-  color: var(--c-black);
-  border-radius: 4px;
-  padding: var(--s-4);
-  text-transform: uppercase; }
 
 .Info .underline {
   text-decoration: underline; }
