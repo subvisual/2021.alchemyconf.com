@@ -839,24 +839,6 @@ a {
   color: var(--c-white);
   border-color: var(--c-white); }
 
-.homeButtonLink {
-  background-color: var(--c-white); }
-
-.infoButtonLink {
-  background-color: var(--c-black); }
-
-.alchemyButtonLink {
-  background-color: var(--c-white); }
-
-.ticketsButtonLink {
-  background-color: var(--c-gray); }
-
-.speakersButtonLink {
-  background-color: var(--c-green); }
-
-.scheduleButtonLink {
-  background-color: var(--c-red); }
-
 .Nav {
   position: absolute;
   top: 0;
@@ -870,8 +852,13 @@ a {
   padding-bottom: var(--s-5);
   border-bottom: 1px solid var(--c-black); }
 
+@media (max-width: 850px) {
+  .Nav {
+    font-size: var(--s-3); } }
+
 .Nav .entry {
-  display: flex; }
+  display: flex;
+  width: calc(100%/3); }
 
 .Nav .entry > a:not(:last-child) {
   margin-right: var(--s-2); }
@@ -881,9 +868,6 @@ a {
   padding: 0 var(--s-2);
   text-transform: uppercase; }
 
-.Nav .entry:first-child > *:nth-child(2) {
-  color: var(--c-white); }
-
 @media (max-width: 1200px) {
   .Nav {
     padding: var(--s-5) var(--s-4); } }
@@ -891,6 +875,34 @@ a {
 @media (max-width: 650px) {
   .Nav {
     display: none; } }
+
+.entry.leftButtons {
+  justify-content: flex-start; }
+
+.entry.centerButton {
+  justify-content: center; }
+
+.entry.rightButtons {
+  justify-content: flex-end; }
+
+.homeButtonLink {
+  background-color: var(--c-white); }
+
+.alchemyButtonLink {
+  background-color: var(--c-white); }
+
+.ticketsButtonLink {
+  background-color: var(--c-gray); }
+
+.speakersButtonLink {
+  background-color: var(--c-green); }
+
+.scheduleButtonLink {
+  background-color: var(--c-red); }
+
+.Schedule .scheduleButtonLink, .Speakers .speakersButtonLink, .Tickets .ticketsButtonLink {
+  background-color: var(--c-black);
+  color: var(--c-white); }
 
 .Marquee {
   overflow: hidden;
