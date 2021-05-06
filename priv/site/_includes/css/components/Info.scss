@@ -306,11 +306,11 @@
 .slider .sliderContent {
   position: absolute;
   z-index: 3;
+  max-width: 60vw;
   left: 50%;
   top: 50%;
   height: auto;
-  max-width: 60vw;
-  // transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   transform: translate(-50%, -50%);
 }
 
@@ -320,8 +320,8 @@
   z-index: 1;
   height: auto;
   max-width: 40vw;
-  // transition: transform 0.5s ease-in-out;
-  transform: translate(-45%, -50%);
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1) translate(-45%, -50%);
 }
 
 .slider .sliderContent.right {
@@ -330,8 +330,8 @@
   z-index: 2;
   height: auto;
   max-width: 40vw;
-  // transition: transform 0.5s ease-in-out;
-  transform: translate(70%, -50%);
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1) translate(70%, -50%);
 }
 
 .slider .sliderContent img {
