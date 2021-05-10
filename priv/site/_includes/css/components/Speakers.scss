@@ -29,17 +29,17 @@
   line-height: var(--s-5);
   text-transform: uppercase;
 }
-      
+
 .Speakers-heroContentTitle {
   background-color: var(--c-gray);
-  color: var(--c-black); 
+  color: var(--c-black);
   font-family: "Chakra Petch";
   font-size: var(--s-7);
   font-weight: 400;
   line-height: 90%;
   letter-spacing: -0.02em;
-  margin-bottom: var(--s-6); 
-  padding: var(--s-3) var(--s-6) var(--s-3) var(--s-3);  
+  margin-bottom: var(--s-6);
+  padding: var(--s-3) var(--s-6) var(--s-3) var(--s-3);
   text-transform: uppercase;
 }
 
@@ -59,11 +59,12 @@
 .Speakers-listSpeaker {
   font-family: "Chakra Petch";
   font-size: var(--s-3);
-  font-weight: 600; 
+  font-weight: 600;
   line-height: var(--s-4);
 }
 
 .Speakers-listTitle {
+  padding-left: var(--s-3);
   font-family: "input-mono";
   font-size: var(--s-3);
   font-weight: 400;
@@ -84,7 +85,7 @@
   color: var(--c-black);
   font-family: "Chakra Petch";
   font-size: var(--s-6);
-  font-weight: 500; 
+  font-weight: 500;
   line-height: 90%;
   letter-spacing: -0.02em;
   max-width: 210px;
@@ -105,7 +106,7 @@
   color: var(--c-black);
   font-family: "Chakra Petch";
   font-size: var(--s-4);
-  font-weight: 600; 
+  font-weight: 600;
   line-height: var(--s-4);
   margin-bottom: var(--s-3);
   padding: var(--s-1) 0;
@@ -116,7 +117,7 @@
   color: var(--c-black);
   font-family: "Chakra Petch";
   font-size: var(--s-6);
-  font-weight: 500; 
+  font-weight: 500;
   line-height: 90%;
   letter-spacing: -0.02em;
   padding: var(--s-3);
@@ -145,32 +146,35 @@
   font-size: var(--s-3);
   font-weight: 400;
   justify-content: space-between;
-  line-height: var(--s-4); 
+  line-height: var(--s-4);
   letter-spacing: -0.02em;
   padding-top: var(--s-3);
 }
 
-.Speaker-card:nth-child(3n+1) {
+.Speaker-card:nth-child(3n + 1) {
   background-color: var(--c-green);
 
-  .Speaker-cardPhotoName, .Speaker-cardContentName {
-      background-color: var(--c-gray);
+  .Speaker-cardPhotoName,
+  .Speaker-cardContentName {
+    background-color: var(--c-gray);
   }
 }
 
-.Speaker-card:nth-child(3n+2) {
+.Speaker-card:nth-child(3n + 2) {
   background-color: var(--c-gray);
 
-  .Speaker-cardPhotoName, .Speaker-cardContentName {
-      background-color: var(--c-green);
+  .Speaker-cardPhotoName,
+  .Speaker-cardContentName {
+    background-color: var(--c-green);
   }
 }
 
-.Speaker-card:nth-child(3n+3) {
+.Speaker-card:nth-child(3n + 3) {
   background-color: var(--c-purple);
 
-  .Speaker-cardPhotoName, .Speaker-cardContentName {
-      background-color: var(--c-green);
+  .Speaker-cardPhotoName,
+  .Speaker-cardContentName {
+    background-color: var(--c-green);
   }
 
   .Speaker-cardContentTitle {
@@ -192,7 +196,6 @@
 }
 
 @media (min-width: 1024px) {
-
   .Speakers-hero {
     flex-direction: row-reverse;
     max-height: 745px;
@@ -233,7 +236,7 @@
     text-align: center;
     margin: 0;
     overflow: hidden;
-    width: 50%
+    width: 50%;
   }
 
   .Speaker-cardPhoto img {
@@ -272,11 +275,9 @@
   .Speaker-cardContentSocial {
     padding-top: var(--s-2);
   }
-
 }
 
-@media (min-width: 1200px) {
-
+@media (min-width: 1350px) {
   .Speakers-hero {
     max-height: 935px;
   }
@@ -301,15 +302,12 @@
   .Speaker-cardContentDescription {
     margin-bottom: var(--s-8);
   }
-
 }
 
 @media (min-width: 1700px) {
-
   .Speaker-cardPhoto img {
     width: 100%;
     object-position: right;
     object-fit: cover;
   }
-  
 }

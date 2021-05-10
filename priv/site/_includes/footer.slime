@@ -1,7 +1,7 @@
 footer class="Footer #{if @env[:alt], do: "Footer--alt"}"
   .Footer-contentMobile
     .Footer-grid
-      = link @env, "schedule", to: "/schedule", class: "BigLink"
+      = #link @env, "schedule", to: "/schedule", class: "BigLink"
       = link @env, "tickets", to: "/tickets", class: "BigLink red"
       = link @env, "speakers", to: "/speakers", class: "BigLink black"
       = link @env, "sponsor", to: "/public/Alchemy_Conf-Prospectus.pdf", class: "BigLink transparent", target: "_blank"

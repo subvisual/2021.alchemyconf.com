@@ -32,8 +32,8 @@ defmodule Alchemy.TemplateHelpers do
   @speakers [
     %{
       name: "Michał Muskała",
-      picture: "public/speakers/michalmuskala.jpg",
-      tagline: "Software Engineer",
+      picture: "_includes/speaker_photos/michalmuskala.jpg",
+      tagline: "Software engineer, open-source developer, speaker and trainer",
       description: """
       Software engineer, open-source developer, speaker and trainer. He
       contributes to multiple open source projects including Elixir and OPT and
@@ -46,6 +46,48 @@ defmodule Alchemy.TemplateHelpers do
       combined!
       """,
       twitter_handle: "michalmuskala",
+      socials: []
+    },
+    %{
+      name: "José Valim",
+      picture: "_includes/speaker_photos/josevalim.jpg",
+      tagline: "Creator of the Elixir programming language",
+      description: """
+      José Valimis the creator of the Elixir programming
+      language and Chief Adoption Officer at Dashbit, a company that focuses on
+      Sustainable Open Source and Continuous Adoption to boost the Elixir
+      ecosystem. He is also a seasoned speaker, the author of three
+      programming books, and an active member of the Open Source community
+      """,
+      twitter_handle: "josevalim",
+      socials: []
+    },
+    %{
+      name: "Ben Smith",
+      picture: "_includes/speaker_photos/bensmith.jpg",
+      tagline: "Bringing event sourcing to the functional world of Elixir",
+      description: """
+      Ben has been building event-driven Elixir applications
+      for the past few years. His popular open source Commanded and EventStore
+      libraries provide a solid technical foundation allowing companies to
+      focus on modelling their business using domain-specific events.
+      """,
+      twitter_handle: "slashdotdash",
+      socials: []
+    },
+    %{
+      name: "Marlus Saraiva",
+      picture: "_includes/speaker_photos/marlus.jpg",
+      tagline: "Software Engineer at Dashbit and Open-source developer",
+      description: """
+      Marlus Saraiva is a Software Engineer with over 20 years
+      of experience building systems and leading teams to deliver products in
+      different domains and technologies. His work ranges from enterprise
+      finance/accounting systems to open-source tools. Marlus currently enjoys
+      being part of the Dashbit team creating exciting things like Broadway and
+      Surface.
+      """,
+      twitter_handle: "MarlusSaraiva",
       socials: []
     }
   ]
@@ -62,5 +104,5 @@ defmodule Alchemy.TemplateHelpers do
 
   def charities, do: @charities
 
-  def speakers, do: @speakers
+  def speakers, do: @speakers |> Enum.sort_by(fn %{name: name} -> name end)
 end
