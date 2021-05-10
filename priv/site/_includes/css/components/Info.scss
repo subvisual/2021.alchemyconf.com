@@ -311,27 +311,19 @@
   top: 50%;
   height: auto;
   transition: transform 0.5s ease-in-out;
-  transform: translate(-50%, -50%);
+  transform: scale(1) translate(-50%, -50%);
 }
 
 .slider .sliderContent.left {
-  left: 0;
-  position: absolute;
   z-index: 1;
-  height: auto;
-  max-width: 40vw;
   transition: transform 0.5s ease-in-out;
-  transform: scale(1) translate(-45%, -50%);
+  transform: scale(0.8) translate(-200%, -50%);
 }
 
 .slider .sliderContent.right {
-  right: 0;
-  position: absolute;
   z-index: 2;
-  height: auto;
-  max-width: 40vw;
   transition: transform 0.5s ease-in-out;
-  transform: scale(1) translate(70%, -50%);
+  transform: scale(0.8) translate(100%, -50%);
 }
 
 .slider .sliderContent img {
