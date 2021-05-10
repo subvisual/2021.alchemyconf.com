@@ -1,7 +1,11 @@
+---
+alternate: false
+---
+
 = if @alternate do
   .MobileNav.MobileNav-alternate
     = include @env, "_includes/mobile_nav_content.slime"
-- else 
+- else
   .MobileNav
     = include @env, "_includes/mobile_nav_content.slime"
 

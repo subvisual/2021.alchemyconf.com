@@ -21,4 +21,7 @@ config :still,
   },
   pass_through_copy: ["public", "videos", "CNAME"]
 
+config :logger,
+  level: :warn
+
 import_config("#{Mix.env()}.exs")
