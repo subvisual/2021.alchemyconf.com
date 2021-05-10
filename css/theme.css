@@ -421,6 +421,7 @@ a {
   line-height: var(--s-4); }
 
 .Speakers-listTitle {
+  padding-left: var(--s-3);
   font-family: "input-mono";
   font-size: var(--s-3);
   font-weight: 400;
@@ -498,30 +499,33 @@ a {
   letter-spacing: -0.02em;
   padding-top: var(--s-3); }
 
-.Speaker-card:nth-child(3n+1) {
+.Speaker-card:nth-child(3n + 1) {
   background-color: var(--c-green); }
 
-.Speaker-card:nth-child(3n+1) .Speaker-cardPhotoName, .Speaker-card:nth-child(3n+1) .Speaker-cardContentName {
+.Speaker-card:nth-child(3n + 1) .Speaker-cardPhotoName,
+.Speaker-card:nth-child(3n + 1) .Speaker-cardContentName {
   background-color: var(--c-gray); }
 
-.Speaker-card:nth-child(3n+2) {
+.Speaker-card:nth-child(3n + 2) {
   background-color: var(--c-gray); }
 
-.Speaker-card:nth-child(3n+2) .Speaker-cardPhotoName, .Speaker-card:nth-child(3n+2) .Speaker-cardContentName {
+.Speaker-card:nth-child(3n + 2) .Speaker-cardPhotoName,
+.Speaker-card:nth-child(3n + 2) .Speaker-cardContentName {
   background-color: var(--c-green); }
 
-.Speaker-card:nth-child(3n+3) {
+.Speaker-card:nth-child(3n + 3) {
   background-color: var(--c-purple); }
 
-.Speaker-card:nth-child(3n+3) .Speaker-cardPhotoName, .Speaker-card:nth-child(3n+3) .Speaker-cardContentName {
+.Speaker-card:nth-child(3n + 3) .Speaker-cardPhotoName,
+.Speaker-card:nth-child(3n + 3) .Speaker-cardContentName {
   background-color: var(--c-green); }
 
-.Speaker-card:nth-child(3n+3) .Speaker-cardContentTitle {
+.Speaker-card:nth-child(3n + 3) .Speaker-cardContentTitle {
   border-bottom: 1px solid var(--c-white);
   border-top: 1px solid var(--c-white);
   color: var(--c-white); }
 
-.Speaker-card:nth-child(3n+3) .Speaker-cardContentSocial {
+.Speaker-card:nth-child(3n + 3) .Speaker-cardContentSocial {
   border-top: 1px solid var(--c-white);
   color: var(--c-white); }
 
@@ -581,7 +585,7 @@ a {
   .Speaker-cardContentSocial {
     padding-top: var(--s-2); } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1350px) {
   .Speakers-hero {
     max-height: 935px; }
   .Speakers-heroContentTitle {
