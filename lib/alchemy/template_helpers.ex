@@ -53,7 +53,7 @@ defmodule Alchemy.TemplateHelpers do
       picture: "_includes/speaker_photos/josevalim.jpg",
       tagline: "Creator of the Elixir programming language",
       description: """
-      José Valimis the creator of the Elixir programming
+      José Valim is the creator of the Elixir programming
       language and Chief Adoption Officer at Dashbit, a company that focuses on
       Sustainable Open Source and Continuous Adoption to boost the Elixir
       ecosystem. He is also a seasoned speaker, the author of three
