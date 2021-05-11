@@ -18,9 +18,3 @@
             li
               span.Speakers-listSpeaker = speaker[:name]
               span.Speakers-listTitle = speaker[:tagline]
-
-        = for _ <- 1..7 do
-          = link @env, to: papercall_url() do
-            li
-              span.Speakers-listSpeaker THIS COULD BE YOU!
-              span.Speakers-listTitle CFP OPEN
