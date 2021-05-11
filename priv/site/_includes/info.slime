@@ -105,8 +105,8 @@ javascript:
   }
 
   setInterval(function() {
-    //Array.from(content).forEach(updateClassNames);
-  }, 1000)
+    Array.from(content).forEach(updateClassNames);
+  }, 1500)
 
 
 
