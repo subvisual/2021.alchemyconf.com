@@ -92,7 +92,7 @@ defmodule Alchemy.TemplateHelpers do
     },
     %{
       name: "Evadne W.",
-      picture: "_includes/speaker_photos/evadne.png",
+      picture: "_includes/speaker_photos/evadne.jpg",
       tagline: "Software Engineer and Open-source developer",
       description: """
       Evadne is a software engineer specialising in end-to-end design and implementation
