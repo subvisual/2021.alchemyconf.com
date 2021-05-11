@@ -89,6 +89,20 @@ defmodule Alchemy.TemplateHelpers do
       """,
       twitter_handle: "MarlusSaraiva",
       socials: []
+    },
+    %{
+      name: "Evadne W.",
+      picture: "_includes/speaker_photos/evadne.jpg",
+      tagline: "Software Engineer and Open-source developer",
+      description: """
+      Evadne is a software engineer specialising in end-to-end design and implementation
+      of web-based applications. She contributes to open source projects in her
+      spare time and is the author of various Elixir libraries such as Packmatic,
+      Etso, and GenMagic. In her former career, Evadne specialised in application
+      development based on Objective-C.
+      """,
+      twitter_handle: "evadne",
+      socials: []
     }
   ]
 
