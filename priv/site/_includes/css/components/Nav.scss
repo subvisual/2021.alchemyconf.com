@@ -66,8 +66,9 @@
   background-color: var(--c-white);
 }
 
-.ticketsButtonLink {
-  background-color: var(--c-gray);
+.infoButtonLink {
+  background-color: var(--c-black);
+  color: var(--c-white);
 }
 
 .speakersButtonLink {
@@ -78,7 +79,17 @@
   background-color: var(--c-red);
 }
 
-.Schedule .scheduleButtonLink, .Speakers .speakersButtonLink, .Tickets .ticketsButtonLink {
+.ticketsButtonLink {
+  background-color: var(--c-red);
+  color: var(--c-white);
+}
+
+.Schedule .infoButtonLink,{
+  background-color: var(--c-white);
+  color: var(--c-black);
+}
+
+.Schedule .ticketsButtonLink,{
   background-color: var(--c-black);
   color: var(--c-white);
 }

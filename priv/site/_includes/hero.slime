@@ -12,7 +12,7 @@ header.Banner
 
   nav.nav#Nav
     = link @env, "Home", to: "/", class: "homeButtonLink"
-    div
+    = link @env, "Tickets", to: tito_url(), class: "ticketsButtonLink"
     = #link @env, "Schedule", to: "/schedule", class: "scheduleButtonLink"
     .Marquee#Marquee aria-hidden="true"
       = for _ <- 1..2 do
@@ -23,7 +23,7 @@ header.Banner
             span 1 attendee = 1 tree
             span 28.05.2021 on a screen near you
     = link @env, "Speakers", to: "/speakers", class: "speakersButtonLink"
-    = link @env, "Tickets", to: "/tickets", class: "ticketsButtonLink"
+    = link @env, "Info", to: "/tickets", class: "infoButtonLink"
 
   = include(@env, "_includes/mobile_nav.slime", alternate: true)
 
