@@ -167,7 +167,7 @@ a {
   margin-left: auto;
   margin-right: auto; }
 
-@media (min-width: 550px) {
+@media (min-width: 650px) {
   .Info > .rectangles {
     height: 530px;
     margin-top: var(--s-9);
@@ -205,8 +205,9 @@ a {
     top: 15%;
     transform: translate(calc(220px + -50%), 20%); } }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   .Info > .rectangles {
+    display: none;
     flex-direction: column;
     width: 350px;
     margin-top: var(--s-7);
@@ -363,6 +364,46 @@ a {
   margin: 0 var(--s-4);
   text-transform: uppercase;
   color: var(--c-white); }
+
+.carousel {
+  width: 100%; }
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 80vw;
+  overflow: hidden; }
+
+.slider video {
+  display: none; }
+
+.slider .sliderContent {
+  position: absolute;
+  z-index: 3;
+  max-width: 60vw;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1) translate(-50%, -50%); }
+
+.slider .sliderContent.left {
+  z-index: 2;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(0.8) translate(-190%, -62%); }
+
+.slider .sliderContent.right {
+  z-index: 1;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(0.8) translate(65%, -62%); }
+
+.slider .sliderContent img {
+  width: 100%;
+  height: auto; }
+
+@media (min-width: 650px) {
+  .carousel {
+    display: none; } }
 
 .Speakers {
   background-color: var(--c-green); }
