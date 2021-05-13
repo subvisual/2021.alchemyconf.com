@@ -27,7 +27,7 @@
             source data-src=url_for("videos/#{source}.webm") type="video/webm"
             source data-src=url_for("videos/#{source}.mp4") type="video/mp4"
           = responsive_image "videos/#{source}.jpg"
-
+          
   .rectangles aria-hidden="true"
     = for source <- ["schedule", "info", "tickets" ] do
       div

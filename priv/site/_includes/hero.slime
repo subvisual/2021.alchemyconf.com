@@ -12,7 +12,8 @@ header.Banner
 
   nav.nav#Nav
     = link @env, "Home", to: "/", class: "homeButtonLink"
-    = link @env, "Schedule", to: "/schedule", class: "scheduleButtonLink"
+    div
+    = #link @env, "Schedule", to: "/schedule", class: "scheduleButtonLink"
     .Marquee#Marquee aria-hidden="true"
       = for _ <- 1..2 do
         div
@@ -45,7 +46,7 @@ javascript:
     } else {
       nav.classList.remove("is-fixed");
     }
-    
+
     if (window.scrollY > navPosition) {
       marquee.classList.add("is-hidden");
     } else {

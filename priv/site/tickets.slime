@@ -3,7 +3,7 @@ layout: _layout.slime
 ---
 
 .Tickets
-  = include(@env, "_includes/tickets/nav.slime")
+  = include(@env, "_includes/nav.slime")
   = include(@env, "_includes/tickets/hero.slime")
   = include(@env, "_includes/tickets/marquee.slime")
 
