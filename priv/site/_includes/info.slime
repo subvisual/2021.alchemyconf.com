@@ -16,9 +16,6 @@
       br
       | This event is for you. Brew some magic!
 
-  .cta
-    = link @env, "Interested in speaking at Alchemy Conf? Apply here", to: papercall_url()
-
   .carousel aria-hidden="true"
     .slider
       = for source <- ["schedule", "info", "tickets" ] do
@@ -90,8 +87,6 @@ javascript:
 
   content[0].classList.add("left");
   content[2].classList.add("right");
-
-  console.log(content);
 
   const updateClassNames = (element) => {
     if (element.classList.contains("left")) {
