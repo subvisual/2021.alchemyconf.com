@@ -11,9 +11,9 @@ header.Banner
     time datetime="2021-05-28" aria-hidden="true" 28.05.2021
 
   nav.nav#Nav
-    = link @env, "Home", to: "/", class: "homeButtonLink"
-    div
-    = #link @env, "Schedule", to: "/schedule", class: "scheduleButtonLink"
+    = link @env, "Home", to: "/", class: "home ButtonLink"
+    = #link @env, "Schedule", to: "/schedule", class: "schedule ButtonLink"
+    = link @env, "Tickets", to: tito_url(), class: "tickets ButtonLink"
     .Marquee#Marquee aria-hidden="true"
       = for _ <- 1..2 do
         div
@@ -22,8 +22,8 @@ header.Banner
             span This is a carbon-neutral event
             span 1 attendee = 1 tree
             span 28.05.2021 on a screen near you
-    = link @env, "Speakers", to: "/speakers", class: "speakersButtonLink"
-    = link @env, "Tickets", to: "/tickets", class: "ticketsButtonLink"
+    = link @env, "Speakers", to: "/speakers", class: "speakers ButtonLink"
+    = link @env, "Info", to: "/tickets", class: "info ButtonLink"
 
   = include(@env, "_includes/mobile_nav.slime", alternate: true)
 
