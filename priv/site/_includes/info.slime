@@ -65,6 +65,25 @@
           and BEAM developers and enthusiasts gather to exchange
           knowledge and get to know one another.
 
+  .Sponsors
+    p.Sponsors-gratitude
+    div.Sponsors-list
+      .Sponsor
+        p.Sponsor-type Plataform Host
+        div.Sponsor-logo
+      .Sponsor
+        p.Sponsor-type Partner
+        div.Sponsor-logo
+      .Sponsor
+        p.Sponsor-type Partner
+        div.Sponsor-logo
+      .Sponsor
+        p.Sponsor-type Community Partner
+        div.Sponsor-logo
+      .Sponsor
+        p.Sponsor-type Partner
+        div.Sponsor-logo
+
   .Marquee.marquee aria-hidden="true"
     = for _ <- 1..2 do
       = link @env, to: tito_url() do
