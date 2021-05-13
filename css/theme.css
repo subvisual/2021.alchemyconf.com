@@ -1141,8 +1141,8 @@ a {
 .Schedule-list li {
   border-top: 1px solid var(--c-black);
   color: var(--c-black);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 50% 50%;
   padding: var(--s-2) 0; }
 
 .Schedule-list li:last-child {
@@ -1155,13 +1155,17 @@ a {
   line-height: var(--s-4); }
 
 .Schedule-listTalkTitle {
-  font-family: "input-mono";
+  font-family: "Chakra Petch";
   font-size: var(--s-3);
-  font-weight: 400;
-  line-height: var(--s-4); }
+  font-weight: 600;
+  line-height: var(--s-4);
+  text-align: end; }
 
 .Schedule-listSpeaker {
   display: none; }
+
+.Schedule-list li:nth-child(even) > span:nth-child(2) {
+  color: var(--c-white); }
 
 .Schedule .marquee {
   background-color: var(--c-light-gray);
@@ -1186,7 +1190,7 @@ a {
 @media (min-width: 1024px) {
   .Schedule-hero {
     flex-direction: row-reverse;
-    max-height: 906px; }
+    max-height: 1020px; }
   .Schedule-heroVideo {
     display: inherit; }
   .Schedule-heroVideo video {
@@ -1201,24 +1205,41 @@ a {
   .Schedule-heroContentTitle {
     font-size: var(--s-8);
     line-height: 90%; }
+  .Schedule-list li {
+    grid-template-columns: 27% 37% 36%; }
+  .Schedule-list li:nth-child(2n+3) {
+    grid-template-columns: 27% 73%;
+    font-style: italic; }
+  .Schedule-list li:last-child {
+    border-bottom: 1px solid var(--c-black);
+    font-style: normal; }
   .Schedule-listTime {
-    font-size: var(--s-4); }
+    font-size: var(--s-4);
+    font-style: normal; }
   .Schedule-listTalkTitle {
-    font-size: var(--s-4); }
+    font-size: var(--s-4);
+    text-align: start;
+    text-transform: uppercase; }
+  .Schedule-listTalkTitle:nth-child(2n+3) {
+    font-size: var(--s-4);
+    text-align: start;
+    text-transform: uppercase; }
   .Schedule-listSpeaker {
     display: inherit;
     font-family: "Chakra Petch";
     font-size: var(--s-4);
     font-weight: 400;
-    line-height: var(--s-4); }
-  .Schedule-list li:last-child {
-    border-bottom: 1px solid var(--c-black); }
-  .Schedule-list li:nth-child(odd) > span:nth-child(2) {
-    color: var(--c-white); } }
+    line-height: var(--s-4);
+    text-align: end;
+    text-transform: uppercase; } }
 
 @media (min-width: 1200px) {
   .Schedule-hero {
-    max-height: 935px; }
+    max-height: 1020px; }
+  .Schedule-list li {
+    grid-template-columns: 30% 40% 30%; }
+  .Schedule-list li:nth-child(2n+3) {
+    grid-template-columns: 30% 70%; }
   .Schedule-heroContentTitle {
     font-size: var(--s-9); } }
 
