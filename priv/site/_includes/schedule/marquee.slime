@@ -1,7 +1,30 @@
-.Marquee.marquee
-    = for _ <- 1..2 do
-      div
-        = for _ <- 1..8 do
-            span Talks
-            span 2021
-            
+.Marquee#marquee.marquee
+  div#marqueeContent.marqueeContent
+    span Talks
+    span 2021
+
+javascript: 
+
+  const marquee = document.getElementById("marquee");
+  const content = document.getElementById("marqueeContent");
+  const {width: marqueeWidth} = marquee.getBoundingClientRect();
+  const {width: contentWidth} = content.getBoundingClientRect();
+  const numberOfClones = marqueeWidth/contentWidth;
+  const contentClone = content.cloneNode(true);
+
+  for(let i = 0; i <= numberOfClones - 1; i++) {
+    marquee.appendChild(content.cloneNode(true));
+  }
+
+  const contentCollection = document.getElementsByClassName("marqueeContent");
+  console.log(contentCollection)
+
+  const animation = popmotion.tween({
+    from: 0,
+    to: {x:-contentWidth},
+    duration: 5000
+  })
+
+  for(let i = 0; i <= contentCollection.length; i++) {
+    animation.start(popmotion.styler(contentCollection[i]).set);
+  }
