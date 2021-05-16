@@ -271,3 +271,62 @@
     }
   }
 }
+
+.Sponsors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content 1fr 1fr 1fr;
+  gap: var(--s-6) var(--s-4);
+  grid-template-areas:
+    "header header"
+    "partner-host partner-1"
+    "partner-2 community-partner"
+    "partner-3 partner-3";
+  text-align: center;
+  margin-bottom: var(--s-9);
+}
+
+.Sponsors-gratitude {
+  align-self: center;
+  text-align: center;
+  grid-area: header;
+  font-family: "Chakra Petch";
+  font-size: var(--s-4);
+  font-weight: 500;
+  text-decoration: underline;
+  line-height: var(--s-5);
+}
+
+.Plataform-Host {
+  grid-area: partner-host;
+}
+
+.Partner-1 {
+  grid-area: partner-1;
+}
+
+.Partner-2 {
+  grid-area: partner-2;
+}
+
+.Community-Partner {
+  grid-area: community-partner;
+}
+
+.Partner-3 {
+  grid-area: partner-3;
+}
+
+.Sponsor-type {
+  margin-bottom: var(--s-4);
+  font-family: "input-mono";
+  font-size: var(--s-3);
+  font-weight: 400;
+  line-height: var(--s-4);
+  text-transform: uppercase;
+}
+
+.Sponsor-logo img {
+  max-width: var(--s-11);
+  height: auto;
+}
