@@ -330,3 +330,36 @@
   max-width: var(--s-11);
   height: auto;
 }
+
+@media (min-width: 1024px) {
+  .Sponsors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
+    gap: var(--s-8) var(--s-9);
+    grid-template-areas:
+      " . header header header header . "
+      " partner-host partner-host partner-1 partner-1 partner-2 partner-2 "
+      " . community-partner community-partner partner-3 partner-3 . ";
+    text-align: center;
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: var(--s-9);
+  }
+
+  .Sponsors-gratitude {
+    font-size: var(--s-5);
+    line-height: var(--s-6);
+  }
+
+  .Sponsor-type {
+    margin-bottom: var(--s-3);
+    font-size: var(--s-3);
+    line-height: var(--s-4);
+  }
+
+  .Sponsor-logo img {
+    max-width: var(--s-10);
+    height: auto;
+  }
+}
