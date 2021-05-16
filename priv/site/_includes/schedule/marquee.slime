@@ -17,14 +17,17 @@ javascript:
   }
 
   const contentCollection = document.getElementsByClassName("marqueeContent");
-  console.log(contentCollection)
-
-  const animation = popmotion.tween({
-    from: 0,
-    to: {x:-contentWidth},
-    duration: 5000
-  })
 
   for(let i = 0; i <= contentCollection.length; i++) {
+    const animation = popmotion.tween({
+      from: contentCollection[i].style.left,
+      to: {left:-marqueeWidth},
+      duration: 15000
+    })
+  }
+
+  for(let i = 0; i <= contentCollection.length; i++) {
+    contentCollection[i].style.position = "absolute";
+    contentCollection[i].style.left = (contentWidth * i) + "px";
     animation.start(popmotion.styler(contentCollection[i]).set);
   }
