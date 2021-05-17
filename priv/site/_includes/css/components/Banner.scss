@@ -55,13 +55,6 @@
       
     }
 
-    > a {
-      font-family: "input-mono";
-      font-size: var(--s-4);
-      line-height: var(--s-5);
-      padding: var(--s-1) var(--s-3);
-    }
-
     @media (max-width: 650px) {
       display: none;
     }

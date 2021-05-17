@@ -16,6 +16,15 @@
       br
       | This event is for you. Brew some magic!
 
+  .carousel aria-hidden="true"
+    .slider
+      = for source <- ["schedule", "info", "tickets" ] do
+        div.sliderContent 
+          video.lozad autoplay=true muted=true loop=true data-poster=url_for("videos/#{source}.jpg")
+            source data-src=url_for("videos/#{source}.webm") type="video/webm"
+            source data-src=url_for("videos/#{source}.mp4") type="video/mp4"
+          = responsive_image "videos/#{source}.jpg"
+          
   .rectangles aria-hidden="true"
     = for source <- ["schedule", "info", "tickets" ] do
       div
@@ -24,8 +33,6 @@
           source data-src=url_for("videos/#{source}.mp4") type="video/mp4"
         = responsive_image "videos/#{source}.jpg"
 
-    .mobile
-      <svg width="741" height="533" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M256.5 317.5c13.807 0 25-11.193 25-25s-11.193-25-25-25-25 11.193-25 25 11.193 25 25 25z" fill="#CDFF63" stroke="#E43640"/><path d="M468.5 506c0 14.636 11.864 26.5 26.5 26.5s26.5-11.864 26.5-26.5-11.864-26.5-26.5-26.5-26.5 11.864-26.5 26.5zM413.5 70.5c0 7.732 6.268 14 14 14s14-6.268 14-14-6.268-14-14-14-14 6.268-14 14z" fill="#E5E5E5" stroke="#E43640"/><path d="M740 1L492 503 740 1zM492 503L428 71 126 467 2 71l490 432z" stroke="#E43640"/></svg>
     .desktop
       <svg width="2150" height="698" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="504" cy="671" r="26.5" transform="rotate(90 504 671)" stroke="#CDFF63"/><path d="M134 643.5c-8.008 0-14.5-6.492-14.5-14.5s6.492-14.5 14.5-14.5 14.5 6.492 14.5 14.5-6.492 14.5-14.5 14.5z" fill="#E5E5E5" stroke="#CDFF63"/><circle cx="436.5" cy="235.5" r="14" transform="rotate(90 436.5 235.5)" fill="#E5E5E5" stroke="#CDFF63"/><circle cx="10" cy="231" r="9.5" transform="rotate(90 10 231)" fill="#E5E5E5" stroke="#CDFF63"/><path d="M749 166L501 668m0 0l-64-432-302 396L11 236l490 432z" stroke="#CDFF63"/><circle cx="752" cy="163" r="26.5" transform="rotate(90 752 163)" fill="#E5E5E5" stroke="#CDFF63"/><circle cx="1251.5" cy="175.5" r="25" stroke="#CDFF63"/><circle cx="681.5" cy="508.5" r="49" fill="#CDFF63" stroke="#CDFF63"/><circle cx="1636.5" cy="321.5" r="25" fill="#CDFF63" stroke="#CDFF63"/><circle cx="2123" cy="27" r="26.5" transform="rotate(90 2123 27)" fill="#E5E5E5" stroke="#CDFF63"/><circle cx="1875" cy="535" r="26.5" transform="rotate(90 1875 535)" fill="#E5E5E5" stroke="#CDFF63"/><path d="M1505 507.5c-8.01 0-14.5-6.492-14.5-14.5s6.49-14.5 14.5-14.5 14.5 6.492 14.5 14.5-6.49 14.5-14.5 14.5z" fill="#E5E5E5" stroke="#CDFF63"/><circle cx="1807.5" cy="99.5" r="14" transform="rotate(90 1807.5 99.5)" fill="#E5E5E5" stroke="#CDFF63"/><circle cx="1381" cy="95" r="9.5" transform="rotate(90 1381 95)" fill="#E5E5E5" stroke="#CDFF63"/><path d="M2120 30l-248 502m0 0l-64-432-302 396-124-396 490 432z" stroke="#CDFF63"/></svg>
 
@@ -71,3 +78,27 @@
         = for _ <- 1..7 do
           span Join us
           span 28.05.2021 on a screen near you
+
+javascript:
+
+  const [slider] = document.getElementsByClassName("slider");
+  const content = document.getElementsByClassName("sliderContent");
+  const parent = content[0].parentNode;
+
+  content[0].classList.add("left");
+  content[2].classList.add("right");
+
+  const updateClassNames = (element) => {
+    if (element.classList.contains("left")) {
+      element.classList.remove("left");
+      element.classList.add("right");
+    } else if (element.classList.contains("right")) {
+      element.classList.remove("right");
+    } else {
+      element.classList.add("left");
+    }
+  }
+
+  setInterval(function() {
+    Array.from(content).forEach(updateClassNames);
+  }, 1500)
