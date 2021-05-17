@@ -1,0 +1,7 @@
+section.ScheduleSpeakers
+
+  .ScheduleSpeakers-presentation
+    p This year we wanted to enlarge the Mirror experience and with that in mind we decided to give to you four amazing workshops. From design planning to front-end mastering, with experienced mentors who define the web, we are sure that these workshops will empower your craft.
+
+  = for speaker <- speakers() do
+    = include(@env, "_includes/schedule/speakers_card.slime", speaker: speaker)

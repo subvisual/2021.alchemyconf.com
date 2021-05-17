@@ -7,6 +7,6 @@ layout: _layout.slime
   = include(@env, "_includes/schedule/hero.slime") 
   = include(@env, "_includes/schedule/marquee.slime")
 
-= include(@env, "_includes/schedule/speakers.slime")
+= include(@env, "_includes/schedule/speakers_content.slime")
 
 = include(@env, "_includes/footer.slime")
