@@ -15,62 +15,98 @@
       ul.Schedule-list
         li
           span.Schedule-listTime 9:00-9:15
-          span.Schedule-listTalkTitle Introduction
-          span.Schedule-listSpeaker Alchemy Team
+          span.Schedule-listTalkTitle MC Intro
+          span.Schedule-listSpeaker
         li
-          span.Schedule-listTime 9:15-10:15
-          span.Schedule-listTalkTitle Talk #1 + Q&A
-          span.Schedule-listSpeaker Speaker 1
+          span.Schedule-listTime 9:15-09:55
+          span.Schedule-listTalkTitle
+          span.Schedule-listSpeaker José Valim
         li
-          span.Schedule-listTime 10:15-10:30
+          span.Schedule-listTime 09:55-10:05
+          span.Schedule-listTalkTitle 
+          span.Schedule-listSpeaker Q&A
+        li
+          span.Schedule-listTime 10:05-10:20
+          span.Schedule-listTalkTitle.break Break
+          span.Schedule-listSpeaker
+        li
+          span.Schedule-listTime 10:20-11:00
+          span.Schedule-listTalkTitle 
+          span.Schedule-listSpeaker Mateusz Front
+        li
+          span.Schedule-listTime 11:00-11:10
+          span.Schedule-listTalkTitle Q&A
+          span.Schedule-listSpeaker
+        li
+          span.Schedule-listTime 11:10-11:40
+          span.Schedule-listTalkTitle.break Large Break 
+          span.Schedule-listSpeaker
+        li
+          span.Schedule-listTime 11:40-12:20
+          span.Schedule-listTalkTitle 
+          span.Schedule-listSpeaker Marlus Saraiva
+        li
+          span.Schedule-listTime 12:20-12:30
+          span.Schedule-listTalkTitle Q&A 
+          span.Schedule-listSpeaker
+        li
+          span.Schedule-listTime 12:30-13:30
+          span.Schedule-listTalkTitle.break Lunch Break
+          span.Schedule-listSpeaker
+        li
+          span.Schedule-listTime 13:30-14:10
+          span.Schedule-listTalkTitle 
+          span.Schedule-listSpeaker Evadne Wu
+        li
+          span.Schedule-listTime 14:10-14:20
+          span.Schedule-listTalkTitle Q&A
+          span.Schedule-listSpeaker
+        li
+          span.Schedule-listTime 14:20-14:35
           span.Schedule-listTalkTitle Break
           span.Schedule-listSpeaker
         li
-          span.Schedule-listTime 10:30-11:30
-          span.Schedule-listTalkTitle Talk #2 + Q&A
-          span.Schedule-listSpeaker Speaker 2
+          span.Schedule-listTime 14:35-15:15
+          span.Schedule-listTalkTitle 
+          span.Schedule-listSpeaker Ben Smith
         li
-          span.Schedule-listTime 11:30-12:00
-          span.Schedule-listTalkTitle Break 
-          span.Schedule-listSpeaker 
-        li
-          span.Schedule-listTime 12:00-13:00
-          span.Schedule-listTalkTitle Talk #3 + Q&A
-          span.Schedule-listSpeaker Speaker 3
-        li
-          span.Schedule-listTime 13:00-13:15
-          span.Schedule-listTalkTitle Break 
+          span.Schedule-listTime 15:15-15:25
+          span.Schedule-listTalkTitle Q&A
           span.Schedule-listSpeaker
         li
-          span.Schedule-listTime 13:15-14:15
-          span.Schedule-listTalkTitle Talk #4 + Q&A
-          span.Schedule-listSpeaker Speaker 4
-        li
-          span.Schedule-listTime 14:15-14:45
-          span.Schedule-listTalkTitle Break 
+          span.Schedule-listTime 15:25-15:40
+          span.Schedule-listTalkTitle.break Break
           span.Schedule-listSpeaker
         li
-          span.Schedule-listTime 14:45-15:45
-          span.Schedule-listTalkTitle Talk #5 + Q&A
-          span.Schedule-listSpeaker Speaker 5
+          span.Schedule-listTime 15:40-16:20
+          span.Schedule-listTalkTitle 
+          span.Schedule-listSpeaker Mrinal Wadhwa
         li
-          span.Schedule-listTime 15:45-16:00
-          span.Schedule-listTalkTitle Break
+          span.Schedule-listTime 16:20-16:30
+          span.Schedule-listTalkTitle Q&A
           span.Schedule-listSpeaker
         li
-          span.Schedule-listTime 16:00-17:00
-          span.Schedule-listTalkTitle Talk #6 + Q&A
-          span.Schedule-listSpeaker Speaker 6
-        li
-          span.Schedule-listTime 17:00-17:15
-          span.Schedule-listTalkTitle Break
+          span.Schedule-listTime 16:30-16:45
+          span.Schedule-listTalkTitle.break Break
           span.Schedule-listSpeaker
         li
-          span.Schedule-listTime 17:15-18:30
-          span.Schedule-listTalkTitle Panel + Q&A
-          span.Schedule-listSpeaker Alchemy Team
+          span.Schedule-listTime 16:45-17:25
+          span.Schedule-listTalkTitle 
+          span.Schedule-listSpeaker Michal Muskala
         li
-          span.Schedule-listTime 18:30
+          span.Schedule-listTime 17:25-17:35
+          span.Schedule-listTalkTitle Q&A
+          span.Schedule-listSpeaker
+        li
+          span.Schedule-listTime 17:35-17:50
+          span.Schedule-listTalkTitle.break Break
+          span.Schedule-listSpeaker
+        li
+          span.Schedule-listTime 17:50-18:50
+          span.Schedule-listTalkTitle Panel (1h inc. Q&A)
+          span.Schedule-listSpeaker
+        li
+          span.Schedule-listTime 18:50
           span.Schedule-listTalkTitle Ending
           span.Schedule-listSpeaker
           

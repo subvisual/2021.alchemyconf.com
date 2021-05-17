@@ -1,0 +1,8 @@
+.ScheduleSpeakers-speaker
+    .ScheduleSpeakers-speakerCard id="#{String.replace(@speaker[:name], " ", "")}"
+        .ScheduleSpeakers-speakerPhoto
+            = responsive_image @speaker[:picture], alt: @speaker[:name]
+        h3.ScheduleSpeakers-speakerName #{@speaker[:name]}
+
+    .ScheduleSpeakers-contentTalkTitle
+        p = @speaker[:tagline]
