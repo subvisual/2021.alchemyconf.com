@@ -1,10 +1,11 @@
 footer class="Footer #{if @env[:alt], do: "Footer--alt"}"
   .Footer-contentMobile
     .Footer-grid
-      = #link @env, "schedule", to: "/schedule", class: "schedule ButtonLink"
+      = link @env, "Schedule", to: "/schedule", class: "schedule ButtonLink"
       = link @env, "Tickets", to: tito_url(), class: "tickets ButtonLink"
       = link @env, "Info", to: "/tickets", class: "info ButtonLink"
       = link @env, "Speakers", to: "/speakers", class: "speakers ButtonLink"
+      div
       = link @env, "Sponsor", to: "/public/Alchemy_Conf-Prospectus.pdf", class: "sponsors ButtonLink", target: "_blank"
     .Footer-footer
       p.Footer-copyright &copy; 2021 ALCHEMY CONF

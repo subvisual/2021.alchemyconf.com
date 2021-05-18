@@ -11,8 +11,7 @@ header.Banner
     time datetime="2021-05-28" aria-hidden="true" 28.05.2021
 
   nav.nav#Nav
-    = link @env, "Home", to: "/", class: "home ButtonLink"
-    = #link @env, "Schedule", to: "/schedule", class: "schedule ButtonLink"
+    = link @env, "Schedule", to: "/schedule", class: "schedule ButtonLink"
     = link @env, "Tickets", to: tito_url(), class: "tickets ButtonLink"
     .Marquee#Marquee aria-hidden="true"
       = for _ <- 1..2 do

@@ -8,105 +8,88 @@
       .Schedule-heroContentDateTime
         time datetime="2021-05-28"
           | May 28 2021
-        p 09:00 - 18:30
+        p 09:00 - 17:35
 
       h1.Schedule-heroContentTitle Schedule
 
       ul.Schedule-list
         li
           span.Schedule-listTime 9:00-9:15
-          span.Schedule-listTalkTitle MC Intro
-          span.Schedule-listSpeaker
+          span.Schedule-listTalkIntro MC Intro
         li
           span.Schedule-listTime 9:15-09:55
-          span.Schedule-listTalkTitle
-          span.Schedule-listSpeaker José Valim
+          div
+            span.Schedule-listTalkTitle Updates on Elixir v1.12
+            span.Schedule-listSpeaker José Valim
         li
           span.Schedule-listTime 09:55-10:05
-          span.Schedule-listTalkTitle 
-          span.Schedule-listSpeaker Q&A
+          span.Schedule-listTalkQA Q&A
         li
           span.Schedule-listTime 10:05-10:20
-          span.Schedule-listTalkTitle.break Break
-          span.Schedule-listSpeaker
+          span.Schedule-listTalkBreak Break
         li
           span.Schedule-listTime 10:20-11:00
-          span.Schedule-listTalkTitle 
-          span.Schedule-listSpeaker Mateusz Front
+          div
+            span.Schedule-listTalkTitle Pipelining WebRTC - videoconferences in Elixir with Membrane Framework
+            span.Schedule-listSpeaker Mateusz Front
         li
           span.Schedule-listTime 11:00-11:10
-          span.Schedule-listTalkTitle Q&A
-          span.Schedule-listSpeaker
+          span.Schedule-listTalkQA Q&A
         li
           span.Schedule-listTime 11:10-11:40
-          span.Schedule-listTalkTitle.break Large Break 
-          span.Schedule-listSpeaker
+          span.Schedule-listTalkBreak Large Break 
         li
           span.Schedule-listTime 11:40-12:20
-          span.Schedule-listTalkTitle 
-          span.Schedule-listSpeaker Marlus Saraiva
+          div
+            span.Schedule-listTalkTitle Improving your Phoenix Liveview experience with Surface
+            span.Schedule-listSpeaker Marlus Saraiva
         li
           span.Schedule-listTime 12:20-12:30
-          span.Schedule-listTalkTitle Q&A 
-          span.Schedule-listSpeaker
+          span.Schedule-listTalkQA Q&A 
         li
           span.Schedule-listTime 12:30-13:30
-          span.Schedule-listTalkTitle.break Lunch Break
-          span.Schedule-listSpeaker
+          span.Schedule-listTalkBreak Lunch Break
         li
           span.Schedule-listTime 13:30-14:10
-          span.Schedule-listTalkTitle 
-          span.Schedule-listSpeaker Evadne Wu
+          div
+            span.Schedule-listTalkTitle How I Learned to Stop Worrying and Love Macros
+            span.Schedule-listSpeaker Evadne Wu
         li
           span.Schedule-listTime 14:10-14:20
-          span.Schedule-listTalkTitle Q&A
-          span.Schedule-listSpeaker
+          span.Schedule-listTalkQA Q&A
         li
           span.Schedule-listTime 14:20-14:35
-          span.Schedule-listTalkTitle Break
-          span.Schedule-listSpeaker
+          span.Schedule-listTalkBreak Break
         li
           span.Schedule-listTime 14:35-15:15
-          span.Schedule-listTalkTitle 
-          span.Schedule-listSpeaker Ben Smith
+          div
+            span.Schedule-listTalkTitle Modelling complex business domains with events
+            span.Schedule-listSpeaker Ben Smith
         li
           span.Schedule-listTime 15:15-15:25
-          span.Schedule-listTalkTitle Q&A
-          span.Schedule-listSpeaker
+          span.Schedule-listTalkQA Q&A
         li
           span.Schedule-listTime 15:25-15:40
-          span.Schedule-listTalkTitle.break Break
-          span.Schedule-listSpeaker
+          span.Schedule-listTalkBreak Break
         li
           span.Schedule-listTime 15:40-16:20
-          span.Schedule-listTalkTitle 
-          span.Schedule-listSpeaker Mrinal Wadhwa
+          div
+            span.Schedule-listTalkTitle How can applications become more secure, private and dependable
+            span.Schedule-listSpeaker Mrinal Wadhwa
         li
           span.Schedule-listTime 16:20-16:30
-          span.Schedule-listTalkTitle Q&A
-          span.Schedule-listSpeaker
+          span.Schedule-listTalkQA Q&A
         li
           span.Schedule-listTime 16:30-16:45
-          span.Schedule-listTalkTitle.break Break
-          span.Schedule-listSpeaker
+          span.Schedule-listTalkBreak Break
         li
           span.Schedule-listTime 16:45-17:25
-          span.Schedule-listTalkTitle 
-          span.Schedule-listSpeaker Michal Muskala
+          div
+            span.Schedule-listTalkTitle Xref.rs - Erlang static analysis in Rust
+            span.Schedule-listSpeaker Michal Muskala
         li
           span.Schedule-listTime 17:25-17:35
-          span.Schedule-listTalkTitle Q&A
-          span.Schedule-listSpeaker
+          span.Schedule-listTalkQA Q&A
         li
-          span.Schedule-listTime 17:35-17:50
-          span.Schedule-listTalkTitle.break Break
-          span.Schedule-listSpeaker
-        li
-          span.Schedule-listTime 17:50-18:50
-          span.Schedule-listTalkTitle Panel (1h inc. Q&A)
-          span.Schedule-listSpeaker
-        li
-          span.Schedule-listTime 18:50
-          span.Schedule-listTalkTitle Ending
-          span.Schedule-listSpeaker
-          
+          span.Schedule-listTime 17:35 
+          span.Schedule-listTalkEnd Wrap up  
