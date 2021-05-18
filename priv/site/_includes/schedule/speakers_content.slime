@@ -5,4 +5,4 @@ section.ScheduleSpeakers
 
   .ScheduleSpeakers-content
     = for speaker <- speakers() do
-      = include(@env, "./_includes/schedule/speakers_card.slime", speaker: speaker)
+      = include(@env, "_includes/schedule/speaker_card.slime", speaker: speaker)
