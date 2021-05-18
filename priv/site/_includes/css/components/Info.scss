@@ -275,14 +275,16 @@
 .Sponsors {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content 1fr 1fr 1fr;
-  gap: var(--s-6) var(--s-4);
+  grid-template-rows: min-content min-content min-content min-content min-content;
   grid-template-areas:
     "header header"
-    "partner-host partner-1"
-    "partner-2 community-partner"
-    "partner-3 partner-3";
+    "CrankWheel Finiam"
+    "AppSignal Colectiv"
+    "Utrust ElixirCast"
+    "Onda Onda";
   text-align: center;
+  max-width: 700px;
+  margin: auto;
   margin-bottom: var(--s-9);
 }
 
@@ -295,30 +297,42 @@
   font-weight: 500;
   text-decoration: underline;
   line-height: var(--s-5);
+  margin-bottom: var(--s-7);
 }
 
-.Plataform-Host {
-  grid-area: partner-host;
+.Sponsor {
+  margin-bottom: var(--s-5);
 }
 
-.Partner-1 {
-  grid-area: partner-1;
+.CrankWheel {
+  grid-area: CrankWheel;
 }
 
-.Partner-2 {
-  grid-area: partner-2;
+.Finiam {
+  grid-area: Finiam;
 }
 
-.Community-Partner {
-  grid-area: community-partner;
+.AppSignal {
+  grid-area: AppSignal;
 }
 
-.Partner-3 {
-  grid-area: partner-3;
+.Colectiv {
+  grid-area: Colectiv;
+}
+
+.Utrust {
+  grid-area: Utrust;
+}
+
+.ElixirCast {
+  grid-area: ElixirCast;
+}
+
+.Onda {
+  grid-area: Onda;
 }
 
 .Sponsor-type {
-  margin-bottom: var(--s-4);
   font-family: "input-mono";
   font-size: var(--s-3);
   font-weight: 400;
@@ -326,23 +340,33 @@
   text-transform: uppercase;
 }
 
+.Sponsor-logo {
+  align-items: center;
+  display: inline-flex;
+  height: var(--s-8);
+}
+
 .Sponsor-logo img {
   max-width: var(--s-11);
   height: auto;
 }
 
+.CrankWheel .Sponsor-logo img {
+  max-width: var(--s-9);
+}
+
 @media (min-width: 1024px) {
   .Sponsors {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: min-content min-content min-content;
-    gap: var(--s-8) var(--s-9);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content min-content min-content;
     grid-template-areas:
-      " . header header header header . "
-      " partner-host partner-host partner-1 partner-1 partner-2 partner-2 "
-      " . community-partner community-partner partner-3 partner-3 . ";
+      "header header header"
+      "CrankWheel Finiam AppSignal"
+      "Colectiv Utrust ElixirCast"
+      ". Onda .";
     text-align: center;
-    max-width: 70%;
+    max-width: 75%;
     margin: auto;
     margin-bottom: var(--s-9);
   }
@@ -350,16 +374,11 @@
   .Sponsors-gratitude {
     font-size: var(--s-5);
     line-height: var(--s-6);
+    margin-bottom: var(--s-7);
   }
 
   .Sponsor-type {
-    margin-bottom: var(--s-3);
     font-size: var(--s-3);
     line-height: var(--s-4);
-  }
-
-  .Sponsor-logo img {
-    max-width: var(--s-10);
-    height: auto;
   }
 }

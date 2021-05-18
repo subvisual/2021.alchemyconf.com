@@ -67,26 +67,34 @@
 
   .Sponsors
     p.Sponsors-gratitude Thanks to our sponsors
-    .Sponsor.Plataform-Host
+    .Sponsor.CrankWheel
       p.Sponsor-type Plataform Host
       div.Sponsor-logo
-        img src="http://placekitten.com/360/320" alt="crankwheel-partner-logo"
-    .Sponsor.Partner-1
+        img src=url_for("public/logos/crankwheel_logo.svg") alt="crankwheel-partner-logo"
+    .Sponsor.Finiam
       p.Sponsor-type Partner
       div.Sponsor-logo
-        img src=url_for("Sponsors-Logos/finiam_logo.svg") alt="finiam-partner-logo"
-    .Sponsor.Partner-2
+        img src=url_for("public/logos/finiam_logo.svg") alt="finiam-partner-logo"
+    .Sponsor.AppSignal
       p.Sponsor-type Partner
       div.Sponsor-logo
-        img src=url_for("Sponsors-Logos/appsignal_logo.svg") alt="appsignal-partner-logo"
-    .Sponsor.Community-Partner
+        img src=url_for("public/logos/appsignal_logo.svg") alt="appsignal-partner-logo"
+    .Sponsor.Colectiv
+      p.Sponsor-type Partner
+      div.Sponsor-logo
+        img src=url_for("public/logos/colectiv_logo.svg") alt="colectiv-partner-logo"
+    .Sponsor.Utrust
+      p.Sponsor-type Partner
+      div.Sponsor-logo
+        img src=url_for("public/logos/utrust_logo.svg") alt="utrust-partner-logo"
+    .Sponsor.ElixirCast
       p.Sponsor-type Community Partner
       div.Sponsor-logo
-        img src=url_for("Sponsors-Logos/elixircasts_logo.svg") alt="elixircasts-partner-logo"
-    .Sponsor.Partner-3
+        img src=url_for("public/logos/elixircasts_logo.png") alt="elixircasts-partner-logo"
+    .Sponsor.Onda
       p.Sponsor-type Partner
       div.Sponsor-logo
-        img src=url_for("Sponsors-Logos/onda_logo.svg") alt="onda-partner-logo"
+        img src=url_for("public/logos/onda_logo.svg") alt="onda-partner-logo"
 
   .Marquee.marquee aria-hidden="true"
     = for _ <- 1..2 do
