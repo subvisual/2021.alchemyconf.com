@@ -17,7 +17,7 @@ button.button(data-micromodal-trigger="modal-menu")
           </svg>
 
       .content#modal-menu-content
-        = #link @env, "Schedule", to: "/schedule", class: "schedule ButtonLink"
+        = link @env, "Schedule", to: "/schedule", class: "schedule ButtonLink"
         = link @env, "Speakers", to: "/speakers", class: "speakers ButtonLink"
         = link @env, "Tickets", to: "/tickets", class: "tickets ButtonLink"
         = link @env, "Info", to: "/tickets", class: "info ButtonLink"

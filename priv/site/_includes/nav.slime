@@ -5,7 +5,7 @@ nav.Nav
   div.entry.centerButton
     = link @env, "Alchemy Conf 2021", to: "/", class: "alchemy ButtonLink"
   div.entry.rightButtons
-    = #link @env, "Schedule", to: "/schedule", class: "schedule ButtonLink"
+    = link @env, "Schedule", to: "/schedule", class: "schedule ButtonLink"
     = link @env, "Speakers", to: "/speakers", class: "speakers ButtonLink"
     = link @env, "Info", to: "/tickets", class: "info ButtonLink"
 

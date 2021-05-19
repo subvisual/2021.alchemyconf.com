@@ -58,6 +58,10 @@
     width: 100%;
   }
 
+  .Footer .ButtonLink {
+    justify-content: center;
+  }
+
   .info.ButtonLink {
     background-color: var(--c-white);
     color: var(--c-black);
@@ -141,6 +145,11 @@
 
   .Schedule .schedule.ButtonLink, .Speakers .speakers.ButtonLink, .Tickets .info.ButtonLink {
     display: none;
+  }
+
+  .Banner .schedule.ButtonLink {
+    background-color: var(--c-white);
+    color: var(--c-black);
   }
 }
 
