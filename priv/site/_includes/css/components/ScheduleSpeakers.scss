@@ -59,11 +59,25 @@
   padding: 0 var(--s-6) var(--s-2);
 }
 
+#MateuszFront.ScheduleSpeakers-speakerCard {
+  justify-content: initial;
+}
+
+#MateuszFront .ScheduleSpeakers-speakerPhoto {
+  background-color: var(--c-black);
+}
+
+#MateuszFront .ScheduleSpeakers-speakerPhoto img {
+  top: 0;
+  left: 0;
+  transform: translate(0%, 0%);
+}
+
 @media (min-width: 1024px) {
   
   .ScheduleSpeakers-presentation {
     display: block;
-    padding: var(--s-5) 0 var(--s-9); 
+    padding: var(--s-8) 0; 
   }
 
   .ScheduleSpeakers-presentation p {
@@ -81,12 +95,55 @@
 
   .ScheduleSpeakers-content {
     display: grid;
+    grid-template-areas: 
+    "speaker-1 speaker-2"
+    "speaker-3 speaker-4"
+    "speaker-5 speaker-6"
+    "speaker-7 speaker-7";
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content min-content min-content;
     grid-column-gap: 10%;
     justify-content: space-between; 
     margin: auto;
     max-width: 80%;
     padding-top: 0;
+  }
+
+  .ScheduleSpeakers-speaker {
+    max-width: 375px;
+    margin: 0 auto;
+  }
+
+  .ScheduleSpeakers-speaker:nth-child(1) {
+    grid-area: speaker-1;
+  }
+
+  .ScheduleSpeakers-speaker:nth-child(2) {
+    grid-area: speaker-2;
+  }
+
+  .ScheduleSpeakers-speaker:nth-child(3) {
+    grid-area: speaker-3;
+  }
+
+  .ScheduleSpeakers-speaker:nth-child(4) {
+    grid-area: speaker-4;
+  }
+
+  .ScheduleSpeakers-speaker:nth-child(5) {
+    grid-area: speaker-5;
+  }
+
+  .ScheduleSpeakers-speaker:nth-child(6) {
+    grid-area: speaker-6;
+  }
+
+  .ScheduleSpeakers-speaker:nth-child(7) {
+    grid-area: speaker-7;
+  }
+
+  .ScheduleSpeakers-speakerPhoto {
+    max-height: 400px;
   }
 
   .ScheduleSpeakers-contentTalkTitle {
@@ -100,10 +157,6 @@
 
 @media (min-width: 1200px) {
 
-  .ScheduleSpeakers-presentation {
-    padding: var(--s-7) 0 var(--s-8); 
-  }
-
   .ScheduleSpeakers-presentation p {
     font-size: var(--s-4);
     line-height: var(--s-5);
@@ -113,7 +166,12 @@
 
   .ScheduleSpeakers-content {
     display: grid;
+    grid-template-areas: 
+    "speaker-1 speaker-2 speaker-3"
+    "speaker-4 speaker-5 speaker-6"
+    " . speaker-7 . ";
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
     grid-column-gap: 10%;
     justify-content: space-between;
     margin: auto;
@@ -125,7 +183,7 @@
   }
 
   .ScheduleSpeakers-contentTalkTitle {
-    padding: 0 var(--s-6) var(--s-9);
+    padding: 0 var(--s-6) var(--s-2);
   }
   
 }
