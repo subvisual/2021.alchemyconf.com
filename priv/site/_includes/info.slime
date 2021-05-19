@@ -75,7 +75,7 @@
   .Sponsors
     p.Sponsors-gratitude Thanks to our sponsors
     .Sponsor.CrankWheel
-      p.Sponsor-type Plataform Host
+      p.Sponsor-type Platform Host
       div.Sponsor-logo
         img src=url_for("public/logos/crankwheel_logo.svg") alt="crankwheel-partner-logo"
     .Sponsor.Finiam
