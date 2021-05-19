@@ -125,7 +125,8 @@
   }
   
   .schedule.ButtonLink {
-    background-color: var(--c-red);
+    background-color: var(--c-white);
+    color: var(--c-black);
   }
   
   .tickets.ButtonLink {
@@ -145,11 +146,6 @@
 
   .Schedule .schedule.ButtonLink, .Speakers .speakers.ButtonLink, .Tickets .info.ButtonLink {
     display: none;
-  }
-
-  .Banner .schedule.ButtonLink {
-    background-color: var(--c-white);
-    color: var(--c-black);
   }
 }
 
