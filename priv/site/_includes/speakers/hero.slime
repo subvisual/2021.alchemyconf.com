@@ -8,7 +8,7 @@
       .Speakers-heroContentDateTime
         time datetime="2021-05-28"
           | May 28 2021
-        p 09:00 - 18:30
+        p 09:00 - 17:35
 
       h1.Speakers-heroContentTitle Speakers
 
