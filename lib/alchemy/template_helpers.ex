@@ -91,7 +91,7 @@ defmodule Alchemy.TemplateHelpers do
       socials: []
     },
     %{
-      name: "Evadne W.",
+      name: "Evadne Wu",
       picture: "_includes/speaker_photos/evadne.jpg",
       tagline: "Software Engineer and Open-source developer",
       description: """

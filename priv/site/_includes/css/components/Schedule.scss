@@ -65,13 +65,13 @@
   font-weight: 600; 
 }
 
-.Schedule-listTalkTitle, .Schedule-listTalkIntro, .Schedule-listTalkBreak, .Schedule-listTalkQA, .Schedule-listTalkEnd {
+.Schedule-listTalkTitle, .Schedule-listTalkIntro, .Schedule-listTalkBreak, .Schedule-listTalkEnd {
   font-family: "Chakra Petch";
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.Schedule-listTalkTitle, .Schedule-listTalkQA {
+.Schedule-listTalkTitle {
   color: var(--c-white);
 }
 
@@ -81,6 +81,7 @@
 
 .Schedule-listSpeaker {
   display: block;
+  cursor: pointer;
   font-family: "Chakra Petch";
   font-weight: 400;
   text-transform: uppercase;
