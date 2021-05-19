@@ -103,6 +103,30 @@ defmodule Alchemy.TemplateHelpers do
       """,
       twitter_handle: "evadne",
       socials: []
+    },
+    %{
+      name: "Mrinal Wadhwa",
+      picture: "_includes/speaker_photos/mrinal.jpg",
+      tagline: "CTO at Ockam",
+      description: """
+      Mrinal Wadhwa is CTO at Ockam. He is passionate about Distributed Systems,
+      Applied Cryptography and the Internet of Things. At Ockam, Mrinal and his team
+      are building open source libraries that make it easy to establish end-to-end encrypted,
+      mutually authenticated, granularly authorized communication between edge devices and cloud services.
+      """,
+      twitter_handle: "mrinal",
+      socials: []
+    },
+    %{
+      name: "Mateusz Front",
+      picture: "_includes/speaker_photos/mateusz.jpg",
+      tagline: "Co-creator of Membrane",
+      description: """
+      Mateusz designs and develops various multimedia applications and libraries at Software Mansion.
+      He enjoys solving complex problems in simple ways. He is a co-creator of Membrane.
+      """,
+      twitter_handle: "uusszz",
+      social: []
     }
   ]
 

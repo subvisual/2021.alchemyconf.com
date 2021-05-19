@@ -1,11 +1,12 @@
 nav.Nav
   div.entry.leftButtons
-    = link @env, "Home", to: "/", class: "homeButtonLink"
-    = #link @env, "Schedule", to: "/schedule", class: "scheduleButtonLink"
+    = link @env, "Home", to: "/", class: "home ButtonLink"
+    = link @env, "Tickets", to: tito_url(), class: "tickets ButtonLink"
   div.entry.centerButton
-    = link @env, "Alchemy Conf 2021", to: "/", class: "alchemyButtonLink"
+    = link @env, "Alchemy Conf 2021", to: "/", class: "alchemy ButtonLink"
   div.entry.rightButtons
-    = link @env, "Speakers", to: "/speakers", class: "speakersButtonLink"
-    = link @env, "Tickets", to: "/tickets", class: "ticketsButtonLink"
+    = #link @env, "Schedule", to: "/schedule", class: "schedule ButtonLink"
+    = link @env, "Speakers", to: "/speakers", class: "speakers ButtonLink"
+    = link @env, "Info", to: "/tickets", class: "info ButtonLink"
 
 = include(@env, "_includes/mobile_nav.slime")
