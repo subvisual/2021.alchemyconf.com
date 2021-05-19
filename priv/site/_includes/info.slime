@@ -98,10 +98,6 @@
       p.Sponsor-type Community Partner
       div.Sponsor-logo
         img src=url_for("public/logos/elixircasts_logo.png") alt="elixircasts-partner-logo"
-    .Sponsor.Onda
-      p.Sponsor-type Partner
-      div.Sponsor-logo
-        img src=url_for("public/logos/onda_logo.svg") alt="onda-partner-logo"
 
   .Marquee.marquee aria-hidden="true"
     = for _ <- 1..2 do
