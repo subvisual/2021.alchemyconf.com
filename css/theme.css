@@ -862,7 +862,7 @@ a {
   display: grid;
   grid-column-gap: var(--s-4);
   grid-row-gap: var(--s-4);
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(3, 1fr); }
 
 .Footer-footer {
   display: flex;
@@ -971,6 +971,8 @@ a {
     text-decoration: none;
     text-transform: uppercase;
     width: 100%; }
+  .Footer .ButtonLink {
+    justify-content: center; }
   .info.ButtonLink {
     background-color: var(--c-white);
     color: var(--c-black); }
@@ -1021,7 +1023,10 @@ a {
     background-color: var(--c-black);
     color: var(--c-white); }
   .Schedule .schedule.ButtonLink, .Speakers .speakers.ButtonLink, .Tickets .info.ButtonLink {
-    display: none; } }
+    display: none; }
+  .Banner .schedule.ButtonLink {
+    background-color: var(--c-white);
+    color: var(--c-black); } }
 
 @media (max-width: 850px) {
   .Nav .ButtonLink {
@@ -1217,11 +1222,15 @@ a {
   padding: var(--s-3) var(--s-6) var(--s-3) var(--s-3);
   text-transform: uppercase; }
 
+.Schedule-list {
+  line-height: var(--s-4);
+  font-size: var(--s-3); }
+
 .Schedule-list li {
   border-top: 1px solid var(--c-black);
   color: var(--c-black);
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 20% 80%;
   padding: var(--s-2) 0; }
 
 .Schedule-list li:last-child {
@@ -1229,22 +1238,24 @@ a {
 
 .Schedule-listTime {
   font-family: "Chakra Petch";
-  font-size: var(--s-3);
-  font-weight: 600;
-  line-height: var(--s-4); }
+  font-weight: 600; }
 
-.Schedule-listTalkTitle {
+.Schedule-listTalkTitle, .Schedule-listTalkIntro, .Schedule-listTalkBreak, .Schedule-listTalkQA, .Schedule-listTalkEnd {
   font-family: "Chakra Petch";
-  font-size: var(--s-3);
-  font-weight: 600;
-  line-height: var(--s-4);
-  text-align: end; }
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.Schedule-listTalkTitle, .Schedule-listTalkQA {
+  color: var(--c-white); }
+
+.Schedule-listTalkBreak {
+  font-style: italic; }
 
 .Schedule-listSpeaker {
-  display: none; }
-
-.Schedule-list li:nth-child(even) > span:nth-child(2) {
-  color: var(--c-white); }
+  display: block;
+  font-family: "Chakra Petch";
+  font-weight: 400;
+  text-transform: uppercase; }
 
 .Schedule .marquee {
   background-color: var(--c-light-gray);
@@ -1269,13 +1280,13 @@ a {
 @media (min-width: 1024px) {
   .Schedule-hero {
     flex-direction: row-reverse;
-    max-height: 1020px; }
+    max-height: 2045px; }
   .Schedule-heroVideo {
     display: inherit; }
   .Schedule-heroVideo video {
     width: 100%;
     object-position: right;
-    object-fit: cover; }
+    object-fit: fill; }
   .Schedule-heroContent {
     padding: var(--s-10) var(--s-7) var(--s-8);
     width: 50%; }
@@ -1284,43 +1295,17 @@ a {
   .Schedule-heroContentTitle {
     font-size: var(--s-8);
     line-height: 90%; }
+  .Schedule-list {
+    line-height: var(--s-5);
+    font-size: var(--s-4); }
   .Schedule-list li {
-    grid-template-columns: 27% 37% 36%; }
-  .Schedule-list li:nth-child(2n+3) {
-    grid-template-columns: 27% 73%;
-    font-style: italic; }
-  .Schedule-list li:last-child {
-    border-bottom: 1px solid var(--c-black);
-    font-style: normal; }
-  .Schedule-listTime {
-    font-size: var(--s-4);
-    font-style: normal; }
-  .Schedule-listTalkTitle {
-    font-size: var(--s-4);
-    text-align: start;
-    text-transform: uppercase; }
-  .Schedule-listTalkTitle:nth-child(2n+3) {
-    font-size: var(--s-4);
-    text-align: start;
-    text-transform: uppercase; }
-  .Schedule-listSpeaker {
-    display: inherit;
-    font-family: "Chakra Petch";
-    font-size: var(--s-4);
-    font-weight: 400;
-    line-height: var(--s-4);
-    text-align: end;
-    text-transform: uppercase; } }
-
-@media (min-width: 1200px) {
-  .Schedule-hero {
-    max-height: 1020px; }
-  .Schedule-list li {
-    grid-template-columns: 30% 40% 30%; }
-  .Schedule-list li:nth-child(2n+3) {
     grid-template-columns: 30% 70%; }
-  .Schedule-heroContentTitle {
-    font-size: var(--s-9); } }
+  .Schedule-list li:last-child {
+    border-bottom: 1px solid var(--c-black); }
+  .Schedule-listSpeaker {
+    font-family: "Chakra Petch";
+    font-weight: 400;
+    text-transform: uppercase; } }
 
 .ScheduleSpeakers {
   background-color: var(--c-gray); }
@@ -1374,10 +1359,21 @@ a {
   font-weight: 500;
   padding: 0 var(--s-6) var(--s-2); }
 
+#MateuszFront.ScheduleSpeakers-speakerCard {
+  justify-content: initial; }
+
+#MateuszFront .ScheduleSpeakers-speakerPhoto {
+  background-color: var(--c-black); }
+
+#MateuszFront .ScheduleSpeakers-speakerPhoto img {
+  top: 0;
+  left: 0;
+  transform: translate(0%, 0%); }
+
 @media (min-width: 1024px) {
   .ScheduleSpeakers-presentation {
     display: block;
-    padding: var(--s-5) 0 var(--s-9); }
+    padding: var(--s-8) 0; }
   .ScheduleSpeakers-presentation p {
     background-color: var(--c-white);
     color: var(--c-black);
@@ -1391,20 +1387,39 @@ a {
     width: var(--s-14); }
   .ScheduleSpeakers-content {
     display: grid;
+    grid-template-areas: "speaker-1 speaker-2" "speaker-3 speaker-4" "speaker-5 speaker-6" "speaker-7 speaker-7";
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content min-content min-content;
     grid-column-gap: 10%;
     justify-content: space-between;
     margin: auto;
     max-width: 80%;
     padding-top: 0; }
+  .ScheduleSpeakers-speaker {
+    max-width: 375px;
+    margin: 0 auto; }
+  .ScheduleSpeakers-speaker:nth-child(1) {
+    grid-area: speaker-1; }
+  .ScheduleSpeakers-speaker:nth-child(2) {
+    grid-area: speaker-2; }
+  .ScheduleSpeakers-speaker:nth-child(3) {
+    grid-area: speaker-3; }
+  .ScheduleSpeakers-speaker:nth-child(4) {
+    grid-area: speaker-4; }
+  .ScheduleSpeakers-speaker:nth-child(5) {
+    grid-area: speaker-5; }
+  .ScheduleSpeakers-speaker:nth-child(6) {
+    grid-area: speaker-6; }
+  .ScheduleSpeakers-speaker:nth-child(7) {
+    grid-area: speaker-7; }
+  .ScheduleSpeakers-speakerPhoto {
+    max-height: 400px; }
   .ScheduleSpeakers-contentTalkTitle {
     padding: 0 var(--s-7) var(--s-5); }
   .ScheduleSpeakers-speaker:last-child {
     margin-bottom: var(--s-9); } }
 
 @media (min-width: 1200px) {
-  .ScheduleSpeakers-presentation {
-    padding: var(--s-7) 0 var(--s-8); }
   .ScheduleSpeakers-presentation p {
     font-size: var(--s-4);
     line-height: var(--s-5);
@@ -1412,7 +1427,9 @@ a {
     width: var(--s-14); }
   .ScheduleSpeakers-content {
     display: grid;
+    grid-template-areas: "speaker-1 speaker-2 speaker-3" "speaker-4 speaker-5 speaker-6" " . speaker-7 . ";
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
     grid-column-gap: 10%;
     justify-content: space-between;
     margin: auto;
@@ -1420,4 +1437,4 @@ a {
   .ScheduleSpeakers-speaker:nth-child(3n+1), .ScheduleSpeakers-speaker:nth-child(3n+3) {
     padding-top: var(--s-4); }
   .ScheduleSpeakers-contentTalkTitle {
-    padding: 0 var(--s-6) var(--s-9); } }
+    padding: 0 var(--s-6) var(--s-2); } }
