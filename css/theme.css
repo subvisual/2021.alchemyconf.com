@@ -1012,7 +1012,8 @@ a {
   .speakers.ButtonLink {
     background-color: var(--c-green); }
   .schedule.ButtonLink {
-    background-color: var(--c-red); }
+    background-color: var(--c-white);
+    color: var(--c-black); }
   .tickets.ButtonLink {
     background-color: var(--c-red);
     color: var(--c-white); }
@@ -1023,10 +1024,7 @@ a {
     background-color: var(--c-black);
     color: var(--c-white); }
   .Schedule .schedule.ButtonLink, .Speakers .speakers.ButtonLink, .Tickets .info.ButtonLink {
-    display: none; }
-  .Banner .schedule.ButtonLink {
-    background-color: var(--c-white);
-    color: var(--c-black); } }
+    display: none; } }
 
 @media (max-width: 850px) {
   .Nav .ButtonLink {
