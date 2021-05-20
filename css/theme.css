@@ -601,6 +601,9 @@ a {
   margin-bottom: var(--s-3);
   padding: var(--s-3); }
 
+.Speaker-cardTalkTitle {
+  font-weight: 600; }
+
 .Speaker-cardContentSocial {
   border-top: 1px solid var(--c-black);
   color: var(--c-black);
@@ -620,26 +623,26 @@ a {
 .Speaker-card:nth-child(3n + 1) .Speaker-cardContentName {
   background-color: var(--c-gray); }
 
-.Speaker-card:nth-child(3n + 2) {
-  background-color: var(--c-gray); }
-
-.Speaker-card:nth-child(3n + 2) .Speaker-cardPhotoName,
-.Speaker-card:nth-child(3n + 2) .Speaker-cardContentName {
-  background-color: var(--c-green); }
-
 .Speaker-card:nth-child(3n + 3) {
-  background-color: var(--c-purple); }
+  background-color: var(--c-gray); }
 
 .Speaker-card:nth-child(3n + 3) .Speaker-cardPhotoName,
 .Speaker-card:nth-child(3n + 3) .Speaker-cardContentName {
   background-color: var(--c-green); }
 
-.Speaker-card:nth-child(3n + 3) .Speaker-cardContentTitle {
+.Speaker-card:nth-child(3n + 2) {
+  background-color: var(--c-purple); }
+
+.Speaker-card:nth-child(3n + 2) .Speaker-cardPhotoName,
+.Speaker-card:nth-child(3n + 2) .Speaker-cardContentName {
+  background-color: var(--c-green); }
+
+.Speaker-card:nth-child(3n + 2) .Speaker-cardContentTitle {
   border-bottom: 1px solid var(--c-white);
   border-top: 1px solid var(--c-white);
   color: var(--c-white); }
 
-.Speaker-card:nth-child(3n + 3) .Speaker-cardContentSocial {
+.Speaker-card:nth-child(3n + 2) .Speaker-cardContentSocial {
   border-top: 1px solid var(--c-white);
   color: var(--c-white); }
 
@@ -667,8 +670,7 @@ a {
     line-height: 90%; }
   .Speaker-card {
     display: flex;
-    flex-direction: row-reverse;
-    max-height: 640px; }
+    flex-direction: row-reverse; }
   .Speaker-cardPhoto {
     align-self: normal;
     text-align: center;
@@ -677,7 +679,7 @@ a {
     width: 50%; }
   .Speaker-cardPhoto img {
     display: inline-block;
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -704,8 +706,6 @@ a {
     max-height: 935px; }
   .Speakers-heroContentTitle {
     font-size: var(--s-9); }
-  .Speaker-card {
-    max-height: 880px; }
   .Speaker-cardContent {
     padding: var(--s-8) var(--s-7) var(--s-7) var(--s-6); }
   .Speaker-cardContentName {
