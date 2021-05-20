@@ -1251,10 +1251,17 @@ a {
 
 .Schedule-listSpeaker {
   display: block;
-  cursor: pointer;
   font-family: "Chakra Petch";
   font-weight: 400;
   text-transform: uppercase; }
+
+.Schedule-timeZone {
+  color: var(--c-black);
+  line-height: var(--s-4);
+  font-family: "Chakra Petch";
+  font-size: var(--s-3);
+  font-weight: 400;
+  margin-top: var(--s-3); }
 
 .Schedule .marquee {
   background-color: var(--c-light-gray);
@@ -1304,13 +1311,15 @@ a {
   .Schedule-listSpeaker {
     font-family: "Chakra Petch";
     font-weight: 400;
-    text-transform: uppercase; } }
+    text-transform: uppercase; }
+  .Schedule-timeZone {
+    line-height: var(--s-6);
+    font-size: var(--s-4);
+    margin-top: var(--s-3); } }
 
 .ScheduleSpeakers {
-  background-color: var(--c-gray); }
-
-.ScheduleSpeakers-presentation {
-  display: none; }
+  background-color: var(--c-gray);
+  padding-top: var(--s-8); }
 
 .ScheduleSpeakers-content {
   margin: auto;
@@ -1371,20 +1380,6 @@ a {
   transform: translate(0%, 0%); }
 
 @media (min-width: 1024px) {
-  .ScheduleSpeakers-presentation {
-    display: block;
-    padding: var(--s-8) 0; }
-  .ScheduleSpeakers-presentation p {
-    background-color: var(--c-white);
-    color: var(--c-black);
-    font-family: "input-mono";
-    font-size: var(--s-4);
-    font-weight: 400;
-    line-height: var(--s-5);
-    margin: auto;
-    padding: var(--s-4) var(--s-5);
-    text-align: center;
-    width: var(--s-14); }
   .ScheduleSpeakers-content {
     display: grid;
     grid-template-areas: "speaker-1 speaker-2" "speaker-3 speaker-4" "speaker-5 speaker-6" "speaker-7 speaker-7";
@@ -1420,11 +1415,6 @@ a {
     margin-bottom: var(--s-9); } }
 
 @media (min-width: 1200px) {
-  .ScheduleSpeakers-presentation p {
-    font-size: var(--s-4);
-    line-height: var(--s-5);
-    padding: var(--s-4);
-    width: var(--s-14); }
   .ScheduleSpeakers-content {
     display: grid;
     grid-template-areas: "speaker-1 speaker-2 speaker-3" "speaker-4 speaker-5 speaker-6" " . speaker-7 . ";
