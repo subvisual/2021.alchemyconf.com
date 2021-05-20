@@ -46,7 +46,9 @@ defmodule Alchemy.TemplateHelpers do
       combined!
       """,
       twitter_handle: "michalmuskala",
-      socials: []
+      socials: [],
+      talkTitle: "<br><br>Xref.rs - Erlang static analysis in Rust",
+      talkDescription: "<br>xref is an amazing and powerful static analysis tool for Erlang for verifying and undestanding cross-references between modules. It is an indispensible CI step, that can catch many silly mistakes, given the Erlang compiler does not check remote function calls in any way. Unfortunately, on sizeable codebases with many releases it can be rather slow, with runtimes reaching more than 30 minutes. In this talk, I'll present my new tool xref.rs, which re-implements a subset of the original xref toolchain in Rust, bringing the runtime on the same codebase, performing the same analysis to under a second. In doing so, we'll dive into the structure of the .beam files, and explore some common techniques for optimising static analysis tools."
     },
     %{
       name: "José Valim",
@@ -60,7 +62,9 @@ defmodule Alchemy.TemplateHelpers do
       programming books, and an active member of the Open Source community
       """,
       twitter_handle: "josevalim",
-      socials: []
+      socials: [],
+      talkTitle: "<br><br>Updates on Elixir v1.12",
+      talkDescription: "<br>"
     },
     %{
       name: "Ben Smith",
@@ -73,7 +77,9 @@ defmodule Alchemy.TemplateHelpers do
       focus on modelling their business using domain-specific events.
       """,
       twitter_handle: "slashdotdash",
-      socials: []
+      socials: [],
+      talkTitle: "<br><br>Modelling complex business domains with events",
+      talkDescription: "<br>Discover how we can use domain events (simple facts relevant to a business) to model business processes. Using tools such as Event Storming we can design our applications around these events. Then write the code which implements our design using pure functions which emit immutable events and handlers for side-effects to interact with the outside world. "
     },
     %{
       name: "Marlus Saraiva",
@@ -88,7 +94,9 @@ defmodule Alchemy.TemplateHelpers do
       Surface.
       """,
       twitter_handle: "MarlusSaraiva",
-      socials: []
+      socials: [],
+      talkTitle: "<br><br>Improving your Phoenix Liveview experience with Surface",
+      talkDescription: "<br>"
     },
     %{
       name: "Evadne Wu",
@@ -102,7 +110,9 @@ defmodule Alchemy.TemplateHelpers do
       development based on Objective-C.
       """,
       twitter_handle: "evadne",
-      socials: []
+      socials: [],
+      talkTitle: "<br><br>How I Learned to Stop Worrying and Love Macros",
+      talkDescription: "<br>Eliminate duplicate code, expose cleaner interfaces and manage external changes effectively with macros! Used sparingly but judiciously, macros can make your development process faster, and more pleasant. Easily implement your own DSLs, generate code for service clients, and create consistent contexts, all with macros."
     },
     %{
       name: "Mrinal Wadhwa",
@@ -115,7 +125,11 @@ defmodule Alchemy.TemplateHelpers do
       mutually authenticated, granularly authorized communication between edge devices and cloud services.
       """,
       twitter_handle: "mrinal",
-      socials: []
+      socials: [],
+      talkTitle: "<br><br>How can applications become more secure, private and dependable",
+      talkDescription: "<br>Machines, within the Internet of Things, operate by exchanging messages, with cloud services and other connected machines. To support occasionally connected devices, low power radio protocols and containerized microservices - such messages usually travel via a number of queues and caches, often over a series of network layer connections before reaching their end-destination. 
+      <br>
+      In this talk, we’ll explore how applications can achieve end-to-end encryption, mutual authentication and granular authorization in such complex data flows."
     },
     %{
       name: "Mateusz Front",
@@ -126,7 +140,9 @@ defmodule Alchemy.TemplateHelpers do
       He enjoys solving complex problems in simple ways. He is a co-creator of Membrane.
       """,
       twitter_handle: "uusszz",
-      social: []
+      social: [],
+      talkTitle: "<br><br>Pipelining WebRTC - videoconferences in Elixir with Membrane Framework",
+      talkDescription: "<br>WebRTC has become a state-of-the-art technology for real-time communication. In this talk, I want to show the audience how we implemented a WebRTC server in Elixir with the use of Membrane - an advanced multimedia processing framework. I’ll go through the benefits and challenges of the architectural approach we took and the possibilities given by the BEAM. I will also show how to integrate our server with an Elixir application."
     }
   ]
 

@@ -8,7 +8,10 @@ section.Speaker-card id="#{String.replace(@speaker[:name], " ", "")}"
 
     h2.Speaker-cardContentName = @speaker[:name]
 
-    p.Speaker-cardContentDescription = @speaker[:description]
+    .Speaker-cardContentDescription 
+      p.Speaker-cardSpeakerDescription = @speaker[:description]
+      p.Speaker-cardTalkTitle = @speaker[:talkTitle]
+      p.Speaker-cardTalkDescription = @speaker[:talkDescription]
 
     .Speaker-cardContentSocial
       = if @speaker[:linkedin_handle] do
