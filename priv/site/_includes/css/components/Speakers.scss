@@ -138,6 +138,10 @@
   padding: var(--s-3);
 }
 
+.Speaker-cardTalkTitle {
+  font-weight: 600;
+}
+
 .Speaker-cardContentSocial {
   border-top: 1px solid var(--c-black);
   color: var(--c-black);
@@ -160,7 +164,7 @@
   }
 }
 
-.Speaker-card:nth-child(3n + 2) {
+.Speaker-card:nth-child(3n + 3) {
   background-color: var(--c-gray);
 
   .Speaker-cardPhotoName,
@@ -169,7 +173,7 @@
   }
 }
 
-.Speaker-card:nth-child(3n + 3) {
+.Speaker-card:nth-child(3n + 2) {
   background-color: var(--c-purple);
 
   .Speaker-cardPhotoName,
@@ -228,7 +232,6 @@
   .Speaker-card {
     display: flex;
     flex-direction: row-reverse;
-    max-height: 640px;
   }
 
   .Speaker-cardPhoto {
@@ -241,7 +244,7 @@
 
   .Speaker-cardPhoto img {
     display: inline-block;
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -284,10 +287,6 @@
 
   .Speakers-heroContentTitle {
     font-size: var(--s-9);
-  }
-
-  .Speaker-card {
-    max-height: 880px;
   }
 
   .Speaker-cardContent {
