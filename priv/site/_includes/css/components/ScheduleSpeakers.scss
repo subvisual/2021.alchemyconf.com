@@ -1,9 +1,6 @@
 .ScheduleSpeakers {
   background-color: var(--c-gray);
-}
-
-.ScheduleSpeakers-presentation {
-  display: none;
+  padding-top: var(--s-8);
 }
 
 .ScheduleSpeakers-content {
@@ -75,24 +72,6 @@
 }
 
 @media (min-width: 1024px) {
-  
-  .ScheduleSpeakers-presentation {
-    display: block;
-    padding: var(--s-8) 0; 
-  }
-
-  .ScheduleSpeakers-presentation p {
-    background-color: var(--c-white);
-    color: var(--c-black);
-    font-family: "input-mono";
-    font-size: var(--s-4);
-    font-weight: 400;  
-    line-height: var(--s-5);
-    margin: auto;
-    padding: var(--s-4) var(--s-5);
-    text-align: center; 
-    width: var(--s-14);
-  }
 
   .ScheduleSpeakers-content {
     display: grid;
@@ -157,13 +136,6 @@
 }
 
 @media (min-width: 1200px) {
-
-  .ScheduleSpeakers-presentation p {
-    font-size: var(--s-4);
-    line-height: var(--s-5);
-    padding: var(--s-4);
-    width: var(--s-14);
-  }
 
   .ScheduleSpeakers-content {
     display: grid;
