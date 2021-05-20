@@ -81,10 +81,18 @@
 
 .Schedule-listSpeaker {
   display: block;
-  cursor: pointer;
   font-family: "Chakra Petch";
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.Schedule-timeZone {
+  color: var(--c-black);
+  line-height: var(--s-4);
+  font-family: "Chakra Petch";
+  font-size: var(--s-3);
+  font-weight: 400;
+  margin-top: var(--s-3);
 }
 
 .Schedule .marquee {
@@ -160,6 +168,12 @@
     font-family: "Chakra Petch";
     font-weight: 400;
     text-transform: uppercase;
+  }
+
+  .Schedule-timeZone {
+    line-height: var(--s-6);
+    font-size: var(--s-4);
+    margin-top: var(--s-3);
   }
 
 }

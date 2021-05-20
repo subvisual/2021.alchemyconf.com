@@ -18,64 +18,58 @@
         span.Schedule-listTalkIntro MC Intro
       li
         span.Schedule-listTime 9:15-10:05
-        div
-          span.Schedule-listTalkTitle Updates on Elixir v1.12
-          a href="/speakers#JoséValim"
+        a href="/speakers#JoséValim"
+            span.Schedule-listTalkTitle Updates on Elixir v1.12
             span.Schedule-listSpeaker José Valim
       li
         span.Schedule-listTime 10:05-10:20
         span.Schedule-listTalkBreak Break
       li
         span.Schedule-listTime 10:20-11:10
-        div
+        a href="/speakers#MateuszFront" 
           span.Schedule-listTalkTitle Pipelining WebRTC - videoconferences in Elixir with Membrane Framework
-          a href="/speakers#MateuszFront" 
-            span.Schedule-listSpeaker Mateusz Front
+          span.Schedule-listSpeaker Mateusz Front
       li
         span.Schedule-listTime 11:10-11:40
         span.Schedule-listTalkBreak Large Break 
       li
         span.Schedule-listTime 11:40-12:30
-        div
+        a href="/speakers#MarlusSaraiva"
           span.Schedule-listTalkTitle Improving your Phoenix Liveview experience with Surface
-          a href="/speakers#MarlusSaraiva"
-            span.Schedule-listSpeaker Marlus Saraiva
+          span.Schedule-listSpeaker Marlus Saraiva
       li
         span.Schedule-listTime 12:30-13:30
         span.Schedule-listTalkBreak Lunch Break
       li
         span.Schedule-listTime 13:30-14:20
-        div
+        a href="/speakers#EvadneWu"
           span.Schedule-listTalkTitle How I Learned to Stop Worrying and Love Macros
-          a href="/speakers#EvadneWu"
-            span.Schedule-listSpeaker Evadne Wu
+          span.Schedule-listSpeaker Evadne Wu
       li
         span.Schedule-listTime 14:20-14:35
         span.Schedule-listTalkBreak Break
       li
         span.Schedule-listTime 14:35-15:25
-        div
+        a href="/speakers#BenSmith"
           span.Schedule-listTalkTitle Modelling complex business domains with events
-          a href="/speakers#BenSmith"
-            span.Schedule-listSpeaker Ben Smith
+          span.Schedule-listSpeaker Ben Smith
       li
         span.Schedule-listTime 15:25-15:40
         span.Schedule-listTalkBreak Break
       li
         span.Schedule-listTime 15:40-16:30
-        div
+        a href="/speakers#MrinalWadhwa"
           span.Schedule-listTalkTitle How can applications become more secure, private and dependable
-          a href="/speakers#MrinalWadhwa"
-            span.Schedule-listSpeaker Mrinal Wadhwa
+          span.Schedule-listSpeaker Mrinal Wadhwa
       li
         span.Schedule-listTime 16:30-16:45
         span.Schedule-listTalkBreak Break
       li
         span.Schedule-listTime 16:45-17:35
-        div
+        a href="/speakers#MichałMuskała"
           span.Schedule-listTalkTitle Xref.rs - Erlang static analysis in Rust
-          a href="/speakers#MichałMuskała"
-            span.Schedule-listSpeaker Michal Muskala
+          span.Schedule-listSpeaker Michal Muskala
       li
         span.Schedule-listTime 17:35 
         span.Schedule-listTalkEnd Wrap up  
+    p.Schedule-timeZone All times shown in GMT+1
