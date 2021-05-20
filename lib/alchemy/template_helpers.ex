@@ -64,7 +64,7 @@ defmodule Alchemy.TemplateHelpers do
       twitter_handle: "josevalim",
       socials: [],
       talkTitle: "<br><br>Updates on Elixir v1.12",
-      talkDescription: "<br>"
+      talkDescription: ""
     },
     %{
       name: "Ben Smith",
@@ -96,7 +96,7 @@ defmodule Alchemy.TemplateHelpers do
       twitter_handle: "MarlusSaraiva",
       socials: [],
       talkTitle: "<br><br>Improving your Phoenix Liveview experience with Surface",
-      talkDescription: "<br>"
+      talkDescription: ""
     },
     %{
       name: "Evadne Wu",
