@@ -76,28 +76,34 @@
     p.Sponsors-gratitude Thanks to our sponsors
     .Sponsor.CrankWheel
       p.Sponsor-type Platform Host
-      div.Sponsor-logo
-        img src=url_for("public/logos/crankwheel_logo.svg") alt="crankwheel-partner-logo"
+      a href="https://crankwheel.com/jobs/" target="_blank"
+        div.Sponsor-logo
+          img src=url_for("public/logos/crankwheel_logo.svg") alt="crankwheel-partner-logo"
     .Sponsor.Finiam
       p.Sponsor-type Partner
-      div.Sponsor-logo
-        img src=url_for("public/logos/finiam_logo.svg") alt="finiam-partner-logo"
+      a href="https://finiam.com/" target="_blank"
+        div.Sponsor-logo
+          img src=url_for("public/logos/finiam_logo.svg") alt="finiam-partner-logo"
     .Sponsor.AppSignal
       p.Sponsor-type Partner
-      div.Sponsor-logo
-        img src=url_for("public/logos/appsignal_logo.svg") alt="appsignal-partner-logo"
+      a href="https://www.appsignal.com/" target="_blank" 
+        div.Sponsor-logo
+          img src=url_for("public/logos/appsignal_logo.svg") alt="appsignal-partner-logo"
     .Sponsor.Colectiv
       p.Sponsor-type Partner
-      div.Sponsor-logo
-        img src=url_for("public/logos/colectiv_logo.svg") alt="colectiv-partner-logo"
+      a href="https://www.coletiv.com/" target="_blank" 
+        div.Sponsor-logo
+          img src=url_for("public/logos/colectiv_logo.svg") alt="colectiv-partner-logo"
     .Sponsor.Utrust
       p.Sponsor-type Partner
-      div.Sponsor-logo
-        img src=url_for("public/logos/utrust_logo.svg") alt="utrust-partner-logo"
+      a href="https://utrust.com/" target="_blank"
+        div.Sponsor-logo
+          img src=url_for("public/logos/utrust_logo.svg") alt="utrust-partner-logo"
     .Sponsor.ElixirCast
       p.Sponsor-type Community Partner
-      div.Sponsor-logo
-        img src=url_for("public/logos/elixircasts_logo.png") alt="elixircasts-partner-logo"
+      a href="https://elixircasts.io/" target="_blank" 
+        div.Sponsor-logo
+          img src=url_for("public/logos/elixircasts_logo.png") alt="elixircasts-partner-logo"
 
   .Marquee.marquee aria-hidden="true"
     = for _ <- 1..2 do
