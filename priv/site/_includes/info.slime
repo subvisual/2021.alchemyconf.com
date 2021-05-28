@@ -104,6 +104,11 @@
       a href="https://elixircasts.io/" target="_blank" 
         div.Sponsor-logo
           img src=url_for("public/logos/elixircasts_logo.png") alt="elixircasts-partner-logo"
+    .Sponsor.Envelope
+      p.Sponsor-type Community Partner
+      a href="https://elixirweekly.net/" target="_blank"
+        div.Sponsor-logo
+          img src=url_for("public/logos/envelope_logo.png") alt="envelope-partner-logo"
 
   .Marquee.marquee aria-hidden="true"
     = for _ <- 1..2 do
