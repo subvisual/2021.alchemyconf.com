@@ -19,12 +19,12 @@
   .carousel aria-hidden="true"
     .slider
       = for source <- ["schedule", "info", "tickets" ] do
-        div.sliderContent 
+        div.sliderContent
           video.lozad autoplay=true muted=true loop=true data-poster=url_for("videos/#{source}.jpg")
             source data-src=url_for("videos/#{source}.webm") type="video/webm"
             source data-src=url_for("videos/#{source}.mp4") type="video/mp4"
           = responsive_image "videos/#{source}.jpg"
-          
+
   .rectangles aria-hidden="true"
     = for source <- ["schedule", "info", "tickets" ] do
       div
@@ -86,12 +86,12 @@
           img src=url_for("public/logos/finiam_logo.svg") alt="finiam-partner-logo"
     .Sponsor.AppSignal
       p.Sponsor-type Partner
-      a href="https://www.appsignal.com/" target="_blank" 
+      a href="https://www.appsignal.com/" target="_blank"
         div.Sponsor-logo
           img src=url_for("public/logos/appsignal_logo.svg") alt="appsignal-partner-logo"
     .Sponsor.Colectiv
       p.Sponsor-type Partner
-      a href="https://www.coletiv.com/" target="_blank" 
+      a href="https://www.coletiv.com/" target="_blank"
         div.Sponsor-logo
           img src=url_for("public/logos/colectiv_logo.svg") alt="colectiv-partner-logo"
     .Sponsor.Utrust
@@ -101,14 +101,14 @@
           img src=url_for("public/logos/utrust_logo.svg") alt="utrust-partner-logo"
     .Sponsor.ElixirCast
       p.Sponsor-type Community Partner
-      a href="https://elixircasts.io/" target="_blank" 
+      a href="https://elixircasts.io/" target="_blank"
         div.Sponsor-logo
           img src=url_for("public/logos/elixircasts_logo.png") alt="elixircasts-partner-logo"
-    .Sponsor.Envelope
+    .Sponsor.ElixirWeekly
       p.Sponsor-type Community Partner
       a href="https://elixirweekly.net/" target="_blank"
         div.Sponsor-logo
-          img src=url_for("public/logos/envelope_logo.png") alt="envelope-partner-logo"
+          img src=url_for("public/logos/envelope_logo.png") alt="elixir-weekly-partner-logo"
 
   .Marquee.marquee aria-hidden="true"
     = for _ <- 1..2 do
