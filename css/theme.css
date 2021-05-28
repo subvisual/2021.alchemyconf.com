@@ -362,8 +362,8 @@ a {
 .Sponsors {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content min-content min-content min-content min-content;
-  grid-template-areas: "header header" "CrankWheel Finiam" "AppSignal Colectiv" "Utrust ElixirCast";
+  grid-template-rows: min-content min-content min-content min-content min-content min-content;
+  grid-template-areas: "header header" "CrankWheel Finiam" "AppSignal Colectiv" "Utrust ElixirCast" "Envelope Envelope";
   text-align: center;
   max-width: 700px;
   margin: auto;
@@ -401,6 +401,9 @@ a {
 .ElixirCast {
   grid-area: ElixirCast; }
 
+.Envelope {
+  grid-area: Envelope; }
+
 .Sponsor-type {
   font-family: "input-mono";
   font-size: var(--s-3);
@@ -420,12 +423,15 @@ a {
 .CrankWheel .Sponsor-logo img {
   max-width: var(--s-9); }
 
+.Envelope .Sponsor-logo img {
+  max-width: var(--s-7); }
+
 @media (min-width: 1024px) {
   .Sponsors {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: min-content min-content min-content min-content;
-    grid-template-areas: "header header header" "CrankWheel Finiam AppSignal" "Colectiv Utrust ElixirCast";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas: "header header header header" "CrankWheel Finiam Finiam AppSignal" "Colectiv Utrust ElixirCast Envelope";
     text-align: center;
     max-width: 75%;
     margin: auto;
