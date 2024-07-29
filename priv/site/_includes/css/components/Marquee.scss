@@ -1,33 +1,17 @@
 .Marquee {
   overflow: hidden;
   position: relative;
+  overflow-y: hidden;
+  display: inline-flex;
+  width: 100%;
 
   > * {
-    top: 0;
-    position: absolute;
-    display: flex;
+    position: relative;
+    display: inline-flex;
     width: min-content;
-    min-width: 100%;
-    animation: marquee 50s linear infinite;
-    left: 0%;
 
     span {
       white-space: nowrap;
     }
-  }
-
-  > *:nth-child(2) {
-    left: 100%;
-    animation-delay: 12.5s;
-  }
-}
-
-@keyframes marquee {
-  0% {
-    transform: translate3d(0%, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(-200%, 0, 0);
   }
 }

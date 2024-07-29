@@ -13,5 +13,6 @@ html
     = link_to_css "css/theme.scss", media: "all"
      link rel="preconnect" href="https://fonts.gstatic.com"
      link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap"
+    script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popmotion/9.3.5/popmotion.global.min.js"
   body
     = @children
